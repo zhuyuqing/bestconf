@@ -2,6 +2,20 @@
 Better Configurations for Large-Scale Systems (BestConf)
 ====================================
 
+Bestconf can find better configurations for a specific large-scale system under a given application workload.
+Currently, bestconf has been tested on the following systems: 
+   
+          Spark
+   
+          Cassandra
+          
+          Hive+Hadoop
+          
+          Tomcat Server
+          
+          MySQL
+
+
 Links
 -----
 
@@ -23,10 +37,8 @@ Getting Started
     cd bestconf-master/deploy
     ```
     
-2. Set up a system for tuning. Currently, bestconf has been tested on the following
-   systems: Cassandra, Hive+Hadoop, Tomcat Server, MySQL and Spark. We offer two 
-   deployable examples in the project: one is called 4BI(Hive+Hadoop under Hibench
-   tests) and the other is called 4tomecat(Tomcat under JMeter tests).
+2. Set up a system for tuning. We offer two deployable examples in the project: one is called 
+   4BI(Hive+Hadoop under Hibench tests) and the other is called 4tomecat(Tomcat under JMeter tests).
 
 3. Run BestConf command. 
 
