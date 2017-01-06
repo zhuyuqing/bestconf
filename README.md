@@ -3,7 +3,11 @@ Better Configurations for Large-Scale Systems (BestConf)
 ====================================
 
 Bestconf can find better configurations for a specific large-scale system under a given application workload.
-Currently, bestconf has been tested on the following systems: 
+
+Given the diverse application workloads, a large-scale system with hundreds of configuration parameters, such as Spark, 
+Hadoop, Cassandra, MySQL and Tomcat, does not necessarily offer the best performance under their default configurations.
+
+Currently, Bestconf has been tested on the following systems: 
    
           Spark
    
