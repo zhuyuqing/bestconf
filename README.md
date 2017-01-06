@@ -4,9 +4,13 @@ Better Configurations for Large-Scale Systems (BestConf)
 
 Links
 -----
+
 http://prof.ict.ac.cn/~yuqing
+
 zhuyuqing@ict.ac.cn
+
 liujianxun@ict.ac.cn
+
 
 Getting Started
 ---------------
