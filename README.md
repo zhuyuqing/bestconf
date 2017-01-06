@@ -8,16 +8,16 @@ Given the diverse application workloads, a large-scale system with hundreds of c
 Hadoop, Cassandra, MySQL and Tomcat, does not necessarily offer the best performance under their default configurations.
 
 Currently, Bestconf has been tested on the following systems: 
-   
-          Spark [![Spark](http://spark.apache.org/)]
-   
-          Cassandra [http://cassandra.apache.org/]
-          
-          Hive+Hadoop [http://hive.apache.org/][http://hadoop.apache.org/]
-          
-          Tomcat Server [http://tomcat.apache.org/]
-          
-          MySQL [https://www.mysql.com/]
+
+   [Spark](http://spark.apache.org/)
+
+   [Cassandra](http://cassandra.apache.org/)
+
+   [Hive](http://hive.apache.org/) + [Hadoop](http://hadoop.apache.org/)
+
+   [Tomcat Server](http://tomcat.apache.org/)
+
+   [MySQL](https://www.mysql.com/)
 
 
 Links
