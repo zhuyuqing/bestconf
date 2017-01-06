@@ -9,15 +9,15 @@ Hadoop, Cassandra, MySQL and Tomcat, does not necessarily offer the best perform
 
 Currently, Bestconf has been tested on the following systems: 
 
-------------[Spark](http://spark.apache.org/)
+-------->>>[Spark](http://spark.apache.org/)
 
-------------[Cassandra](http://cassandra.apache.org/)
+-------->>>[Cassandra](http://cassandra.apache.org/)
 
-------------[Hive](http://hive.apache.org/) + [Hadoop](http://hadoop.apache.org/)
+-------->>>[Hive](http://hive.apache.org/) + [Hadoop](http://hadoop.apache.org/)
 
-------------[Tomcat Server](http://tomcat.apache.org/)
+-------->>>[Tomcat Server](http://tomcat.apache.org/)
 
-------------[MySQL](https://www.mysql.com/)
+-------->>>[MySQL](https://www.mysql.com/)
 
 
 Links
