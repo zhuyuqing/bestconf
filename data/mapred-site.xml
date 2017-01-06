@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<!-- Put site-specific property overrides in this file. -->
+<configuration> 
+  <property> 
+    <name>mapreduce.framework.name</name>  
+    <value>yarn</value> 
+  </property>  
+  <property> 
+    <name>mapred.job.tracker</name>  
+    <value>master41:9001</value>  
+    <description>Host or IP and port of JobTracker.</description> 
+  </property>  
+  <property> 
+    <name>mapreduce.map.java.opts</name>  
+    <value>-Xmx1638m</value> 
+  </property>  
+  <property> 
+    <name>mapreduce.reduce.java.opts</name>  
+    <value>-Xmx1638m</value> 
+  </property>  
+  <property> 
+    <name>mapreduce.jobtracker.address</name>  
+    <value>hdfs://master41:8021</value>  
+    <description>jobtracker's address</description> 
+  </property>  
+  <property> 
+    <name>mapreduce.jobhistory.address</name>  
+    <value>master41:10020</value> 
+  </property>  
+  <property> 
+    <name>mapred.job.tracker.http.address</name>  
+    <value>master41:50030</value> 
+  </property>  
+  <property> 
+    <name>mapred.task.tracker.http.address</name>  
+    <value>master41:50060</value> 
+  </property>  
+  <property> 
+    <name>mapreduce.jobhistory.webapp.address</name>  
+    <value>master41:19888</value> 
+  </property>  
+  <property> 
+    <name>mapreduce.jobhistory.done-dir</name>  
+    <value>/opt/hadoop-2.6.5/history/done</value> 
+  </property>  
+  <property> 
+    <name>mapreduce.jobhistory.intermediate-done-dir</name>  
+    <value>/opt/hadoop-2.6.5/history/done_intermediate</value>
+  </property>  
+  <property>
+    <name>pAliveRequests</name>
+    <value>16786</value>
+  </property>
+  <property>
+    <name>orTerminationTimeoutMillis</name>
+    <value>2600</value>
+  </property>
+  <property>
+    <name>Count</name>
+    <value>8088</value>
+  </property>
+  <property>
+    <name>eads</name>
+    <value>12174</value>
+  </property>
+  <property>
+    <name>tionTimeout</name>
+    <value>119727</value>
+  </property>
+  <property>
+    <name>iveTimeout</name>
+    <value>39553</value>
+  </property>
+  <property>
+    <name>orThreadCount</name>
+    <value>23</value>
+  </property>
+  <property>
+    <name>Buffer</name>
+    <value>35097</value>
+  </property>
+  <property>
+    <name>sorCache</name>
+    <value>8367</value>
+  </property>
+  <property>
+    <name>nections</name>
+    <value>26939</value>
+  </property>
+  <property>
+    <name>imeout</name>
+    <value>19475</value>
+  </property>
+  <property>
+    <name>reThreads</name>
+    <value>5266</value>
+  </property>
+</configuration>

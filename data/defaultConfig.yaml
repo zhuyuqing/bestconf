@@ -1,0 +1,12 @@
+acceptCount:100
+acceptorThreadCount:1
+asyncTimeout:30000
+connectionTimeout:20000
+executorTerminationTimeoutMillis:5000
+keepAliveTimeout:20000
+maxConnections:8192
+maxKeepAliveRequests:100
+maxThreads:200
+minSpareThreads:10
+processorCache:200
+socketBuffer:9000
