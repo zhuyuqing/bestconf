@@ -1,0 +1,1 @@
+jmeter -n -t test4bestconf.jmx -l test4bestconf.jtl
