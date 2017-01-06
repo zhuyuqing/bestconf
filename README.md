@@ -1,7 +1,6 @@
 
 Better Configurations for Large-Scale Systems (BestConf)
 ====================================
-[![Build Status](http://prof.ict.ac.cn/~yuqing/res/email.png)](http://prof.ict.ac.cn/~yuqing/)
 
 Links
 -----
