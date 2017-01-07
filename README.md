@@ -24,7 +24,6 @@ Links
 -----
 
 zhuyuqing@ict.ac.cn
-http://prof.ict.ac.cn/~yuqing
 
 liujianxun@ict.ac.cn
 
