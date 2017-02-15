@@ -71,5 +71,5 @@ The source files of [SparkConfigReadin.java](https://github.com/liujianxun-ict/b
 Download 
 -------
 
-https://github.com/liujianxun-ict/bestconf.git
+http://github.com/zhuyuqing/bestconf
 
