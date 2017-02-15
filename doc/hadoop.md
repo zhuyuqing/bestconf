@@ -14,25 +14,25 @@ We executed Bestconf for the Hadoop cluster with 4 nodes. The Hadoop cluster con
       <tr>
         <td>172.16.48.208</td>
         <td>root</td>
-        <td>ljx123</td>
+        
         <td>Master</td>
       </tr>
       <tr>
         <td>172.16.48.203</td>
         <td>root</td>
-        <td>ljx123</td>
+       
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.206</td>
         <td>root</td>
-        <td>ljx123</td>
+        
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.39</td>
         <td>root</td>
-        <td>ljx123</td>
+        
         <td>Slave</td>
       </tr> 
     </table>
