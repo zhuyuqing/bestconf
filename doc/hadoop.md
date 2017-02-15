@@ -6,33 +6,43 @@ We executed Bestconf for the Hadoop cluster with 4 nodes. The Hadoop cluster con
 <div>
     <table border="0">
       <tr>
-        <th>IP address</th>
-        <th>Username</th>
-        <th>Password</th>
-        <th>Type</th>
+         <th>IP address</th>
+        <th>OS</th>
+        <th>CPU</th>
+        <th>Memory</th>
+        <th>Disk</th>
+        <th>Node Type</th>
       </tr>
-      <tr>
+       <tr>
         <td>172.16.48.208</td>
-        <td>root</td>
-        
+        <td>CentOS 6.0</td>
+        <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
+        <td>32G</td>
+        <td>50G</td>
         <td>Master</td>
       </tr>
       <tr>
         <td>172.16.48.203</td>
-        <td>root</td>
-       
+        <td>CentOS 5.5</td>
+        <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
+        <td>32G</td>
+        <td>508G</td>
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.206</td>
-        <td>root</td>
-        
+        <td>CentOS 6.0</td>
+         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
+        <td>32G</td>
+        <td>808G</td>
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.39</td>
-        <td>root</td>
-        
+        <td>CentOS 6.4</td>
+        <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
+        <td>32G</td>
+        <td>808G</td>
         <td>Slave</td>
       </tr> 
     </table>
