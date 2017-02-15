@@ -12,7 +12,7 @@ We executed Bestconf for the Hadoop cluster with 4 nodes. The Hadoop cluster con
         <th>Memory</th>
       </tr>
        <tr>
-        <td>Master Node</td>
+        <td>Master</td>
         <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
