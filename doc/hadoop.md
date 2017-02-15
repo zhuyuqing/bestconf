@@ -1,6 +1,6 @@
 BestConf for Hadoop+Hive
 ======================
-Experiment Environment
+Experimental Settings
 -----------
 We executed Bestconf for the Hadoop cluster with 4 nodes. The Hadoop cluster consists of 1 master node and 3 slave nodes. All nodes used in our experiment are shown below.
 <div>
