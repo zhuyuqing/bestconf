@@ -67,4 +67,4 @@ The source files of [HadoopConfigReadin.java](https://github.com/liujianxun-ict/
 
 Download 
 -------
-https://github.com/liujianxun-ict/bestconf.git
+http://github.com/zhuyuqing/bestconf
