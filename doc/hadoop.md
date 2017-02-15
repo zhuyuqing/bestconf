@@ -65,7 +65,8 @@ Figure 1: The performance surface of Hadoop+Hive under Hibench-Join workload
 </table>
 Best Configuration for Hadoop+Hive
 --------
-We tuned 110 parameters for Hadoop+Hive, the best value for each parameter is saved in [mapred.bestconf](https://github.com/liujianxun-ict/bestconf/blob/master/bestconfs/hadoop/bestconfForJoin/mapred.yaml) and [yarn.bestconf](https://github.com/liujianxun-ict/bestconf/blob/master/bestconfs/hadoop/bestconfForJoin/yarn.yaml).
+We tuned 110 parameters for Hadoop+Hive, the best value for each parameter is saved in [mapred.bestconf](https://github.com/liujianxun-ict/bestconf/blob/master/bestconfs/hadoop/bestconfForJoin/mapred.yaml) and [yarn.bestconf](https://github.com/liujianxun-ict/bestconf/blob/master/bestconfs/hadoop/bestconfForJoin/yarn.yaml).<br>
+The best configure files with best configurations are [mapred-site.xml]() and [yarn-site.xml]().
 Script files
 --------
 [Script files for Master node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/hadoop-shells-master)<br>
