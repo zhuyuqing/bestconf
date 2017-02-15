@@ -14,25 +14,25 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
       <tr>
         <td>172.16.48.41</td>
         <td>root</td>
-        <td>ljx123</td>
+      
         <td>Master</td>
       </tr>
       <tr>
         <td>172.16.48.209</td>
         <td>root</td>
-        <td>ljx123</td>
+     
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.211</td>
         <td>root</td>
-        <td>ljx123</td>
+        
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.207</td>
         <td>root</td>
-        <td>ljx123</td>
+        
         <td>Slave</td>
       </tr> 
     </table>
