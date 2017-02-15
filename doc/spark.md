@@ -10,39 +10,34 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
         <th>OS</th>
         <th>CPU</th>
         <th>Memory</th>
-        <th>Disk</th>
         <th>Node Type</th>
       </tr>
       <tr>
         <td>172.16.48.41</td>
-        <td>CentOS 7.0.1406</td>
+        <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
-        <td>533G</td>
         <td>Master</td>
       </tr>
       <tr>
         <td>172.16.48.209</td>
-        <td>CentOS 5.5</td>
+        <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
-        <td>778G</td>
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.211</td>
-        <td>CentOS 6.0</td>
+        <td>CentOS</td>
          <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
-        <td>808G</td>
         <td>Slave</td>
       </tr>
       <tr>
         <td>172.16.48.207</td>
-        <td>CentOS 6.0</td>
+        <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
-        <td>50G</td>
         <td>Slave</td>
       </tr> 
     </table>
