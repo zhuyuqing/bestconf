@@ -52,7 +52,7 @@ We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted
 </tr>
 <tr border="0">
 <td border="0" align=center>
-Figure 1: The scatter plot of performance for Cassandra under YCSB workloada
+Figure 1: The scatter plot of performance for Cassandra under YCSB workloada workload.
 </td>
 </tr>
 </table>
