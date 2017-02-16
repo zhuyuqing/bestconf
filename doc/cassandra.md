@@ -1,4 +1,4 @@
-BestConf for Spark
+BestConf for Cassandra
 ======================
 Experimental Settings
 -----------
@@ -12,27 +12,27 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
         <th>Memory</th>
       </tr>
       <tr>
-        <td>Master</td>
+        <td>Cassandra 1</td>
         <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
       </tr>
       <tr>
-       <td>Slave 1</td>
+       <td>Cassandra 2</td>
         <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
         
       </tr>
       <tr>
-        <td>Slave 2</td>
+        <td>Cassandra 3</td>
         <td>CentOS</td>
          <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
         
       </tr>
       <tr>
-        <td>Slave 3</td>
+        <td>YCSB</td>
         <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
@@ -43,7 +43,7 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
 
 Result
 -----------
-We use [HiBench](https://github.com/intel-hadoop/HiBench) that is a widely adopted benchmark tools in the workload generator for Spark to generate the target workload. Currently, the workload adopted in our test is Pagerank. Figure 1 plot the highly differed performance surfaces for Spark Pagerank workload.
+We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted benchmark tools in the workload generator for Cassandra to generate the target workload. Currently, the workload adopted in our test is workoada, and we set recorecount to 17000000 and operationcount to 720000. Figure 1 plot the highly differed performance surfaces for Cassandra workloada workload.
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
