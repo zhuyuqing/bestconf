@@ -43,11 +43,11 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
 
 Result
 -----------
-We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted benchmark tools in the workload generator for Cassandra to generate the target workload. Currently, the workload adopted in our test is workoada, and we set recorecount to 17000000 and operationcount to 720000. Figure 1 plot the highly differed performance surfaces for Cassandra workloada workload.
+We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted benchmark tools in the workload generator for Cassandra to generate the target workload. Currently, the workload adopted in our test is workoada, and we set recorecount to 17000000 and operationcount to 720000. Figure 1 is the scatter plot of performance for Cassandra workloada workload.
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
-<img src="https://github.com/liujianxun-ict/bestconf/blob/master/pics/spark-pagerank.jpg" width = "800" height = "500" align=center />
+<img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/cassandra-scatter.jpg" width = "800" height = "500" align=center />
 </td>
 </tr>
 <tr border="0">
@@ -58,7 +58,7 @@ Figure 1: The performance surface of Spark under Hibench-Pagerank workload
 </table>
 Best Configuration for Spark
 --------
-We tuned 31 parameters for spark, the best value for each parameter is saved in [SparkPagerankConfig.txt](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/spark/bestconfForPagerank/SparkPagerankConfig.txt).<br>
+We tuned 28 parameters for cassandra, the best value for each parameter is saved in [cassandra.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/spark/bestconfForPagerank/SparkPagerankConfig.txt).<br>
 The best configure files with best configurations are [spark-default.conf]() and [spark-env.sh]().
 Script files
 --------
