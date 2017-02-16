@@ -62,7 +62,7 @@ We tuned 28 parameters for cassandra, the best value for each parameter is saved
 The best configure file with best configurations is [cassandra.yaml]().
 Script files
 --------
-[Script files for Cassandra Node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)<br>
+[Script files for Cassandra node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)<br>
 [Scripts files for YCSB node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)
 Interface Impl
 -------
