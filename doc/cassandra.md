@@ -52,21 +52,21 @@ We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted
 </tr>
 <tr border="0">
 <td border="0" align=center>
-Figure 1: The performance surface of Spark under Hibench-Pagerank workload
+Figure 1: The scatter plot of performance for Cassandra under YCSB workloada
 </td>
 </tr>
 </table>
-Best Configuration for Spark
+Best Configuration for Cassandra
 --------
-We tuned 28 parameters for cassandra, the best value for each parameter is saved in [cassandra.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/spark/bestconfForPagerank/SparkPagerankConfig.txt).<br>
-The best configure files with best configurations are [spark-default.conf]() and [spark-env.sh]().
+We tuned 28 parameters for cassandra, the best value for each parameter is saved in [cassandra.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/cassandra/cassandra.bestconf).<br>
+The best configure file with best configurations is [cassandra.yaml]().
 Script files
 --------
-[Script files for Master node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)<br>
-[Scripts files for Slave node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)
+[Script files for Cassandra Node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)<br>
+[Scripts files for YCSB node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)
 Interface Impl
 -------
-The source files of [SparkConfigReadin.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [SparkConfigWrite.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
+The source files of [CassandraConfigReadin.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [CassandraConfigWrite.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
 
 Download 
 -------
