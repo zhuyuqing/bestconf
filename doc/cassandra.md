@@ -43,7 +43,7 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
 
 Result
 -----------
-We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted benchmark tools in the workload generator for Cassandra to generate the target workload. Currently, the workload adopted in our test is workoada, and we set recorecount to 17000000 and operationcount to 720000. Figure 1 is the scatter plot of performance for Cassandra workloada workload.
+We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted benchmark tools in the workload generator for Cassandra to generate the target workload. Currently, the workload adopted in our test is workoada, and we set recorecount to 17000000 and operationcount to 720000. Figure 1 is the scatter plot of performance for Cassandra under YCSB workloada workload.
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
