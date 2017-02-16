@@ -47,7 +47,7 @@ We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
-<img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/cassandra-scatter.jpg" width = "800" height = "500" align=center />
+<img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/mysql-simple.jpg" width = "800" height = "500" align=center />
 </td>
 </tr>
 <tr border="0">
