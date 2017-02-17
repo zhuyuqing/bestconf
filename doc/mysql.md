@@ -28,7 +28,9 @@ We executed Bestconf for the MySQL system, and we applied sysbench to test the p
 
 Result
 -----------
+````sh
 We use [Sysbench](https://github.com/nuodb/sysbench) that is a widely adopted benchmark tools in the workload generator for MySQL to generate the target workload. Currently, the test type in our experiment is oltp and the test mode is simple, and we set num-threads to 16, oltp-table-size to 10000000, and max-time to 300. Figure 1 is the scatter plot of performance for MySQL under OLTP simple test mode.
+```
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
