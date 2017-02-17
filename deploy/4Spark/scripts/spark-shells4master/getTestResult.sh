@@ -1,12 +1,12 @@
 
 resultFile=/opt/HiBench-master/report/hibench.report
-#resultFile=./hibench.report
+
 minduration=0
 i=0
 result=0
 if [  -f "$resultFile" ]; then
 cat $resultFile > /opt/spark/testresult.txt
-#for line in `cat $resultFile`
+
 while read line
 do
         if [ -n "$line" ]; then
@@ -15,7 +15,6 @@ do
                    then
                         ((i++))
                 else 
-                        #echo $duration
                         ((i++))
                         result=`echo "$result + $duration"|bc` 
                         if [ $i == 2 ]; then
