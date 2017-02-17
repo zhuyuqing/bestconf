@@ -59,7 +59,7 @@ Figure 1: The scatter plot of performance for Cassandra under YCSB workloada wor
 Best Configuration for Cassandra
 --------
 We tuned 28 parameters for cassandra, the best value for each parameter is saved in [cassandra.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/cassandra/cassandra.bestconf).<br>
-The best configure file with best configurations is [cassandra.yaml]().
+The best configure file with best configurations is [cassandra.yaml](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/cassandra/cassandra.yaml).
 Script files
 --------
 [Script files for Cassandra node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Cassandra/scripts/cassandra)<br>
