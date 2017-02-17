@@ -49,8 +49,8 @@ We tuned 11 parameters for MySQL, the best value for each parameter is saved in 
 The best configure file with best configurations is [my.cnf]().
 Script files
 --------
-[Script files for MySQL node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)<br>
-[Scripts files for Sysbench node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)
+[Script files for MySQL node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4MySQL/scripts/mysql)<br>
+[Scripts files for Sysbench node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4MySQL/scripts/sysbench)
 Interface Impl
 -------
 The source files of [MySQLConfigReadin.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [MySQLConfigWrite.java](https://github.com/liujianxun-ict/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
