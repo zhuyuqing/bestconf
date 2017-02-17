@@ -45,7 +45,7 @@ Figure 1: The scatter plot of performance for MySQL under OLTP simple test mode.
 </table>
 Best Configuration for MySQL
 --------
-We tuned 10 parameters for MySQL, the best value for each parameter is saved in [mysql.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/mysql/mysql.bestconf).<br>
+We tuned 11 parameters for MySQL, the best value for each parameter is saved in [mysql.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/mysql/mysql.bestconf).<br>
 The best configure file with best configurations is [my.cnf]().
 Script files
 --------
