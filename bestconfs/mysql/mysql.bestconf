@@ -1,0 +1,15 @@
+sort_buffer_size 293255
+innodb_buffer_pool_size 990985
+max_connections 34814
+query_cache_size 78739
+read_buffer_size 241980
+myisam_sort_buffer_size 362743
+table_open_cache 180153
+max_allowed_packet 352453
+query_cache_type 0
+key_buffer_size 344080
+thread_cache_size 1714
+
+
+
+
