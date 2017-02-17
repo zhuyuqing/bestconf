@@ -62,8 +62,8 @@ We tuned 28 parameters for cassandra, the best value for each parameter is saved
 The best configure file with best configurations is [cassandra.yaml]().
 Script files
 --------
-[Script files for Cassandra node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)<br>
-[Scripts files for YCSB node](https://github.com/liujianxun-ict/bestconf/tree/master/scripts/spark-shells-master)
+[Script files for Cassandra node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Cassandra/scripts/cassandra)<br>
+[Scripts files for YCSB node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Cassandra/scripts/YCSB)
 Interface Impl
 -------
 The source files of [CassandraConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/cassandra/cn/ict/zyq/bestConf/cluster/InterfaceImpl/CassandraConfigReadin.java) and [CassandraConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/cassandra/cn/ict/zyq/bestConf/cluster/InterfaceImpl/CassandraConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
