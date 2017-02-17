@@ -27,11 +27,11 @@
   </property>  
   <property> 
     <name>mapreduce.map.java.opts</name>  
-    <value>-Xmx1638m</value> 
+    <value>-Xmx1024m</value> 
   </property>  
   <property> 
     <name>mapreduce.reduce.java.opts</name>  
-    <value>-Xmx1638m</value> 
+    <value>-Xmx1024m</value> 
   </property>  
   <property> 
     <name>mapreduce.jobtracker.address</name>  
@@ -63,51 +63,295 @@
     <value>/opt/hadoop-2.6.5/history/done_intermediate</value>
   </property>  
   <property>
-    <name>pAliveRequests</name>
-    <value>16786</value>
+    <name>mapreduce.job.counters.limit</name>
+    <value>673</value>
   </property>
   <property>
-    <name>orTerminationTimeoutMillis</name>
-    <value>2600</value>
+    <name>mapreduce.shuffle.connection-keep-alive.timeout</name>
+    <value>32</value>
   </property>
   <property>
-    <name>Count</name>
-    <value>8088</value>
+    <name>mapreduce.reduce.maxattempts</name>
+    <value>8</value>
   </property>
   <property>
-    <name>eads</name>
-    <value>12174</value>
+    <name>mapreduce.jobtracker.jobhistory.lru.cache.size</name>
+    <value>464</value>
   </property>
   <property>
-    <name>tionTimeout</name>
-    <value>119727</value>
+    <name>mapreduce.reduce.shuffle.input.buffer.percent</name>
+    <value>0.30300528147389794</value>
   </property>
   <property>
-    <name>iveTimeout</name>
-    <value>39553</value>
+    <name>mapreduce.task.timeout</name>
+    <value>278958</value>
   </property>
   <property>
-    <name>orThreadCount</name>
-    <value>23</value>
+    <name>mapreduce.input.lineinputformat.linespermap</name>
+    <value>25</value>
   </property>
   <property>
-    <name>Buffer</name>
-    <value>35097</value>
+    <name>mapreduce.task.io.sort.mb</name>
+    <value>145</value>
   </property>
   <property>
-    <name>sorCache</name>
-    <value>8367</value>
+    <name>mapreduce.job.end-notification.max.attempts</name>
+    <value>13</value>
   </property>
   <property>
-    <name>nections</name>
-    <value>26939</value>
+    <name>mapreduce.task.skip.start.attempts</name>
+    <value>7</value>
   </property>
   <property>
-    <name>imeout</name>
-    <value>19475</value>
+    <name>mapreduce.reduce.cpu.vcores</name>
+    <value>3</value>
   </property>
   <property>
-    <name>reThreads</name>
-    <value>5266</value>
+    <name>mapreduce.task.io.sort.factor</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.expire.trackers.interval</name>
+    <value>561792</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.skip.maxgroups</name>
+    <value>88</value>
+  </property>
+  <property>
+    <name>yarn.app.mapreduce.task.container.log.backups</name>
+    <value>51</value>
+  </property>
+  <property>
+    <name>mapreduce.client.completion.pollinterval</name>
+    <value>1987</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.loadedjobs.cache.size</name>
+    <value>38</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.handler.count</name>
+    <value>47</value>
+  </property>
+  <property>
+    <name>yarn.app.mapreduce.client.max-retries</name>
+    <value>9</value>
+  </property>
+  <property>
+    <name>yarn.app.mapreduce.client-am.ipc.max-retries</name>
+    <value>14</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.shuffle.fetch.retry.timeout-ms</name>
+    <value>118837</value>
+  </property>
+  <property>
+    <name>mapreduce.shuffle.max.connections</name>
+    <value>11</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.shuffle.fetch.retry.interval-ms</name>
+    <value>2747</value>
+  </property>
+  <property>
+    <name>mapreduce.tasktracker.taskmemorymanager.monitoringinterval</name>
+    <value>8170</value>
+  </property>
+  <property>
+    <name>mapreduce.job.maxtaskfailures.per.tracker</name>
+    <value>27</value>
+  </property>
+  <property>
+    <name>mapreduce.tasktracker.reduce.tasks.maximum</name>
+    <value>2</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.shuffle.parallelcopies</name>
+    <value>48</value>
+  </property>
+  <property>
+    <name>mapreduce.map.skip.maxrecords</name>
+    <value>88</value>
+  </property>
+  <property>
+    <name>mapreduce.job.end-notification.retry.interval</name>
+    <value>9850</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.input.buffer.percent</name>
+    <value>0.37962752551643336</value>
+  </property>
+  <property>
+    <name>mapreduce.map.memory.mb</name>
+    <value>2501</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.shuffle.read.timeout</name>
+    <value>200822</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.taskcache.levels</name>
+    <value>161</value>
+  </property>
+  <property>
+    <name>mapreduce.shuffle.transfer.buffer.size</name>
+    <value>625495</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.shuffle.retry-delay.max.ms</name>
+    <value>101672</value>
+  </property>
+  <property>
+    <name>mapreduce.job.end-notification.max.retry.interval</name>
+    <value>35978</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.datestring.cache.size</name>
+    <value>193827</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.maxtasks.perjob</name>
+    <value>94</value>
+  </property>
+  <property>
+    <name>mapreduce.tasktracker.tasks.sleeptimebeforesigkill</name>
+    <value>25355</value>
+  </property>
+  <property>
+    <name>mapreduce.job.speculative.speculativecap</name>
+    <value>0.578025871784568</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.jobhistory.task.numberprogresssplits</name>
+    <value>17</value>
+  </property>
+  <property>
+    <name>mapreduce.map.cpu.vcores</name>
+    <value>5</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.move.interval-ms</name>
+    <value>117902</value>
+  </property>
+  <property>
+    <name>mapreduce.tasktracker.map.tasks.maximum</name>
+    <value>288</value>
+  </property>
+  <property>
+    <name>mapreduce.tasktracker.local.dir.minspacekill</name>
+    <value>81</value>
+  </property>
+  <property>
+    <name>mapreduce.client.submit.file.replication</name>
+    <value>14</value>
+  </property>
+  <property>
+    <name>mapreduce.job.ubertask.maxmaps</name>
+    <value>105</value>
+  </property>
+  <property>
+    <name>mapreduce.shuffle.max.threads</name>
+    <value>184</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.retiredjobs.cache.size</name>
+    <value>748</value>
+  </property>
+  <property>
+    <name>mapreduce.job.maps</name>
+    <value>46</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.memory.mb</name>
+    <value>1148</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.shuffle.connect.timeout</name>
+    <value>176411</value>
+  </property>
+  <property>
+    <name>mapreduce.job.max.split.locations</name>
+    <value>51</value>
+  </property>
+  <property>
+    <name>mapreduce.task.merge.progress.records</name>
+    <value>23302</value>
+  </property>
+  <property>
+    <name>mapreduce.job.ubertask.maxreduces</name>
+    <value>139</value>
+  </property>
+  <property>
+    <name>mapreduce.job.speculative.slowtaskthreshold</name>
+    <value>0.9172906485483746</value>
+  </property>
+  <property>
+    <name>mapreduce.client.progressmonitor.pollinterval</name>
+    <value>9142</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.jobhistory.block.size</name>
+    <value>109862937</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.tasktracker.maxblacklists</name>
+    <value>37</value>
+  </property>
+  <property>
+    <name>mapreduce.job.reducer.unconditional-preempt.delay.sec</name>
+    <value>145</value>
+  </property>
+  <property>
+    <name>mapreduce.tasktracker.indexcache.mb</name>
+    <value>431</value>
+  </property>
+  <property>
+    <name>mapreduce.task.combine.progress.records</name>
+    <value>89237</value>
+  </property>
+  <property>
+    <name>yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts</name>
+    <value>22</value>
+  </property>
+  <property>
+    <name>mapreduce.ifile.readahead.bytes</name>
+    <value>33900879</value>
+  </property>
+  <property>
+    <name>mapreduce.job.reduces</name>
+    <value>26</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.joblist.cache.size</name>
+    <value>50782</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.markreset.buffer.percent</name>
+    <value>0.5164496680222852</value>
+  </property>
+  <property>
+    <name>yarn.app.mapreduce.am.resource.cpu-vcores</name>
+    <value>19</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.move.thread-count</name>
+    <value>37</value>
+  </property>
+  <property>
+    <name>mapreduce.job.jvm.numtasks</name>
+    <value>92</value>
+  </property>
+  <property>
+    <name>mapreduce.jobtracker.heartbeats.in.second</name>
+    <value>67</value>
+  </property>
+  <property>
+    <name>mapreduce.job.reduce.slowstart.completedmaps</name>
+    <value>0.25851147259048635</value>
+  </property>
+  <property>
+    <name>yarn.app.mapreduce.am.job.committer.commit-window</name>
+    <value>53344</value>
   </property>
 </configuration>

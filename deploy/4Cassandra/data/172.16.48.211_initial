@@ -1,0 +1,89 @@
+rpc_address: 172.16.48.211
+start_native_transport: true
+rpc_server_type: sync
+commitlog_sync: periodic
+max_hint_window_in_ms: 10800000 # 3 hours
+request_scheduler: org.apache.cassandra.scheduler.NoScheduler
+start_rpc: true
+endpoint_snitch: SimpleSnitch
+concurrent_counter_writes: 32
+key_cache_size_in_mb: 100
+row_cache_size_in_mb: 0
+client_encryption_options:
+    enabled: false
+    optional: false
+    keystore: conf/.keystore
+    keystore_password: cassandra
+file_cache_size_in_mb: 512
+incremental_backups: false
+disk_failure_policy: stop
+concurrent_writes: 32
+hinted_handoff_throttle_in_kb: 1024
+tombstone_failure_threshold: 100000
+inter_dc_tcp_nodelay: false
+batch_size_warn_threshold_in_kb: 5
+compaction_large_partition_warning_threshold_mb: 100
+request_timeout_in_ms: 10000
+cas_contention_timeout_in_ms: 1000
+partitioner: org.apache.cassandra.dht.Murmur3Partitioner
+rpc_max_threads: 2048
+listen_address: 172.16.48.211
+server_encryption_options:
+    internode_encryption: none
+    keystore: conf/.keystore
+    keystore_password: cassandra
+    truststore: conf/.truststore
+    truststore_password: cassandra
+authenticator: AllowAllAuthenticator
+truncate_request_timeout_in_ms: 60000
+stream_throughput_outbound_megabits_per_sec: 200
+cluster_name: Test Cluster
+native_transport_port: 9042
+rpc_keepalive: true
+memtable_allocation_type: heap_buffers
+cross_node_timeout: false
+counter_write_request_timeout_in_ms: 5000
+write_request_timeout_in_ms: 2000
+sstable_preemptive_open_interval_in_mb: 50
+dynamic_snitch_reset_interval_in_ms: 600000
+read_request_timeout_in_ms: 5000
+commitlog_total_space_in_mb: 8192
+snapshot_before_compaction: false
+commitlog_segment_size_in_mb: 32
+ssl_storage_port: 7001
+storage_port: 7000
+hinted_handoff_enabled: true
+max_hints_delivery_threads: 2
+authorizer: AllowAllAuthorizer
+dynamic_snitch_badness_threshold: 0.1
+commit_failure_policy: stop
+num_tokens: 256
+index_summary_capacity_in_mb: 100
+key_cache_save_period: 14400
+seed_provider:
+    - class_name: org.apache.cassandra.locator.SimpleSeedProvider
+      parameters:
+          - seeds: "172.16.48.41,172.16.48.211,172.16.48.209"
+rpc_port: 9160
+thrift_framed_transport_size_in_mb: 15
+trickle_fsync_interval_in_kb: 10240
+memtable_heap_space_in_mb: 2048
+index_summary_resize_interval_in_minutes: 60
+internode_compression: all
+commitlog_sync_period_in_ms: 10000
+range_request_timeout_in_ms: 10000
+rpc_min_threads: 16
+concurrent_reads: 32
+column_index_size_in_kb: 64
+memtable_flush_writers: 8
+dynamic_snitch_update_interval_in_ms: 100
+counter_cache_size_in_mb:
+permissions_validity_in_ms: 2000
+auto_snapshot: true
+counter_cache_save_period: 7200
+memtable_offheap_space_in_mb: 2048
+tombstone_warn_threshold: 1000
+compaction_throughput_mb_per_sec: 16
+trickle_fsync: false
+row_cache_save_period: 0
+batchlog_replay_throttle_in_kb: 1024
