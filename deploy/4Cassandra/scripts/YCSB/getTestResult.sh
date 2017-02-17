@@ -7,7 +7,7 @@ result=0
 runtime=0
 if [  -f "$resultFile" ]; then
 cat $resultFile > /opt/cassandra/testresultofycsb.txt
-#for line in `cat $resultFile`
+
 while read line
 do
         if [ -n "$line" ]; then
