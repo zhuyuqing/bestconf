@@ -11,13 +11,13 @@ Currently, Bestconf has been tested on the following systems:
 
 -------->>>[Spark: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/spark.md)
 
--------->>>[Cassandra](http://cassandra.apache.org/)
+-------->>>[Cassandra: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/cassandra.md)
 
 -------->>>[Hive+Hadoop: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/hadoop.md)
 
 -------->>>[Tomcat Server](http://tomcat.apache.org/)
 
--------->>>[MySQL](https://www.mysql.com/)
+-------->>>[MySQL: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/mysql.md)
 
 
 Links
