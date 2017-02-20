@@ -39,7 +39,7 @@ We use [Sysbench](https://github.com/nuodb/sysbench) that is a widely adopted be
 </tr>
 <tr border="0">
 <td border="0" align=center>
-Figure 1: The scatter plot of performance for MySQL under OLTP simple test mode.
+Figure 1: The scatter plot of performance for Tomcat Server
 </td>
 </tr>
 </table>
