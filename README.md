@@ -15,7 +15,7 @@ Currently, Bestconf has been tested on the following systems:
 
 -------->>>[Hive+Hadoop: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/hadoop.md)
 
--------->>>[Tomcat Server](http://tomcat.apache.org/)
+-------->>>[Tomcat Server: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/tomcat.md)
 
 -------->>>[MySQL: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/mysql.md)
 
