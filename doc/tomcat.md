@@ -12,13 +12,13 @@ We executed Bestconf for the Tomcat server, and we applied sysbench to test the 
         <th>Memory</th>
       </tr>
       <tr>
-        <td>MySQL</td>
+        <td>Tomcat Server</td>
         <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
       </tr>
       <tr>
-        <td>Sysbench</td>
+        <td>JMeter</td>
         <td>CentOS</td>
         <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
         <td>32G</td>
