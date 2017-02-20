@@ -53,7 +53,7 @@ Script files
 [Scripts files for Sysbench node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4MySQL/scripts/sysbench)
 Interface Impl
 -------
-The source files of [MySQLConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/mysql/cn/ict/zyq/bestConf/cluster/InterfaceImpl/MySQLConfigReadin.java) and [MySQLConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/mysql/cn/ict/zyq/bestConf/cluster/InterfaceImpl/MySQLConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
+The source files of [TomcatConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigReadin.java) and [TomcatConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
 
 Download 
 -------
