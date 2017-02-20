@@ -1,8 +1,8 @@
-BestConf for MySQL
+BestConf for Tomcat Server
 ======================
 Experimental Settings
 -----------
-We executed Bestconf for the MySQL system, and we applied sysbench to test the performance of MySQL. All nodes used in our experiment are shown below.
+We executed Bestconf for the Tomcat server, and we applied sysbench to test the performance of Tomcat server. All nodes used in our experiment are shown below.
 <div>
     <table border="0">
       <tr>
