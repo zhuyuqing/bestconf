@@ -43,14 +43,14 @@ Figure 1: The performance surface of Tomcat under a page navigation workload.
 </td>
 </tr>
 </table>
-Best Configuration for MySQL
+Best Configuration for Tomcat Server
 --------
 We tuned 13 parameters for Tomcat Server, the best value for each parameter is saved in [tomcat.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/mysql/mysql.bestconf).<br>
 The best configuration file with best configurations is [my.cnf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/mysql/my.cnf).
 Script files
 --------
-[Script files for MySQL node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4MySQL/scripts/mysql)<br>
-[Scripts files for Sysbench node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4MySQL/scripts/sysbench)
+[Script files for Tomcat node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Tomcat/scripts)<br>
+[Scripts files for JMeter node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Tomcat/scripts)
 Interface Impl
 -------
 The source files of [TomcatConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigReadin.java) and [TomcatConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
