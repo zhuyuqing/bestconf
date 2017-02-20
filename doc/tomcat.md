@@ -29,7 +29,7 @@ We executed Bestconf for the Tomcat server, and we applied sysbench to test the 
 Result
 -----------
 
-We use [JMeter](http://jmeter.apache.org) that is a widely adopted benchmark tools in the workload generator for MySQL to generate the target workload. Currently, the test type in our experiment is oltp and the test mode is simple, and we set num-threads to 16, oltp-table-size to 10000000, and max-time to 300. Figure 1 is the scatter plot of performance for MySQL under OLTP simple test mode.
+We use [JMeter](http://jmeter.apache.org) that is a widely adopted benchmark tools in the workload generator for Tomcat to generate the target workload. 
 
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
