@@ -63,15 +63,10 @@ public class testCollectPerfs {
     }
     public static String getMD5(String str) {
         try {
-            // Éú³ÉÒ»¸öMD5¼ÓÃÜ¼ÆËãÕªÒª
             MessageDigest md = MessageDigest.getInstance("MD5");
-            // ¼ÆËãmd5º¯Êı
             md.update(str.getBytes());
-            // digest()×îºóÈ·¶¨·µ»Ømd5 hashÖµ£¬·µ»ØÖµÎª8Îª×Ö·û´®¡£ÒòÎªmd5 hashÖµÊÇ16Î»µÄhexÖµ£¬Êµ¼ÊÉÏ¾ÍÊÇ8Î»µÄ×Ö·û
-            // BigIntegerº¯ÊıÔò½«8Î»µÄ×Ö·û´®×ª»»³É16Î»hexÖµ£¬ÓÃ×Ö·û´®À´±íÊ¾£»µÃµ½×Ö·û´®ĞÎÊ½µÄhashÖµ
-            return new BigInteger(1, md.digest()).toString(16);
         } catch (Exception e) {
-            System.out.println("³öÏÖ´íÎó£¡");
+            System.out.println("Errorï¼");
         }
 		return null;
     }
@@ -127,10 +122,8 @@ public class testCollectPerfs {
 		}else{
 			continue;
 		}
-			//		½«ÅäÖÃĞŞ¸ÄÓÚYamlÎÄ¼şÖĞ£¬Æô¶¯ÊµÑé£¬²¢»ñ¸÷½á¹û
 		}
 		retVal = samplePoints;
-		//±ØĞëÉè¶¨ºÃyÖµËùÔÚµÄÊôĞÔ
 		retVal.setClassIndex(retVal.numAttributes()-1);
 		
 		return retVal;
@@ -151,25 +144,20 @@ public class testCollectPerfs {
 		int tot = 0;
 		for(int i = 0; i < 20; i++){
 			Instance ins = samplePoints.get(i);
-			//System.err.println(ins.toString());
 			StringBuffer perfs = new StringBuffer("");
 			for(int j = 0; j < ins.numAttributes()-2; j++){
-				//hm.put(ins.attribute(j).name(), ins.value(ins.attribute(j)));
-				//System.out.println("key is " + ins.attribute(j).name() + " value is" + ins.value(ins.attribute(j)));
-				 //if(j != ins.numAttributes()-1 && j != ins.numAttributes()-2)
 				perfs.append(ins.value(ins.attribute(j)));
 			}
 			String targetname = getMD5(perfs.toString());
-			//System.out.println("filename is : " + targetname);
 			if(isPerfExists(targetname, perfsfilepath)){
-				System.out.println("ÎÄ¼ş´æÔÚ £º" + tot++);
+				System.out.println("æ–‡ä»¶å­˜åœ¨ ï¼š" + tot++);
 				double[] results = getPerf(perfsfilepath, targetname);
 				ins.setValue(samplePoints.numAttributes()-2, results[0]);
 				ins.setValue(samplePoints.numAttributes()-1, results[1]);
 				System.out.println("num-2 is " + results[0]);
 				System.out.println("num-1 is " + results[1]);
 			}else
-				System.out.println("²»´æÔÚ£¡");
+				System.out.println("not existï¼");
 		}
 		retVal = samplePoints;
 		retVal.setClassIndex(retVal.numAttributes()-1);
@@ -183,8 +171,7 @@ public class testCollectPerfs {
 			Instances data = new Instances(frData);// 
 			System.out.println("num of attributes is : " + data.numAttributes());
 			System.out.println("size of data is : " + data.numInstances());
-			//AutoTestAdjust auto = new AutoTestAdjust(null);
-			//test.runExp(data, "performance");
+			
 			test.collectPerfs(data, "performance");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
