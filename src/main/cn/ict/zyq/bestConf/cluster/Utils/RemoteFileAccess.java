@@ -16,25 +16,8 @@ import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 import com.jcraft.jsch.SftpProgressMonitor;
 
-
-
-/**
- * ʹ��SFTP��Զ�����������ļ���
- * 
- * @author ���� <aofengblog@163.com>
- */
 public class RemoteFileAccess {
 
-	/**
-	 * ʹ��SFTP��Զ�����������ļ���
-	 * 
-	 * @param connectInfo
-	 *            SFTP������Ϣ
-	 * @param localPath
-	 *            �����ļ�·��
-	 * @param remotePath
-	 *            Զ���ļ�·��
-	 */
 	public void download(SFtpConnectInfo connectInfo, String localPath, final String remotePath) {
 		JSch jsch = new JSch();
 		Session session = null;
@@ -46,7 +29,7 @@ public class RemoteFileAccess {
 			Properties props = new Properties();
 			props.put("StrictHostKeyChecking", "no");
 			session.setConfig(props);
-			session.connect(5000); // ����
+			session.connect(5000); 
 			channel = (ChannelSftp) session.openChannel("sftp");
 			channel.connect(5000);
 			outs = new BufferedOutputStream(new FileOutputStream(new File(localPath)));
@@ -63,15 +46,12 @@ public class RemoteFileAccess {
 
 				@Override
 				public void end() {
-					//if (logger.isInfoEnabled()) {
-						//logger.debug(String.format("download file:%s complete", remotePath));
-					//}
+					
 				}
 
 				@Override
 				public boolean count(long count) {
 					current += count;
-					//progress.show(current);
 
 					return true;
 				}
