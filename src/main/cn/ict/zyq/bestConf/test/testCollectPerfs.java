@@ -110,8 +110,6 @@ public class testCollectPerfs {
 				//System.out.println("key is " + ins.attribute(j).name() + " value is" + ins.value(ins.attribute(j)));
 			}
 			boolean testRet;
-			//System.out.println("initial attribute is : " + ins.value(ins.attribute(ins.numAttributes()-1)));
-			//if(ins.value(ins.attribute(ins.numAttributes()-1)) == Double.NaN){
 			  if(Double.isNaN(ins.value(ins.attribute(ins.numAttributes()-1)))){	
 				double y = 0;
 					y = -1;
@@ -150,12 +148,10 @@ public class testCollectPerfs {
 			}
 			String targetname = getMD5(perfs.toString());
 			if(isPerfExists(targetname, perfsfilepath)){
-				System.out.println("文件存在 ：" + tot++);
+				System.out.println("file exists ：" + tot++);
 				double[] results = getPerf(perfsfilepath, targetname);
 				ins.setValue(samplePoints.numAttributes()-2, results[0]);
-				ins.setValue(samplePoints.numAttributes()-1, results[1]);
-				System.out.println("num-2 is " + results[0]);
-				System.out.println("num-1 is " + results[1]);
+				ins.setValue(samplePoints.numAttributes()-1, results[1])
 			}else
 				System.out.println("not exist！");
 		}
