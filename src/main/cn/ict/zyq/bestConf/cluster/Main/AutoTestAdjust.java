@@ -191,7 +191,7 @@ public class AutoTestAdjust implements ClusterManager{
 							boolofstop = false;
 					}
 					if(boolofstop){
-						System.out.println("¼¯ÈºÒÑ¾­±»ÖÕÖ¹ÁË£¡");
+						System.out.println("é›†ç¾¤å·²ç»è¢«ç»ˆæ­¢äº†ï¼");
 						break;
 					}
 				} catch (InterruptedException e) {
@@ -199,26 +199,25 @@ public class AutoTestAdjust implements ClusterManager{
 					e.printStackTrace();
 				}
 			}
-			// ------------ĞŞ¸Ä¼¯ÈºÅäÖÃÎÄ¼ş-------------
+			// ------------Modify configuration file-------------
 			for (int i = 0; i < numServers; i++) {
 				HashMap hm = ConfR_cluster.get(i).modifyConfigFile(hmTarget);
 				ConfW_cluster.get(i).writetoConfigfile(hm);
 				ConfW_cluster.get(i).uploadConfigFile();
 			}
-			// ------------Æô¶¯¼¯Èº---------------------
+			// ------------Start cluster---------------------
 			for (int i = 0; i < numServers; i++) {
 				cluster.get(i).start();
 			}
 			flag = true;//the default value before judging
-			// ------------ÅĞ¶Ï¼¯ÈºÊÇ·ñÆô¶¯³É¹¦----------
+			// ------------Judge whether cluster has been successfully started----------
 			boolean[] flags = new boolean[numServers];
 			for (int i = 0; i < numServers; i++) {
 				flags[i] = false;
 			}
-			//flag = cluster.get(0).isHadoopStarted();
+			
 			for (int i = 0; i < numServers; i++) {
 				flags[i] = cluster.get(i).isStarted();
-				//cluster.get(i).killTail();
 			}
 			for (int i = 0; i < numServers; i++) {
 				if (flags[i])
@@ -227,12 +226,12 @@ public class AutoTestAdjust implements ClusterManager{
 					flag = false;
 			}
 			if(flag){
-				// ---------¼¯ÈºÆô¶¯³É¹¦£¬¿ªÊ¼²âÊÔ-----------------
+				// ---------Start Test-----------------
 				sutTest.terminateTest();
 				sutTest.startTest();
 				performance = sutTest.getResultofTest(num, isInterrupt);
                 System.out.println("performance is : " + performance);
-				//----------¹Ø±Õ¼¯Èº---------------
+				//----------Stop cluster---------------
 				for(int i = 0; i < numServers; i++)
 					cluster.get(i).stopSystem();
 				
@@ -260,7 +259,7 @@ public class AutoTestAdjust implements ClusterManager{
 								bool = false;
 						}
 						if(bool){
-							System.out.println("¼¯ÈºÒÑ¾­¹Ø±ÕÁË£¡");
+							System.out.println("Cluter has been stoppedï¼");
 							break;
 						}
 					} catch (InterruptedException e) {
@@ -299,15 +298,13 @@ public class AutoTestAdjust implements ClusterManager{
     }
     public static String getMD5(String str) {
         try {
-            // Éú³ÉÒ»¸öMD5¼ÓÃÜ¼ÆËãÕªÒª
             MessageDigest md = MessageDigest.getInstance("MD5");
-            // ¼ÆËãmd5º¯Êı
+           
             md.update(str.getBytes());
-            // digest()×îºóÈ·¶¨·µ»Ømd5 hashÖµ£¬·µ»ØÖµÎª8Îª×Ö·û´®¡£ÒòÎªmd5 hashÖµÊÇ16Î»µÄhexÖµ£¬Êµ¼ÊÉÏ¾ÍÊÇ8Î»µÄ×Ö·û
-            // BigIntegerº¯ÊıÔò½«8Î»µÄ×Ö·û´®×ª»»³É16Î»hexÖµ£¬ÓÃ×Ö·û´®À´±íÊ¾£»µÃµ½×Ö·û´®ĞÎÊ½µÄhashÖµ
+           
             return new BigInteger(1, md.digest()).toString(16);
         } catch (Exception e) {
-            System.out.println("³öÏÖ´íÎó£¡");
+            System.out.println("errorï¼");
         }
 		return null;
     }
@@ -320,7 +317,6 @@ public class AutoTestAdjust implements ClusterManager{
     	BufferedWriter writer;
 			try {
 				writer = new BufferedWriter(new FileWriter(file));
-				//writer.write(ins.value(ins.attribute(ins.numAttributes()-2))+"\n");
 				writer.write(ins.value(ins.attribute(ins.numAttributes()-1))+"\n");
 				writer.close();
 			} catch (IOException e) {
@@ -330,10 +326,7 @@ public class AutoTestAdjust implements ClusterManager{
     
 	public Instances runExp(Instances samplePoints, String perfAttName){
 		Instances retVal = null;
-		/*if(performanceType>2 && samplePoints.attribute("combinedPerf_zyq")==null){
-			Attribute combinedPerf = new Attribute("combinedPerf_zyq");
-			samplePoints.insertAttributeAt(combinedPerf, samplePoints.numAttributes());
-		}*/
+	
 		if(samplePoints.attribute(perfAttName) == null){
 			Attribute performance = new Attribute(perfAttName);
 			samplePoints.insertAttributeAt(performance, samplePoints.numAttributes());
@@ -357,18 +350,10 @@ public class AutoTestAdjust implements ClusterManager{
 					y = -1;
 					count++;
 					if(count>=targetTestErrorNum){
-						System.out.println("³öÏÖÒì³££¬ĞèÒª»Ö¸´ÏµÍ³Æô¶¯×´Ì¬£¡");
+						System.out.println("System needs to be restartedï¼");
 						System.exit(1);
 					}
-					/*if(performanceType>2)
-						ins.setValue(samplePoints.numAttributes()-2,-1);*/
-					
-				
 				}else{
-					/*if(performanceType>2){
-						ins.setValue(samplePoints.numAttributes()-2,getPerformanceByType(performanceType));
-						y = getPerformanceByType(2);//the throughput
-					}else*/
 					y = getPerformanceByType(performanceType);
 					count = 0;
 				}
@@ -378,10 +363,9 @@ public class AutoTestAdjust implements ClusterManager{
 		}else{
 			continue;
 		}
-			//		½«ÅäÖÃĞŞ¸ÄÓÚYamlÎÄ¼şÖĞ£¬Æô¶¯ÊµÑé£¬²¢»ñ¸÷½á¹û
+			
 		}
 		retVal = samplePoints;
-		//±ØĞëÉè¶¨ºÃyÖµËùÔÚµÄÊôĞÔ
 		retVal.setClassIndex(retVal.numAttributes()-1);
 		
 		return retVal;
@@ -395,18 +379,16 @@ public class AutoTestAdjust implements ClusterManager{
 	public double getPerformanceByType(int type){
 		double performance = 0.0;
 		switch(type){
-			case 1:{   //indicates latency
+			case 1:{   
 				performance = systemPerformance.getPerformanceOfLatency();
 				break;
 			}
-			case 2:{   //indicates throughput
+			case 2:{   
 				performance = systemPerformance.getPerformanceOfThroughput();
 				System.out.println("throughput is " + performance);
 				break;
 			}
-			/*case 3:
-				performance = systemPerformance.getPerformanceOfThroughput()*1000/systemPerformance.getPerformanceOfLatency();
-				break;*/
+			
 			default:
 				break;
 		}
@@ -436,9 +418,7 @@ public class AutoTestAdjust implements ClusterManager{
 		int tot = timeToTest;
 		while(tot-->0){
 			startTest(yamlModify,0, false);
-			//System.out.println("performance is : " + getPerformance());
-			//cym.setOptimal();
-			//cym.runExp(samplePoints);
+			
 			System.out.println("tot = " + tot);
 		}
 	}
@@ -446,15 +426,12 @@ public class AutoTestAdjust implements ClusterManager{
 	public static void main(String[] args){
 		AutoTestAdjust cym = new AutoTestAdjust("data/SUTconfig.properties");
 		HashMap yamlModify = new HashMap();
-		//yamlModify.put("concurrent_reads", 234);
+		
 		int tot = 4;
 		while(tot-->0){
 			cym.startTest(yamlModify,0,false);
 			System.out.println("performance is : " + cym.getPerformanceByType(3));
-			//cym.setOptimal();
-			//cym.runExp(samplePoints);
 			System.out.println("tot = " + tot);
-			//System.out.println("latency is : " + cym.getPerformance());
 		}
 		
         
@@ -464,11 +441,6 @@ public class AutoTestAdjust implements ClusterManager{
 	@Override
 	public Instances collectPerfs(Instances samplePoints, String perfAttName) {
 		Instances retVal = null;
-		
-		/*if(performanceType>2 && samplePoints.attribute("combinedPerf_zyq")== null){
-			Attribute combinedPerf = new Attribute("combinedPerf_zyq");
-			samplePoints.insertAttributeAt(combinedPerf, samplePoints.numAttributes());
-		}*/
 		if(samplePoints.attribute(perfAttName) == null){
 			Attribute performance = new Attribute(perfAttName);
 			samplePoints.insertAttributeAt(performance, samplePoints.numAttributes());
@@ -496,7 +468,6 @@ public class AutoTestAdjust implements ClusterManager{
 				Instance ins = samplePoints.get(mapping.get(perfFiles[i].getName()));
 				double[] results = getPerf(perfFiles[i].getAbsolutePath());
 				if(results!=null){
-					//ins.setValue(samplePoints.numAttributes()-2, results[0]);
 					ins.setValue(samplePoints.numAttributes()-1, results[0]);
 				}
 				
