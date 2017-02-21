@@ -7,7 +7,7 @@ Bestconf can find better configurations for a specific large-scale system under 
 Given the diverse application workloads, a large-scale system with hundreds of configuration parameters, such as Spark, 
 Hadoop, Cassandra, MySQL and Tomcat, does not necessarily offer the best performance under their default configurations.
 
-Currently, Bestconf has been tested on the following systems: 
+Currently, Bestconf has been tested on the following systems. It has also been applied to the Huawei Cloud+ applications. 
 
 -------->>>[Spark: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/spark.md)
 
@@ -57,3 +57,9 @@ Building from source
 --------------------
 
 Import the whole Bestconf project into eclipse and enjoy!~
+
+
+Acknowledgements
+--------------------
+
+We thank Huawei for supporting this work. This work is also supported in part by the State Key Development Program for Basic Research of China (Grant No. 2014CB340402) and the National Natural Science Foundation of China (Grant No. 61303054).
