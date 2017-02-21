@@ -1,10 +1,5 @@
 package cn.ict.zyq.bestConf.cluster.Utils;
 
-/**
-* SFTP������Ϣ��
-* 
-* @author ���� <>
-*/
 public class SFtpConnectInfo {
 
 private String username;
