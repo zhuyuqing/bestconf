@@ -106,9 +106,6 @@ public class SUTTest implements Test {
     
     public static void test() throws IOException{
     	SUTTest test = new SUTTest();
-    	//test.initial("172.16.48.41", "root", "ljx123", "/opt/HiBench-master");
-    	//test.startTest();
-    	//System.out.println("runtime is : " + test.getRuntime("/opt/HiBench-master/report"));
         test.writeDefaultTesttimeTofile("data/defaultTestTime/defaultTesttime.txt", 34343);
     }
     
@@ -116,8 +113,6 @@ public class SUTTest implements Test {
     	//SUTTest.test();
 		SUTTest test = new SUTTest();
 		test.initial("172.16.48.41", "root", "ljx123", "/opt/HiBench-master", 1,1);
-		//test.getResultofTest(2, true);
-        //test.writeDefaultTesttimeTofile("data/defaultTestTime/defaultTesttime.txt", 34343);
 
     }
  
@@ -135,14 +130,9 @@ public class SUTTest implements Test {
 			BufferedReader br = new BufferedReader(new InputStreamReader(stderr));
 			InputStream stdout = new StreamGobbler(session.getStdout());
 			BufferedReader stdbr = new BufferedReader(new InputStreamReader(stdout));
-//			String line;
-//			while((line = stdbr.readLine()) != null){
-//				System.out.println(line);
-//			}
-			System.out.println("≤‚ ‘“—æ≠∆Ù∂Ø£°");
-		    /*if(session != null)
-		    	session.close();
-			closeConnection();*/
+
+			System.out.println("Test has been started!");
+		   
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally{
