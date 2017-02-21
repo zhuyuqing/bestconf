@@ -1,0 +1,12 @@
+executorTerminationTimeoutMillis 62476
+maxConnections 903
+maxKeepAliveRequests 9990
+connectionTimeout 147793
+acceptorThreadCount 10
+minSpareThreads 1182
+asyncTimeout 11238
+socketBuffer 9776
+maxThreads 15198
+acceptCount 7978
+processorCache 9294
+keepAliveTimeout 27319
