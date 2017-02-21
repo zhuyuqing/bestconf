@@ -45,7 +45,7 @@ Figure 1: The performance surface of Tomcat under a page navigation workload.
 </table>
 Best Configuration for Tomcat Server
 --------
-We tuned 13 parameters for Tomcat Server, the best value for each parameter is saved in [tomcat.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/mysql/mysql.bestconf).<br>
+We tuned 13 parameters for Tomcat Server, the best value for each parameter is saved in [tomcat.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/tomcat/tomcat.bestconf).<br>
 The best configuration file with best configurations is [server.xml](https://github.com/zhuyuqing/bestconf/blob/master/deploy/4Tomcat/data/server.xml).
 Script files
 --------
