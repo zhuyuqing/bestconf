@@ -110,28 +110,6 @@ public class SUTSystemOperation implements SystemOperation {
 		    InputStream stdout;
 		    boolean flag = false;
 		    System.out.println("System is starting......");
-			//System.out.println("Here is remote information:");
-//			stdout = new StreamGobbler(session.getStdout());
-//			br = new BufferedReader(new InputStreamReader(stdout));
-//			InputStream stderr = new StreamGobbler(session.getStderr());
-//			BufferedReader errbr = new BufferedReader(new InputStreamReader(stderr));
-//			String line;
-//			while(true){
-//				line = br.readLine();
-//				//System.out.println("line is : " + line);
-//				if(line == null){
-//					System.out.println("启动脚本 启动了！");
-//					break;
-//				}
-//			}
-//			while(true){
-//				line = errbr.readLine();
-//				//System.out.println("line is : " + line);
-//				if(line == null){
-//					System.out.println("启动脚本 启动了！");
-//					break;
-//				}
-//			}
 			
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -168,23 +146,8 @@ public class SUTSystemOperation implements SystemOperation {
 			if(connection == null)
 				throw new IOException("Unable to connect the server!");
 			session = connection.openSession();
-			// session.execCommand(cmd);
 			session.execCommand(shellofStop);
 			System.out.println("System is being closed.......");
-//			stdout = new StreamGobbler(session.getStdout());
-//			br = new BufferedReader(new InputStreamReader(stdout));
-//			String line = null;
-		
-//			int tot = 0;
-			//while((line = br.readLine()) != null){
-//			while(true){
-//				line = br.readLine();
-//				System.out.println("line is : " + line);
-//				if(line.equals("ok")){
-//					System.out.println("系统关闭了！");
-//					break;
-//				}
-//			}
             
 		}catch(IOException e){
             e.printStackTrace();
@@ -207,7 +170,6 @@ public class SUTSystemOperation implements SystemOperation {
 			Thread exeThread = new Thread() {
 				public void run() {
 					try{
-						// session.execCommand(cmd);
 						session.execCommand(shellofisClosed);
 						System.out.println("Here is remote information:");
 						InputStream stdout = new StreamGobbler(session.getStdout());
@@ -216,7 +178,6 @@ public class SUTSystemOperation implements SystemOperation {
 						String targetLine = "ok";
 						while(true){
 							line = br.readLine();
-							//System.out.println("line is : " + line);
 							if(line != null && line.equals(targetLine)){
 								System.err.println(line);
 								readStatusRetval.set(true);
@@ -340,20 +301,17 @@ public class SUTSystemOperation implements SystemOperation {
 			if(connection == null)
 				throw new IOException("Unable to connect the server!");
 			session = connection.openSession();
-			// session.execCommand(cmd);
 			session.execCommand(shellofTerminate);
 			System.out.println("Here is remote information:");
 			stdout = new StreamGobbler(session.getStdout());
 			br = new BufferedReader(new InputStreamReader(stdout));
 			String line = null;
             		
-//			int tot = 0;
-			//while((line = br.readLine()) != null){
 			while(true){
 				line = br.readLine();
 				System.out.println("line is : " + line);
 				if(line.equals("ok")){
-					System.out.println("ϵͳ���ɹ���ֹ�ˣ�");
+					System.out.println("System has been successfully terminated!");
 				}	
 				if(line == null){
 					break;
