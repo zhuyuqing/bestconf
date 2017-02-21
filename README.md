@@ -53,6 +53,7 @@ Getting Started
     cd deploy
     bin/start.sh
     ```
+
 Building from source
 --------------------
 
