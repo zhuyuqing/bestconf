@@ -37,9 +37,11 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
       </tr> 
     </table>
 </div>
+
 Result
 -----------
 We use [HiBench](https://github.com/intel-hadoop/HiBench) that is a widely adopted benchmark tools in the workload generator for Spark to generate the target workload. Currently, the workload adopted in our test is Pagerank. Figure 1 plot the highly differed performance surfaces for Spark Pagerank workload.
+<div>
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
@@ -52,6 +54,7 @@ Figure 1: The performance surface of Spark under Hibench-Pagerank workload
 </td>
 </tr>
 </table>
+</div>
 Best Configuration for Spark
 --------
 We tuned 30 parameters for spark, the best value for each parameter is saved in [SparkPagerankConfig.txt](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/spark/bestconfForPagerank/SparkPagerankConfig.txt).<br>
