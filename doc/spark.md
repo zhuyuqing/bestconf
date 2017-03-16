@@ -27,8 +27,7 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
         <td>Slave 2</td>
         <td>CentOS</td>
          <td>16 Intel(R) Xeon(R) CPU E5620 @ 2.40GHz</td>
-        <td>32G</td>
-        
+        <td>32G</td>     
       </tr>
       <tr>
         <td>Slave 3</td>
