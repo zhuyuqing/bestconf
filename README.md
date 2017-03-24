@@ -23,6 +23,8 @@ Currently, Bestconf has been tested on the following systems. It has also been a
 Links
 -----
 
+If you have any question, please contact:
+
 zhuyuqing@ict.ac.cn
 
 liujianxun@ict.ac.cn
