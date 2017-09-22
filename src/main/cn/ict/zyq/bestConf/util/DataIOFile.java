@@ -1,4 +1,4 @@
-package cn.ict.zyq.bestConf.data;
+package cn.ict.zyq.bestConf.util;
 
 import java.io.File;
 import java.io.IOException;

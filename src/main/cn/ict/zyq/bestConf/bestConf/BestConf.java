@@ -17,10 +17,11 @@ import org.ho.yaml.Yaml;
 
 import cn.ict.zyq.bestConf.COMT2.COMT2;
 import cn.ict.zyq.bestConf.COMT2.UnlabledTrainingInstanceGen2;
+import cn.ict.zyq.bestConf.bestConf.optimizer.Optimization;
+import cn.ict.zyq.bestConf.bestConf.sysmanipulator.ClusterManager;
 import cn.ict.zyq.bestConf.cluster.Main.AutoTestAdjust;
 import cn.ict.zyq.bestConf.cluster.Utils.PropertiesUtil;
-import cn.ict.zyq.bestConf.data.DataIOFile;
-import cn.ict.zyq.bestConf.test.ClusterManagerStub;
+import cn.ict.zyq.bestConf.util.DataIOFile;
 import cn.ict.zyq.bestConf.util.LHSInitializer;
 
 import weka.classifiers.evaluation.Evaluation;
@@ -30,6 +31,8 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.ProtectedProperties;
 import weka.attributeSelection.PrincipalComponents;
+
+import cn.ict.zyq.bestConf.cluster.Main.AutoTestAdjust;
 
 public class BestConf {
 	
@@ -300,19 +303,11 @@ public class BestConf {
 		case 2:
 			opt = new COMT2Optimization(bestconf, BestConf.InitialSampleSetSize, BestConf.COMT2Iteration);
 			break;
-		case 3:
-			opt = new COMT2MultiOptimization(bestconf, BestConf.InitialSampleSetSize, 
-					BestConf.COMT2Iteration, BestConf.COMT2MultiIteration);
-			break;
-		case 0:
+		case 1:
 			opt = new RRSOptimization(bestconf, BestConf.InitialSampleSetSize, BestConf.RRSMaxRounds);
 			break;
-		case 1:
-			opt = new RRSPoolOptimization(bestconf, BestConf.InitialSampleSetSize, BestConf.RRSMaxRounds);
-			break;
-		case 4:
-			opt = new RRSoverCOMT2Optimization(bestconf, BestConf.InitialSampleSetSize, 
-					BestConf.RRSMaxRounds, BestConf.COMT2Iteration);
+		case 0:
+			opt = new RBSoDDSOptimization(bestconf, BestConf.InitialSampleSetSize, BestConf.RRSMaxRounds);
 			break;
 		default:
 			opt = null;

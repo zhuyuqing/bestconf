@@ -1,4 +1,4 @@
-package cn.ict.zyq.bestConf.bestConf;
+package cn.ict.zyq.bestConf.bestConf.sysmanipulator;
 
 import java.util.Map;
 
