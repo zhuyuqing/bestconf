@@ -1,0 +1,8 @@
+@relation SamplesByGridding
+
+@attribute spark.executor.cores numeric
+@attribute spark.shuffle.sort.bypassMergeThreshold numeric
+@attribute performance numeric
+
+@data
+9.510318,57,262

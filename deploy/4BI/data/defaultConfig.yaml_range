@@ -1,0 +1,1 @@
+yarnyarn.timeline-service.client.retry-interval-ms: "[100, 300000]"

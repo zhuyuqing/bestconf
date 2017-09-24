@@ -1,0 +1,19 @@
+@relation SamplesByLHS
+
+@attribute executorTerminationTimeoutMillis numeric
+@attribute maxConnections numeric
+@attribute maxKeepAliveRequests numeric
+@attribute connectionTimeout numeric
+@attribute acceptorThreadCount numeric
+@attribute minSpareThreads numeric
+@attribute asyncTimeout numeric
+@attribute socketBuffer numeric
+@attribute maxThreads numeric
+@attribute acceptCount numeric
+@attribute processorCache numeric
+@attribute keepAliveTimeout numeric
+@attribute performance numeric
+
+@data
+1089,24055,67,241196,10.458712,9116,194435,56379,14353,7575,3883,207149,2693.6
+2078,14963,7339,249366,14.597275,2878,228365,59492,18589,7671,4027,234100,2031.5

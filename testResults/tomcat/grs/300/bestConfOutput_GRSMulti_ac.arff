@@ -1,0 +1,18 @@
+@relation InitialSetByLHS
+
+@attribute executorTerminationTimeoutMillis numeric
+@attribute maxConnections numeric
+@attribute maxKeepAliveRequests numeric
+@attribute connectionTimeout numeric
+@attribute acceptorThreadCount numeric
+@attribute minSpareThreads numeric
+@attribute asyncTimeout numeric
+@attribute socketBuffer numeric
+@attribute maxThreads numeric
+@attribute acceptCount numeric
+@attribute processorCache numeric
+@attribute keepAliveTimeout numeric
+@attribute performance numeric
+
+@data
+144903,431,14833,289415,5.642124,7281,27702,32391,978,3217,4075,144380,5396.3
