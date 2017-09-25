@@ -33,7 +33,7 @@ liujianxun@ict.ac.cn
 Getting Started
 ---------------
 
-1. Download the [latest release of BestConf](https://github.com/zhuyuqing/bestconf/archive/master.zip):
+1. Download the [latest release of BestConfig](https://github.com/zhuyuqing/bestconf/archive/master.zip):
 
     ```sh
     curl -O --location https://github.com/zhuyuqing/bestconf/archive/master.zip
@@ -45,7 +45,7 @@ Getting Started
    Hive+Hadoop, Cassandra, MySQL, and Tomcat. We also specify the workload generators to be used for tuning
    the systems.
    
-3. Run BestConf command. 
+3. Run BestConfig. 
 
     On Linux:
     Update all system and deployment related scripts accordingly and move them to the
@@ -60,10 +60,10 @@ Getting Started
 Building from source
 --------------------
 
-Import the whole Bestconfing project into eclipse and enjoy!~
+Import the whole Bestconfig project into eclipse and enjoy!~
 
 
-Tuning results
+Examples of tuning results
 --------------------
 We provide the tuning results on our cluster under the testResults folder for a quick reference.
 
