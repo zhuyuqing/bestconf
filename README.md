@@ -41,9 +41,10 @@ Getting Started
     cd bestconf-master/deploy
     ```
     
-2. Set up a system for tuning. We offer two deployable examples in the project: one is called 
-   4BI(Hive+Hadoop under Hibench tests) and the other is called 4tomecat(Tomcat under JMeter tests).
-
+2. Set up a system for tuning. In the project, we offer deployable examples for 6 systems, including Spark, 
+   Hive+Hadoop, Cassandra, MySQL, and Tomcat. We also specify the workload generators to be used for tuning
+   the systems.
+   
 3. Run BestConf command. 
 
     On Linux:
@@ -62,12 +63,12 @@ Building from source
 Import the whole Bestconf project into eclipse and enjoy!~
 
 
+Tuning results
+--------------------
+We provide the tuning results on our cluster under the testResults folder for a quick reference.
+
+
 Acknowledgements
 --------------------
 
 We thank Huawei for supporting this work. This work is also supported in part by the State Key Development Program for Basic Research of China (Grant No. 2014CB340402) and the National Natural Science Foundation of China (Grant No. 61303054).
-
-
-Note
---------------------
-We have made partial codes open-sourced. The to-be-open-sourced codes will be put online soon.
