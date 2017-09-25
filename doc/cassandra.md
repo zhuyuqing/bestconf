@@ -38,7 +38,7 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
     </table>
 </div>
 
-Result
+Performance Surface
 -----------
 We use [YCSB](https://github.com/brianfrankcooper/YCSB) that is a widely adopted benchmark tools in the workload generator for Cassandra to generate the target workload. Currently, the workload adopted in our test is workoada, and we set recorecount to 17000000 and operationcount to 720000. Figure 1 is the scatter plot of performance for Cassandra under YCSB workloada workload.
 <div>
@@ -56,15 +56,9 @@ Figure 1: The scatter plot of performance for Cassandra under YCSB workloada wor
 </table>
 </div>
 
-Best Configuration for Cassandra
+Test Results
 --------
-We tuned 28 parameters for cassandra, the best value for each parameter is saved in [cassandra.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/cassandra/cassandra.bestconf).<br>
-The best configure file with best configurations is [cassandra.yaml](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/cassandra/cassandra.yaml).
-
-Script files
---------
-[Script files for Cassandra node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Cassandra/scripts/cassandra)<br>
-[Scripts files for YCSB node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Cassandra/scripts/YCSB)
+The test result of Cassandra under YCSB workloada [cassandraYcsba.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/cassandra/cassandraYcsba.arff).<br>
 
 Interface Impl
 -------
