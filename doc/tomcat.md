@@ -26,7 +26,7 @@ We executed Bestconf for the Tomcat server, and we applied sysbench to test the 
     </table>
 </div>
 
-Result
+Performance Surface
 -----------
 
 We use [JMeter](http://jmeter.apache.org) that is a widely adopted benchmark tools in the workload generator for Tomcat to generate the target workload. 
@@ -44,10 +44,9 @@ Figure 1: The performance surface of Tomcat under a page navigation workload.
 </tr>
 </table>
 
-Best Configuration for Tomcat Server
+Test Results
 --------
-We tuned 13 parameters for Tomcat Server, the best value for each parameter is saved in [tomcat.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/tomcat/tomcat.bestconf).<br>
-The best configuration file with best configurations is [server.xml](https://github.com/zhuyuqing/bestconf/blob/master/deploy/4Tomcat/data/server.xml).
+All the test resuls of Tomcat under different workloads -> [Tomcat_Results](https://github.com/zhuyuqing/bestconf/tree/master/testResults/tomcat). <br>
 
 Script files
 --------
