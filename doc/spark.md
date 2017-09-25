@@ -38,14 +38,14 @@ We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consi
     </table>
 </div>
 
-Result
+Performance Surface
 -----------
-We use [HiBench](https://github.com/intel-hadoop/HiBench) that is a widely adopted benchmark tools in the workload generator for Spark to generate the target workload. Currently, the workload adopted in our test is Pagerank. Figure 1 plot the highly differed performance surfaces for Spark Pagerank workload.
+We use [HiBench](https://github.com/intel-hadoop/HiBench) that is a widely adopted benchmark tools in the workload generator for Spark to generate the target workload. Figure 1 plot the highly differed performance surfaces for Spark Pagerank workload.
 <div>
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
-<img src="https://github.com/liujianxun-ict/bestconf/blob/master/pics/spark-pagerank.jpg" width = "800" height = "500" align=center />
+<img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/spark-pagerank.jpg" width = "800" height = "500" align=center />
 </td>
 </tr>
 <tr border="0">
@@ -56,10 +56,10 @@ Figure 1: The performance surface of Spark under Hibench-Pagerank workload
 </table>
 </div>
 
-Best Configuration for Spark
+Test Results
 --------
-Best Configuration for Spark pagerank workload [pagerank](https://github.com/zhuyuqing/bestconf/blob/master/testResults/spark/pagerank00.arff).<br>
-Best Configuration for Spark kmeans workload [kmeans](https://github.com/zhuyuqing/bestconf/blob/master/testResults/spark/kmeans-trainingBestConf_RRS_0_0_262.0.arff).<br>
+The test result of Spark pagerank workload [pagerank](https://github.com/zhuyuqing/bestconf/blob/master/testResults/spark/pagerank00.arff).<br>
+The test result of Spark kmeans workload [kmeans](https://github.com/zhuyuqing/bestconf/blob/master/testResults/spark/kmeans-trainingBestConf_RRS_0_0_262.0.arff).<br>
 
 Interface Impl
 -------
