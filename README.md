@@ -20,16 +20,6 @@ Currently, Bestconfig has been tested on the following systems. It has also been
 -------->>>[MySQL: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/mysql.md)
 
 
-Links
------
-
-If you have any question, please contact:
-
-zhuyuqing@ict.ac.cn
-
-liujianxun@ict.ac.cn
-
-
 Getting Started
 ---------------
 
@@ -72,3 +62,11 @@ Acknowledgements
 --------------------
 
 We thank Huawei for supporting this work. This work is also supported in part by the State Key Development Program for Basic Research of China (Grant No. 2014CB340402) and the National Natural Science Foundation of China (Grant No. 61303054).
+
+
+Notes
+-----
+
+If you have any question, please contact us at:
+   zhuyuqing@ict.ac.cn
+   liujianxun@ict.ac.cn
