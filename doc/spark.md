@@ -58,7 +58,7 @@ Figure 1: The performance surface of Spark under Hibench-Pagerank workload
 
 Best Configuration for Spark
 --------
-Best Configuration for Spark pagerank workload[pagerank](https://github.com/zhuyuqing/bestconf/blob/master/testResults/spark/pagerank00.arff).
+Best Configuration for Spark pagerank workload [pagerank](https://github.com/zhuyuqing/bestconf/blob/master/testResults/spark/pagerank00.arff).<br>
 Best Configuration for Spark kmeans workload [kmeans](https://github.com/zhuyuqing/bestconf/blob/master/testResults/spark/kmeans-trainingBestConf_RRS_0_0_262.0.arff).<br>
 
 Interface Impl
