@@ -57,9 +57,9 @@ Figure 1: The performance surface of Hadoop+Hive under Hibench-Join workload
 Test Results
 --------
 The test results of Hadoop under Join workload [hadoopJoin.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/hive/hadoopJoin.arff). <br>
-The test results of Hadoop under Pagerank workload [hadoopPageRank.arff] (https://github.com/zhuyuqing/bestconf/blob/master/testResults/hive/hadoopPageRank.arff). <br>
-The test results of Hadoop under Join workload with 500 samples [join-trainingBestConf.arff] (https://github.com/zhuyuqing/bestconf/blob/master/testResults/hive/500/join-trainingBestConf0_RRS0(6).arff)
-and [join-BestConfig.arff] (https://github.com/zhuyuqing/bestconf/blob/master/testResults/hive/500/join-trainingBestConf_RRS_0_0_150.0.arff). <br>
+The test results of Hadoop under Pagerank workload [hadoopPageRank.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/hive/hadoopPageRank.arff). <br>
+The test results of Hadoop under Join workload with 500 samples [join-trainingBestConf.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/hive/500/join-trainingBestConf0_RRS0(6).arff)
+and [join-BestConfig.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/hive/500/join-trainingBestConf_RRS_0_0_150.0.arff). <br>
 
 Interface Impl
 -------
