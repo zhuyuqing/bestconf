@@ -26,7 +26,7 @@ We executed Bestconf for the MySQL system, and we applied sysbench to test the p
     </table>
 </div>
 
-Result
+Performance Surface
 -----------
 
 We use [Sysbench](https://github.com/nuodb/sysbench) that is a widely adopted benchmark tools in the workload generator for MySQL to generate the target workload. Currently, the test type in our experiment is oltp and the test mode is simple, and we set num-threads to 16, oltp-table-size to 10000000, and max-time to 300. Figure 1 is the scatter plot of performance for MySQL under OLTP simple test mode.
@@ -44,15 +44,11 @@ Figure 1: The scatter plot of performance for MySQL under OLTP simple test mode.
 </tr>
 </table>
 
-Best Configuration for MySQL
+Test Results
 --------
-We tuned 11 parameters for MySQL, the best value for each parameter is saved in [mysql.bestconf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/mysql/mysql.bestconf).<br>
-The best configuration file with best configurations is [my.cnf](https://github.com/zhuyuqing/bestconf/blob/master/bestconfs/mysql/my.cnf).
+The result of MySQL under the zipfian read-write workload [MySQL_zipfian_readwrite.arff](https://github.com/zhuyuqing/bestconf/edit/master/testResults/mysql/fig4.arff).<br>
+The result of MySQL under uniform reads workload [MySQL_uniform_reads.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/mysql/fig1.arff).
 
-Script files
---------
-[Script files for MySQL node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4MySQL/scripts/mysql)<br>
-[Scripts files for Sysbench node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4MySQL/scripts/sysbench)
 
 Interface Impl
 -------
