@@ -46,8 +46,8 @@ Figure 1: The scatter plot of performance for MySQL under OLTP simple test mode.
 
 Test Results
 --------
-The result of MySQL under the zipfian read-write workload [MySQL_zipfian_readwrite.arff](https://github.com/zhuyuqing/bestconf/edit/master/testResults/mysql/fig4.arff).<br>
-The result of MySQL under OLTP simple test mode [MySQL_OLTP_simple.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/mysql/fig1.arff).
+The result of MySQL under the zipfian read-write workload [MySQL_zipfian_readwrite.arff](https://github.com/zhuyuqing/bestconf/edit/master/testResults/mysql/MySQL_zipfian_readwrite.arff).<br>
+The result of MySQL under OLTP simple test mode [MySQL_OLTP_simple.arff](https://github.com/zhuyuqing/bestconf/blob/master/testResults/mysql/MySQL_OLTP_simple.arff).
 
 
 Interface Impl
