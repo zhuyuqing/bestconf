@@ -50,8 +50,8 @@ All the test resuls of Tomcat under different workloads -> [Tomcat_Results](http
 
 Script files
 --------
-[Script files for Tomcat node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Tomcat/scripts)<br>
-[Scripts files for JMeter node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Tomcat/scripts)
+[Script files for Tomcat node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Tomcat/scripts/scripts%20for%20Tomcat%20node)<br>
+[Scripts files for JMeter node](https://github.com/zhuyuqing/bestconf/tree/master/deploy/4Tomcat/scripts/scripts%20for%20JMeter%20node)
 
 Interface Impl
 -------
