@@ -1,0 +1,2 @@
+spark.shuffle.sort.bypassMergeThreshold: "[1,500]"
+spark.executor.cores: "[1,16]"

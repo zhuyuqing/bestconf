@@ -1,0 +1,84 @@
+package cn.ict.zyq.bestConf.cluster.Utils;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.Iterator;
+import java.util.Vector;
+
+
+
+
+import com.jcraft.jsch.Channel;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.ChannelSftp.LsEntry;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.Session;
+import com.jcraft.jsch.SftpException;
+
+public class SFTPUtil {
+	
+	
+	
+	public static Session connect(String host, Integer port, String user, String password) throws JSchException{
+		Session session = null;
+		try {
+			JSch jsch = new JSch();
+			if(port != null){
+				session = jsch.getSession(user, host, port.intValue());
+			}else{
+				session = jsch.getSession(user, host);
+			}
+			session.setPassword(password);
+			
+			session.setConfig("StrictHostKeyChecking", "no");
+			//30秒连接超�?
+			session.connect(3000);
+		} catch (JSchException e) {
+			e.printStackTrace();
+			System.out.println("SFTPUitl connection error");
+			throw e;
+		}
+		return session;
+	}
+	
+	public static void upload(String directory, String uploadFile, ChannelSftp sftp) throws Exception{
+		
+		File file = new File(uploadFile);
+		if(file.exists()){
+			
+			try {
+				Vector content = sftp.ls(directory);
+				if(content == null){
+					sftp.mkdir(directory);
+					System.out.println("mkdir:" + directory);
+				}
+			} catch (SftpException e) {
+				sftp.mkdir(directory);
+			}
+			//进入目标路径
+			sftp.cd(directory);
+			System.out.println("directory: " + directory);
+			if(file.isFile()){
+				InputStream ins = new FileInputStream(file);
+				
+				sftp.put(ins, new String(file.getName().getBytes(),"UTF-8"));
+				
+			}else{
+				File[] files = file.listFiles();
+				for (File file2 : files) {
+					String dir = file2.getAbsolutePath();
+					if(file2.isDirectory()){
+						String str = dir.substring(dir.lastIndexOf(file2.separator));
+						directory = directory + str;
+					}
+					System.out.println("directory is :" + directory);
+					upload(directory,dir,sftp);
+				}
+			}
+		}
+	}
+	
+}
