@@ -281,7 +281,7 @@ public class SUTSystemOperation implements SystemOperation {
 		            line = br.readLine();
 		            if(line != null && line.equals(targetFound)){
 						System.err.println(line);
-						System.err.println("启动成功了！");
+						System.err.println("System startup successfully！");
 						result = true;
 						break;
 					}
