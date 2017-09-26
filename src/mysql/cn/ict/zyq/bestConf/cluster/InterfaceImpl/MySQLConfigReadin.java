@@ -112,7 +112,7 @@ public class MySQLConfigReadin implements ConfigReadin {
 						 }
 				}
 			}else
-				System.out.println(entUpdated.getKey().toString() + "Doesn't exit in original list£¡");
+				System.out.println(entUpdated.getKey().toString() + "Doesn't exit in original list!");
 		}
 	}
 	@Override
