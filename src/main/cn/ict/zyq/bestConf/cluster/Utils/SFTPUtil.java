@@ -23,10 +23,6 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.Iterator;
 import java.util.Vector;
-
-
-
-
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.ChannelSftp.LsEntry;
@@ -36,8 +32,6 @@ import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
 public class SFTPUtil {
-	
-	
 	
 	public static Session connect(String host, Integer port, String user, String password) throws JSchException{
 		Session session = null;
