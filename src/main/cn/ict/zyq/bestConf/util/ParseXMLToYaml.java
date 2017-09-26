@@ -1,3 +1,20 @@
+/**
+ * Copyright (c) 2017 Institute of Computing Technology, Chinese Academy of Sciences, 2017 
+ * Institute of Computing Technology, Chinese Academy of Sciences contributors. All rights reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you
+ * may not use this file except in compliance with the License. You
+ * may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * permissions and limitations under the License. See accompanying
+ * LICENSE file.
+ */
 package cn.ict.zyq.bestConf.util;
 
 import java.io.*;
@@ -32,7 +49,6 @@ public class ParseXMLToYaml {
 							.matcher(value).find()) {
 						result.put(foo.elementText("name"), value);
 					} else {
-						//why not handling tihs?...
 					}
 				}
 			}
@@ -68,12 +84,12 @@ public class ParseXMLToYaml {
 
 	public static void appendXMLByDOM4J(HashMap target, String source,
 			String destination) throws IOException {
-		// 1.创建一个SAXReader对象reader
+		
 		SAXReader reader = new SAXReader();
 		try {
-			// 2.通过reader对象的read方法加载xml文件，获取Document对象
+			
 			Document document = reader.read(new File(source));
-			Element configStore = document.getRootElement();// 通过document对象获取根节点bookstore
+			Element configStore = document.getRootElement();
 			Iterator iter = target.entrySet().iterator();
 			while (iter.hasNext()) {
 				Map.Entry entry = (Map.Entry) iter.next();
@@ -85,12 +101,10 @@ public class ParseXMLToYaml {
 				Element value = property.addElement("value");
 				value.setText(val);
 			}
-
-			// 3.设置输出格式和输出流
 			OutputFormat format = OutputFormat.createPrettyPrint();
 			XMLWriter writer = new XMLWriter(new FileOutputStream(destination),
 					format);
-			writer.write(document);// 将文档写入到输出流
+			writer.write(document);
 			writer.close();
 
 		} catch (DocumentException e) {
@@ -101,7 +115,7 @@ public class ParseXMLToYaml {
 	public static void extractYamlRange(String infilepath, String outfilepath) {
 		File filer = new File(infilepath);
 		File filew = new File(outfilepath);
-		// if file doesnt exists, then create it
+		// if file doesn't exist, then create it
 		try {
 			if (!filer.exists()) {
 				filer.createNewFile();
