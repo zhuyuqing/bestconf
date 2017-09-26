@@ -11,7 +11,7 @@ import java.io.OutputStream;
 import javax.swing.JOptionPane;
 
 /**
- * ÎÄ¼þÉ¾³ý¡¢¸´ÖÆ
+ * file deleteã€copy
  * 
  */
 public class FileUtil {
@@ -20,52 +20,46 @@ public class FileUtil {
 	 private static String matches = "[A-Za-z]:\\\\[^:?\"><*]*";  
 	  
 	    /** 
-	     * ¸´ÖÆµ¥¸öÎÄ¼þ 
+	     * single file copy
 	     *  
 	     * @param srcFileName 
-	     *            ´ý¸´ÖÆµÄÎÄ¼þÃû 
+	     *            file name to copy 
 	     * @param descFileName 
-	     *            Ä¿±êÎÄ¼þÃû 
+	     *            target name
 	     * @param overlay 
-	     *            Èç¹ûÄ¿±êÎÄ¼þ´æÔÚ£¬ÊÇ·ñ¸²¸Ç 
-	     * @return Èç¹û¸´ÖÆ³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse 
+	     *            if target file exists, then override 
+	     * @return 
 	     */  
 	    public static boolean copyFile(String srcFileName, String destFileName,  
 	            boolean overlay) {  
 	        File srcFile = new File(srcFileName);  
-	  
-	        // ÅÐ¶ÏÔ´ÎÄ¼þÊÇ·ñ´æÔÚ  
+	    
 	        if (!srcFile.exists()) {  
-	            MESSAGE = "Ô´ÎÄ¼þ£º" + srcFileName + "²»´æÔÚ£¡";  
+	            MESSAGE = "source fileï¼š" + srcFileName + "doesn't existï¼";  
 	            JOptionPane.showMessageDialog(null, MESSAGE);  
 	            return false;  
 	        } else if (!srcFile.isFile()) {  
-	            MESSAGE = "¸´ÖÆÎÄ¼þÊ§°Ü£¬Ô´ÎÄ¼þ£º" + srcFileName + "²»ÊÇÒ»¸öÎÄ¼þ£¡";  
+	            MESSAGE = "failedï¼š" + srcFileName + "not a single fileï¼";  
 	            JOptionPane.showMessageDialog(null, MESSAGE);  
 	            return false;  
 	        }  
 	  
-	        // ÅÐ¶ÏÄ¿±êÎÄ¼þÊÇ·ñ´æÔÚ  
+	        // judge whether target file exists  
 	        File destFile = new File(destFileName);  
 	        if (destFile.exists()) {  
-	            // Èç¹ûÄ¿±êÎÄ¼þ´æÔÚ²¢ÔÊÐí¸²¸Ç  
 	            if (overlay) {  
-	                // É¾³ýÒÑ¾­´æÔÚµÄÄ¿±êÎÄ¼þ£¬ÎÞÂÛÄ¿±êÎÄ¼þÊÇÄ¿Â¼»¹ÊÇµ¥¸öÎÄ¼þ  
 	                new File(destFileName).delete();  
 	            }  
 	        } else {  
-	            // Èç¹ûÄ¿±êÎÄ¼þËùÔÚÄ¿Â¼²»´æÔÚ£¬Ôò´´½¨Ä¿Â¼  
 	            if (!destFile.getParentFile().exists()) {  
-	                // Ä¿±êÎÄ¼þËùÔÚÄ¿Â¼²»´æÔÚ  
+	            
 	                if (!destFile.getParentFile().mkdirs()) {  
-	                    // ¸´ÖÆÎÄ¼þÊ§°Ü£º´´½¨Ä¿±êÎÄ¼þËùÔÚÄ¿Â¼Ê§°Ü  
+	                
 	                    return false;  
 	                }  
 	            }  
 	        }  
-	  
-	        // ¸´ÖÆÎÄ¼þ  
-	        int byteread = 0; // ¶ÁÈ¡µÄ×Ö½ÚÊý  
+	        int byteread = 0; 
 	        InputStream in = null;  
 	        OutputStream out = null;  
 	  
@@ -95,50 +89,50 @@ public class FileUtil {
 	    }  
 	  
 	    /** 
-	     * ¸´ÖÆÕû¸öÄ¿Â¼µÄÄÚÈÝ 
+	     * 
 	     *  
 	     * @param srcDirName 
-	     *            ´ý¸´ÖÆÄ¿Â¼µÄÄ¿Â¼Ãû 
+	     *           
 	     * @param destDirName 
-	     *            Ä¿±êÄ¿Â¼Ãû 
+	     *           
 	     * @param overlay 
-	     *            Èç¹ûÄ¿±êÄ¿Â¼´æÔÚ£¬ÊÇ·ñ¸²¸Ç 
-	     * @return Èç¹û¸´ÖÆ³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse 
+	     *           
+	     * @return 
 	     */  
 	    public static boolean copyDirectory(String srcDirName, String destDirName,  
 	            boolean overlay) {  
-	        // ÅÐ¶ÏÔ´Ä¿Â¼ÊÇ·ñ´æÔÚ  
+	        
 	        File srcDir = new File(srcDirName);  
 	        if (!srcDir.exists()) {  
-	            MESSAGE = "¸´ÖÆÄ¿Â¼Ê§°Ü£ºÔ´Ä¿Â¼" + srcDirName + "²»´æÔÚ£¡";  
+	            MESSAGE = "failed" + srcDirName + "doesn't existï¼";  
 	            JOptionPane.showMessageDialog(null, MESSAGE);  
 	            return false;  
 	        } else if (!srcDir.isDirectory()) {  
-	            MESSAGE = "¸´ÖÆÄ¿Â¼Ê§°Ü£º" + srcDirName + "²»ÊÇÄ¿Â¼£¡";  
+	            MESSAGE = "failed " + srcDirName + "not categoryï¼";  
 	            JOptionPane.showMessageDialog(null, MESSAGE);  
 	            return false;  
 	        }  
 	  
-	        // Èç¹ûÄ¿±êÄ¿Â¼Ãû²»ÊÇÒÔÎÄ¼þ·Ö¸ô·û½áÎ²£¬Ôò¼ÓÉÏÎÄ¼þ·Ö¸ô·û  
+	        
 	        if (!destDirName.endsWith(File.separator)) {  
 	            destDirName = destDirName + File.separator;  
 	        }  
 	        File destDir = new File(destDirName);  
-	        // Èç¹ûÄ¿±êÎÄ¼þ¼Ð´æÔÚ  
+	        
 	        if (destDir.exists()) {  
-	            // Èç¹ûÔÊÐí¸²¸ÇÔòÉ¾³ýÒÑ´æÔÚµÄÄ¿±êÄ¿Â¼  
+	           
 	            if (overlay) {  
 	                new File(destDirName).delete();  
 	            } else {  
-	                MESSAGE = "¸´ÖÆÄ¿Â¼Ê§°Ü£ºÄ¿µÄÄ¿Â¼" + destDirName + "ÒÑ´æÔÚ£¡";  
+	                MESSAGE = "failed to copy category " + destDirName + "already existï¼";  
 	                JOptionPane.showMessageDialog(null, MESSAGE);  
 	                return false;  
 	            }  
 	        } else {  
-	            // ´´½¨Ä¿µÄÄ¿Â¼  
-	            System.out.println("Ä¿µÄÄ¿Â¼²»´æÔÚ£¬×¼±¸´´½¨¡£¡£¡£");  
+	           
+	            System.out.println("prepare to create target categoryã€‚ã€‚ã€‚");  
 	            if (!destDir.mkdirs()) {  
-	                System.out.println("¸´ÖÆÄ¿Â¼Ê§°Ü£º´´½¨Ä¿µÄÄ¿Â¼Ê§°Ü£¡");  
+	                System.out.println("failed to copy category and create target categoryï¼");  
 	                return false;  
 	            }  
 	        }  
@@ -146,7 +140,7 @@ public class FileUtil {
 	        boolean flag = true;  
 	        File[] files = srcDir.listFiles();  
 	        for (int i = 0; i < files.length; i++) {  
-	            // ¸´ÖÆÎÄ¼þ  
+	           
 	            if (files[i].isFile()) {  
 	                flag = FileUtil.copyFile(files[i].getAbsolutePath(),  
 	                        destDirName + files[i].getName(), overlay);  
@@ -160,7 +154,7 @@ public class FileUtil {
 	            }  
 	        }  
 	        if (!flag) {  
-	            MESSAGE = "¸´ÖÆÄ¿Â¼" + srcDirName + "ÖÁ" + destDirName + "Ê§°Ü£¡";  
+	            MESSAGE = "copy category" + srcDirName + "to" + destDirName + "failedï¼";  
 	            JOptionPane.showMessageDialog(null, MESSAGE);  
 	            return false;  
 	        } else {  
@@ -170,35 +164,35 @@ public class FileUtil {
 		
 
 	    /** 
-	     *  ¸ù¾ÝÂ·¾¶É¾³ýÖ¸¶¨µÄÄ¿Â¼»òÎÄ¼þ£¬ÎÞÂÛ´æÔÚÓë·ñ 
-	     *@param sPath  ÒªÉ¾³ýµÄÄ¿Â¼»òÎÄ¼þ 
-	     *@return É¾³ý³É¹¦·µ»Ø true£¬·ñÔò·µ»Ø false¡£ 
+	     *  
+	     *@param sPath  
+	     *@return 
 	     */  
 	    public static boolean deleteFolder(String sPath) {  
 	        boolean flag = false;  
 	       File file = new File(sPath);  
-	        // ÅÐ¶ÏÄ¿Â¼»òÎÄ¼þÊÇ·ñ´æÔÚ  
-	        if (!file.exists()) {  // ²»´æÔÚ·µ»Ø false  
+	     
+	        if (!file.exists()) { 
 	            return flag;  
 	        } else {  
-	            // ÅÐ¶ÏÊÇ·ñÎªÎÄ¼þ  
-	            if (file.isFile()) {  // ÎªÎÄ¼þÊ±µ÷ÓÃÉ¾³ýÎÄ¼þ·½·¨  
+	            
+	            if (file.isFile()) {  
 	                return deleteFile(sPath);  
-	            } else {  // ÎªÄ¿Â¼Ê±µ÷ÓÃÉ¾³ýÄ¿Â¼·½·¨  
+	            } else { 
 	                return deleteDirectory(sPath);  
 	            }  
 	        }  
 	    }  
 	    
 	    /** 
-	     * É¾³ýµ¥¸öÎÄ¼þ 
-	     * @param   sPath    ±»É¾³ýÎÄ¼þµÄÎÄ¼þÃû 
-	     * @return µ¥¸öÎÄ¼þÉ¾³ý³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse 
+	     * 
+	     * @param   sPath    
+	     * @return 
 	     */  
 	    public static boolean deleteFile(String sPath) {  
 	        boolean flag = false;  
 	        File file = new File(sPath);  
-	        // Â·¾¶ÎªÎÄ¼þÇÒ²»Îª¿ÕÔò½øÐÐÉ¾³ý  
+	       
 	        if (file.isFile() && file.exists()) {  
 	            file.delete();  
 	            flag = true;  
@@ -207,36 +201,34 @@ public class FileUtil {
 	    }  
 	    
 	    /** 
-	     * É¾³ýÄ¿Â¼£¨ÎÄ¼þ¼Ð£©ÒÔ¼°Ä¿Â¼ÏÂµÄÎÄ¼þ 
-	     * @param   sPath ±»É¾³ýÄ¿Â¼µÄÎÄ¼þÂ·¾¶ 
-	     * @return  Ä¿Â¼É¾³ý³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse 
+	     * 
+	     * @param   sPath 
+	     * @return  
 	     */  
 	    private static boolean deleteDirectory(String sPath) {  
-	        //Èç¹ûsPath²»ÒÔÎÄ¼þ·Ö¸ô·û½áÎ²£¬×Ô¶¯Ìí¼ÓÎÄ¼þ·Ö¸ô·û  
+	       
 	        if (!sPath.endsWith(File.separator)) {  
 	            sPath = sPath + File.separator;  
 	        }  
 	        File dirFile = new File(sPath);  
-	        //Èç¹ûdir¶ÔÓ¦µÄÎÄ¼þ²»´æÔÚ£¬»òÕß²»ÊÇÒ»¸öÄ¿Â¼£¬ÔòÍË³ö  
+	      
 	        if (!dirFile.exists() || !dirFile.isDirectory()) {  
 	            return false;  
 	        }  
 	        boolean flag = true;  
-	        //É¾³ýÎÄ¼þ¼ÐÏÂµÄËùÓÐÎÄ¼þ(°üÀ¨×ÓÄ¿Â¼)  
+	   
 	        File[] files = dirFile.listFiles();  
 	        for (int i = 0; i < files.length; i++) {  
-	            //É¾³ý×ÓÎÄ¼þ  
 	            if (files[i].isFile()) {  
 	                flag = deleteFile(files[i].getAbsolutePath());  
 	                if (!flag) break;  
-	            } //É¾³ý×ÓÄ¿Â¼  
+	            } 
 	            else {  
 	                flag = deleteDirectory(files[i].getAbsolutePath());  
 	                if (!flag) break;  
 	            }  
 	        }  
 	        if (!flag) return false;  
-	        //É¾³ýµ±Ç°Ä¿Â¼  
 	        if (dirFile.delete()) {  
 	            return true;  
 	        } else {  
