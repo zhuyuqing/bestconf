@@ -128,7 +128,7 @@ public class MySQLConfigWrite implements ConfigWrite {
 	public void writetoConfigfile(HashMap hm) {
 		// TODO Auto-generated method stub
 		File file = new File(mysqltargetfilePath);
-		// if file doesnt exists, then create it
+		// if file doesn't exist, then create it
 		if (!file.exists()) {
 			try {
 				file.createNewFile();
