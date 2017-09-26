@@ -1,3 +1,20 @@
+/**
+ * Copyright (c) 2017 Institute of Computing Technology, Chinese Academy of Sciences, 2017 
+ * Institute of Computing Technology, Chinese Academy of Sciences contributors. All rights reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you
+ * may not use this file except in compliance with the License. You
+ * may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * permissions and limitations under the License. See accompanying
+ * LICENSE file.
+ */
 package cn.ict.zyq.bestConf.cluster.InterfaceImpl;
 
 import java.io.BufferedWriter;
@@ -97,14 +114,14 @@ public class CassandraConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdChangeName);
 			System.out.println("Here is SUT start information:");
-			System.out.println("ĞŞ¸ÄÔ¶³ÌÅäÖÃÎÄ¼şÃû×Ö³É¹¦£¡");
+			System.out.println("ä¿®æ”¹è¿œç¨‹é…ç½®æ–‡ä»¶åå­—æˆåŠŸï¼");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("ĞŞ¸ÄÔ¶³ÌÅäÖÃÎÄ¼şÃû×ÖÊ§°Ü£¡");
+			System.out.println("ä¿®æ”¹è¿œç¨‹é…ç½®æ–‡ä»¶åå­—å¤±è´¥ï¼");
 		}
 	}
 	public void removeRemoteConfigFile(String filename) {
@@ -113,14 +130,14 @@ public class CassandraConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdRemove);
 			System.out.println("Here is SUT start information:");
-			System.out.println("É¾³ıÅäÖÃÎÄ¼ş³É¹¦£¡");
+			System.out.println("åˆ é™¤é…ç½®æ–‡ä»¶æˆåŠŸï¼");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("É¾³ıÅäÖÃÎÄ¼şÊ§°Ü£¡");
+			System.out.println("åˆ é™¤é…ç½®æ–‡ä»¶å¤±è´¥ï¼");
 		}
 	}
 
