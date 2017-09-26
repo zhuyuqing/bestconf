@@ -1,3 +1,20 @@
+/**
+ * Copyright (c) 2017 Institute of Computing Technology, Chinese Academy of Sciences, 2017 
+ * Institute of Computing Technology, Chinese Academy of Sciences contributors. All rights reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you
+ * may not use this file except in compliance with the License. You
+ * may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * permissions and limitations under the License. See accompanying
+ * LICENSE file.
+ */
 package cn.ict.zyq.bestConf.cluster.InterfaceImpl;
 
 import java.io.BufferedWriter;
@@ -27,8 +44,6 @@ public class SparkConfigWrite implements ConfigWrite {
 	private String password;
 	private String remotePath;
 	private String localPath;
-	//private String sparktargetfilePath = "data/kmeans.conf";
-	//private String remoteconffilename = "kmeans.conf";
 	
 	private String sparktargetfilePath = "data/kmeans.conf";
 	private String remoteconffilename = "kmeans.conf";
@@ -126,14 +141,14 @@ public class SparkConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdchange);
 			System.out.println("Here is SUT start information:");
-			System.out.println("–ﬁ∏ƒspark-env√˚◊÷≥…π¶£°");
+			System.out.println("Succeed in changing filename of spark-envÔºÅ");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("–ﬁ∏ƒspark-env√˚◊÷ ß∞‹£°");
+			System.out.println("Failed to change filename of spark-envÔºÅ");
 		}
 	}
 	
@@ -143,14 +158,14 @@ public class SparkConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdRemove);
 			System.out.println("Here is SUT start information:");
-			System.out.println("…æ≥˝≈‰÷√Œƒº˛≥…π¶£°");
+			System.out.println("Succeed in removing configuration fileÔºÅ");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("…æ≥˝≈‰÷√Œƒº˛ ß∞‹£°");
+			System.out.println("Failed to remove configuration fileÔºÅ");
 		}
 	}
 	public void removeRemoteEnvConfigFile(String filename) {
@@ -159,14 +174,14 @@ public class SparkConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdRemove);
 			System.out.println("Here is SUT start information:");
-			System.out.println("…æ≥˝≈‰÷√Œƒº˛env≥…π¶£°");
+			System.out.println("Succeed in removing configuration file of envÔºÅ");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("…æ≥˝≈‰÷√Œƒº˛env ß∞‹£°");
+			System.out.println("Failed to remove configuration file of envÔºÅ");
 		}
 	}
 
@@ -175,7 +190,7 @@ public class SparkConfigWrite implements ConfigWrite {
 		// TODO Auto-generated method stub
 		File file = new File(sparktargetfilePath);
 		File fileenv = new File(sparkenvpath);
-		// if file doesnt exists, then create it
+		// if file doesn't exist, then create it
 		if (!file.exists()) {
 			try {
 				file.createNewFile();
@@ -241,12 +256,11 @@ public class SparkConfigWrite implements ConfigWrite {
 			    	bwenv.write("export SPARK_EXECUTOR_CORES="+ value + "\n");
 			    }
 			}
-				bwenv.write("export JAVA_HOME=/usr/java/jdk1.7.0_55" + "\n");
-				bwenv.write("export SCALA_HOME=/opt/hadoop-2.6.5/spark/scala-2.10.6" + "\n");
-				bwenv.write("export SPARK_MASTER_IP=172.16.48.39" + "\n");
-				bwenv.write("export HADOOP_CONF_DIR=/opt/hadoop-2.6.5/hadoop-2.6.5/etc/hadoop" + "\n"); 
+				bwenv.write("export JAVA_HOME= " + "\n");
+				bwenv.write("export SCALA_HOME= " + "\n");
+				bwenv.write("export SPARK_MASTER_IP= " + "\n");
+				bwenv.write("export HADOOP_CONF_DIR= " + "\n"); 
 			
-			//bw.write("spark.executor.extraJavaOptions " + targetString.toString());
 			bw.close();
 			bwenv.close();
 		} catch (IOException e) {
