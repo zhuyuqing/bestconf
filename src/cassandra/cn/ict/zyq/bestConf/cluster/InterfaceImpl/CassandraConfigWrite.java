@@ -114,14 +114,14 @@ public class CassandraConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdChangeName);
 			System.out.println("Here is SUT start information:");
-			System.out.println("修改远程配置文件名字成功！");
+			System.out.println("Remote config filename had been successfully changed！");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("修改远程配置文件名字失败！");
+			System.out.println("Failed to change remote config filename！");
 		}
 	}
 	public void removeRemoteConfigFile(String filename) {
@@ -130,14 +130,14 @@ public class CassandraConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdRemove);
 			System.out.println("Here is SUT start information:");
-			System.out.println("删除配置文件成功！");
+			System.out.println("Config file had been removed successfully！");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("删除配置文件失败！");
+			System.out.println("Failed to remove config file！");
 		}
 	}
 
@@ -149,11 +149,8 @@ public class CassandraConfigWrite implements ConfigWrite {
 	        HashMap seed_provider_parameters = (HashMap)seed_provider.get(0);
 	        
 	        ArrayList seed_provider_parameters_seeds = (ArrayList)seed_provider_parameters.get("parameters");
-	        //System.out.println(seed_provider_parameters.get("class_name").getClass());
+	       
 	        HashMap seed_provider_parameters_seeds_hashmap = (HashMap)seed_provider_parameters_seeds.get(0);
-	        //StringBuilder seeds_value = new StringBuilder(seed_provider_parameters_seeds_hashmap.get("seeds").toString());
-	        //seeds_value.append("\"");
-	        //seeds_value.insert(0, '\"');
 	        String seeds_value = seed_provider_parameters_seeds_hashmap.get("seeds").toString();
 	        seeds_value = "\"" + seeds_value;
 	        seeds_value = seeds_value + "\"";
@@ -162,11 +159,7 @@ public class CassandraConfigWrite implements ConfigWrite {
 	        seed_provider_parameters.put("parameters", seed_provider_parameters_seeds);
 	        seed_provider.set(0, seed_provider_parameters);
 	        hm.put("seed_provider", seed_provider);
-	        //System.out.println("seeds value = " + seeds_value );
-	        //System.out.println(((HashMap)((ArrayList)ml.get("seed_provider")).get(0)).get("parameters"));
-	        //System.out.println("seeds = " + seed_provider_parameters_seeds.get(0).getClass());
-	        
-	        
+	      
 	        String enabled, optional, keystore, keystore_password;
 	        HashMap client_hashmap = (HashMap)hm.get("client_encryption_options");
             enabled = client_hashmap.get("enabled").toString();
@@ -181,14 +174,10 @@ public class CassandraConfigWrite implements ConfigWrite {
             keystore_password_server = server_hashmap.get("keystore_password").toString();
             truststore = server_hashmap.get("truststore").toString();
             truststore_password = server_hashmap.get("truststore_password").toString();
-            //System.out.println(client_hashmap.get("keystore_password").getClass());
-			
-            
-           // String concurrent_reads = ml.get("concurrent_reads").toString();
-           // ml.put("concurrent_reads", 123);
+          
 		    
             File file = new File(cassandratargetfilePath);
-				// if file doesnt exists, then create it
+				// if file doesn't exist, then create it
 			if (!file.exists()) {
 				file.createNewFile();
 			}
@@ -236,7 +225,6 @@ public class CassandraConfigWrite implements ConfigWrite {
 			        		bw.write(key.toString() + ":" + "\n");
 			        }
 			    }
-				//bw.write(content);
 				bw.close();
 			} catch (IOException e) {
 				e.printStackTrace();
