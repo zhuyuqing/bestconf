@@ -112,7 +112,7 @@ public class MySQLConfigReadin implements ConfigReadin {
 						 }
 				}
 			}else
-				System.out.println(entUpdated.getKey().toString() + "Doesn't exist in original list!");
+				System.out.println(entUpdated.getKey().toString() + " doesn't exist in original list!");
 		}
 	}
 	@Override
