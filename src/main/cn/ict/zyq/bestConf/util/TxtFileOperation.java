@@ -1,3 +1,20 @@
+/**
+ * Copyright (c) 2017 Institute of Computing Technology, Chinese Academy of Sciences, 2017 
+ * Institute of Computing Technology, Chinese Academy of Sciences contributors. All rights reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you
+ * may not use this file except in compliance with the License. You
+ * may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * permissions and limitations under the License. See accompanying
+ * LICENSE file.
+ */
 package cn.ict.zyq.bestConf.util;
 
 import java.io.BufferedReader;
@@ -23,9 +40,9 @@ public class TxtFileOperation {
 	            if (!(dirFile.exists()) && !(dirFile.isDirectory())) {  
 	                boolean creadok = dirFile.mkdirs();  
 	                if (creadok) {  
-	                    System.out.println(" ok:´´½¨ÎÄ¼ş¼Ğ³É¹¦£¡ ");  
+	                    System.out.println(" ok:folder successfully createdï¼ ");  
 	                } else {  
-	                    System.out.println(" err:´´½¨ÎÄ¼ş¼ĞÊ§°Ü£¡ ");  
+	                    System.out.println(" err:failed to create folderï¼ ");  
 	                }  
 	            }  
 	        } catch (Exception e) {  
@@ -36,10 +53,10 @@ public class TxtFileOperation {
 	    }  
 	  
 	    /** 
-	     * Ğ´ÎÄ¼ş 
+	     * write file
 	     *  
-	     * @param path ÎÄ¼şÂ·¾¶
-	     * @param content Ğ´ÈëÄÚÈİ
+	     * @param path 
+	     * @param content
 	     */  
 	    public static boolean write(String path, String content) {  
 	        String s = new String();  
@@ -49,21 +66,14 @@ public class TxtFileOperation {
 	            File f = new File(path);  
 	            if (f.exists()) {  
 	            } else {  
-	                System.out.println("ÎÄ¼ş²»´æÔÚ£¬ÕıÔÚ´´½¨...");  
+	                System.out.println("file doesn't exist and is being creating...");  
 	                if (f.createNewFile()) {  
-	                    System.out.println("ÎÄ¼ş´´½¨³É¹¦£¡");  
+	                    System.out.println("file successfully createdï¼");  
 	                } else {  
-	                    System.out.println("ÎÄ¼ş´´½¨Ê§°Ü£¡");  
+	                    System.out.println("file failed to createï¼");  
 	                }  
 	            } 
-	            
-	            /*BufferedReader input = new BufferedReader(new FileReader(f));  
-	            while ((s = input.readLine()) != null) {  
-	                s1 += s + "\n";  
-	            }  
-	            System.out.println("Ô­ÎÄ¼şÄÚÈİ£º" + s1);  
-	            input.close(); */ 
-	            
+	           
 	            s1 = content;  
 	            output = new BufferedWriter(new FileWriter(f,true));  
 	            output.write(s1);  
@@ -85,11 +95,6 @@ public class TxtFileOperation {
 	    
 	    
 	    
-	    /**
-	     * ¶ÁÈ¡TXTÎÄ¼ş
-	     * @param str	ÎÄ¼şÂ·¾¶
-	     * @return	·µ»Ø×Ö·û´®ÁĞ±í£¬·Ö±ğ¶ÔÓ¦ ²ÎÊıÇø¼ä¡¢²ÎÊıÃû¡¢Ñù±¾
-	     */
 	    public static List<String> readTxt(String str) {  
 	        File file = new File(str);  
 	        String line;
@@ -98,7 +103,7 @@ public class TxtFileOperation {
             List<String> slist = new ArrayList<String>();
 	        try {  
 	            isr = new InputStreamReader(new FileInputStream(file), "utf-8");    
-	            BufferedReader in = new BufferedReader(isr);// °ü×°ÎÄ¼şÊäÈëÁ÷£¬¿ÉÕûĞĞ¶ÁÈ¡  
+	            BufferedReader in = new BufferedReader(isr);
 	            StringBuilder sb = new StringBuilder();
   
 	            while ((line = in.readLine()) != null) {  
@@ -115,7 +120,7 @@ public class TxtFileOperation {
 	        } catch (FileNotFoundException e) {  
 	            e.printStackTrace();  
 	            return null;  
-	        }// ´´½¨ÎÄ¼şÊäÈëÁ÷  
+	        }
 	        catch (IOException e) {  
 	            e.printStackTrace();  
 	            return null;  
@@ -137,7 +142,7 @@ public class TxtFileOperation {
 	        InputStreamReader isr= null;  
 	        try {  
 	            isr = new InputStreamReader(new FileInputStream(file), "utf-8");    
-	            BufferedReader in = new BufferedReader(isr);// °ü×°ÎÄ¼şÊäÈëÁ÷£¬¿ÉÕûĞĞ¶ÁÈ¡  
+	            BufferedReader in = new BufferedReader(isr);
 	            StringBuilder sb = new StringBuilder();  
 	            while ((line = in.readLine()) != null) {  
 	                sb.append(line);  
@@ -148,7 +153,7 @@ public class TxtFileOperation {
 	        } catch (FileNotFoundException e) {  
 	            e.printStackTrace();  
 	            return null;  
-	        }// ´´½¨ÎÄ¼şÊäÈëÁ÷  
+	        }
 	        catch (IOException e) {  
 	            e.printStackTrace();  
 	            return null;  
