@@ -120,10 +120,9 @@ public class SUTTest implements Test {
     }
     
     public static void main(String[] args){
-    	//SUTTest.test();
-		SUTTest test = new SUTTest();
-		test.initial("", "", "", "", 1,1);
-		//test.getResultofTest(2, true);
+	SUTTest test = new SUTTest();
+	test.initial("", "", "", "", 1,1);
+		
        
 
     }
