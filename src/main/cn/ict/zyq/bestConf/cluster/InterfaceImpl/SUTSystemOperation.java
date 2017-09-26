@@ -61,7 +61,6 @@ public class SUTSystemOperation implements SystemOperation {
 		DeducingErrorTime = timeout;
 		this.maxRoundConnection = maxRoundConnection;
 		this.sshReconnectWatingtime = sshReconnectWatingtime;
-		//shellofStart = "cd " + shellsPath + ";./start.sh";
 		shellofStart = shellsPath + "/start.sh";
 		shellofStop = "cd " + shellsPath + ";./stop.sh";
 		shellofisStarted = "cd " + shellsPath + ";./isStart.sh";
@@ -274,7 +273,6 @@ public class SUTSystemOperation implements SystemOperation {
 	            boolean flag = false;
 	            String line = null;
 	            String targetFound = "ok";
-	            //String targetNotFound = "ls";
 	            //-----------------make sure to thoroughly kill process---------------------------
 	            int tot = 0;
 	            while(true){
