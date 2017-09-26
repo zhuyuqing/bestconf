@@ -87,7 +87,6 @@ public class AutoTestAdjust implements ClusterManager{
 	public AutoTestAdjust(String configFilePath){
 		this.configFilePath = configFilePath;
 		cluster = new ArrayList<SystemOperation>();
-		//cluster_statusFileOps = new ArrayList<StartStatusFileOperation>();
 		ConfR_cluster = new ArrayList<ConfigReadin>();
 		ConfW_cluster = new ArrayList<ConfigWrite>();
 		this.getProperties();
@@ -122,9 +121,9 @@ public class AutoTestAdjust implements ClusterManager{
 			}
 		}
 						
-		sutTest = new SUTTest(testDurationTimeOutInSec);//(HibenchTest)Class.forName(interfacePath + "." + systemName + "HibenchTest").newInstance();
+		sutTest = new SUTTest(testDurationTimeOutInSec);
 		sutTest.initial(targetTestServer, targetTestUsername, targetTestPassword, targetTestPath, maxRoundConnection, sshReconnectWatingtime);
-		systemPerformance = new SUTPerformance();//(Performance)Class.forName(interfacePath + "." + systemName + "Performance").newInstance();
+		systemPerformance = new SUTPerformance();
 		
 	};	
 	
@@ -229,10 +228,8 @@ public class AutoTestAdjust implements ClusterManager{
 			for (int i = 0; i < numServers; i++) {
 				flags[i] = false;
 			}
-			//flag = cluster.get(0).isHadoopStarted();
 			for (int i = 0; i < numServers; i++) {
 				flags[i] = cluster.get(i).isStarted();
-				//cluster.get(i).killTail();
 			}
 			for (int i = 0; i < numServers; i++) {
 				if (flags[i])
