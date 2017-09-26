@@ -1,3 +1,20 @@
+/**
+ * Copyright (c) 2017 Institute of Computing Technology, Chinese Academy of Sciences, 2017 
+ * Institute of Computing Technology, Chinese Academy of Sciences contributors. All rights reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you
+ * may not use this file except in compliance with the License. You
+ * may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * permissions and limitations under the License. See accompanying
+ * LICENSE file.
+ */
 package cn.ict.zyq.bestConf.cluster.InterfaceImpl;
 
 import java.io.BufferedWriter;
@@ -96,14 +113,14 @@ public class MySQLConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdRemove);
 			System.out.println("Here is SUT start information:");
-			System.out.println("…æ≥˝≈‰÷√Œƒº˛≥…π¶£°");
+			System.out.println("Configuration file had been successfully removedÔºÅ");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("…æ≥˝≈‰÷√Œƒº˛ ß∞‹£°");
+			System.out.println("Failed to remove configuration fileÔºÅ");
 		}
 	}
 
