@@ -117,7 +117,7 @@ public class CassandraConfigReadin implements ConfigReadin {
 						 }
 				}
 			}else
-				System.out.println(entUpdated.getKey().toString() + "Doesn't exit in original list!");
+				System.out.println(entUpdated.getKey().toString() + "Doesn't exist in original list!");
 		}
 	}
 	@Override
