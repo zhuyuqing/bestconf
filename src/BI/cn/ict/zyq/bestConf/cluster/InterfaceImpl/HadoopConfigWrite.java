@@ -124,14 +124,14 @@ public class HadoopConfigWrite implements ConfigWrite {
 			ch.ethz.ssh2.Session session = this.getConnection().openSession();
 			session.execCommand(cmdRemove);
 			System.out.println("Here is SUT start information:");
-			System.out.println("ɾ�������ļ��ɹ���");
+			System.out.println("Config file had been successfully removed!");
 			if (session != null)
 				session.close();
 			closeConnection();
 
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("ɾ�������ļ�ʧ�ܣ�");
+			System.out.println("Failed to remove config file!");
 		}
 
 	}
