@@ -57,6 +57,10 @@ Examples of tuning results
 --------------------
 We provide the tuning results on our cluster under the testResults folder for a quick reference.
 
+Publications
+--------------------
+Yuqing ZHU, Jianxun Liu, Mengying Guo, Yungang Bao, Wenlong Ma, Zhuoyue Liu, Kunpeng Song, Yingchun Yang. BestConfig: Tapping the Performance Potential of Systems via Automatic Configuration Tuning. Proceedings of the ACM Symposium on Cloud Computing 2017 (SoCC’17).([pdf](https://arxiv.org/abs/1710.03439), [slides](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6N2MwMjQxOWJjMzE5ZmMzMw))
+Yuqing ZHU, Jianxun Liu, Mengying Guo, Yungang Bao. ACTS in Need: Automatic Configuration Tuning with Scalability. Proceedings of the 8th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys’17) ([pdflinks](https://arxiv.org/abs/1708.01349))
 
 Acknowledgements
 --------------------
