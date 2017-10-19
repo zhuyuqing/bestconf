@@ -19,7 +19,6 @@ Currently, Bestconfig has been tested on the following systems. It has also been
 
 -------->>>[MySQL: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/mysql.md)
 
-
 Getting Started
 ---------------
 
@@ -46,6 +45,8 @@ Getting Started
     cd deploy
     bin/start.sh
     ```
+
+Slides (in Chinese) on how to use BestConfig can also be downloaded following this [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmRjOTgzYmE0ZDVlOTU4NQ).
 
 Building from source
 --------------------
