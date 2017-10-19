@@ -22,6 +22,8 @@ Currently, Bestconfig has been tested on the following systems. It has also been
 Getting Started
 ---------------
 
+Slides (in Chinese) on how to use BestConfig can also be downloaded following this [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmRjOTgzYmE0ZDVlOTU4NQ).
+
 1. Download the [latest release of BestConfig](https://github.com/zhuyuqing/bestconf/archive/master.zip):
 
     ```sh
@@ -45,8 +47,6 @@ Getting Started
     cd deploy
     bin/start.sh
     ```
-
-Slides (in Chinese) on how to use BestConfig can also be downloaded following this [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmRjOTgzYmE0ZDVlOTU4NQ).
 
 Building from source
 --------------------
