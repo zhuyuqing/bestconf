@@ -1,4 +1,4 @@
-BestConf for Cassandra
+How to use BestConfig?
 ======================
 Experimental Settings
 -----------
