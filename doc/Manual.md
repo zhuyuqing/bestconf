@@ -1,7 +1,19 @@
 How to use BestConfig?
 ======================
-Experimental Settings
+Environment
 -----------
+1. Deploy environment
+2. Staging environment
+
+Precondition
+-----------
+1. ip, user name and password of the system or cluster nodes under tuned
+2. Authorization of SSH to access the system remotely 
+3. Download source code of [BestConfig](https://github.com/zhuyuqing/bestconf)
+
+Deployment architecture
+-----------
+
 We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consists of 1 master node and 3 slave nodes. All nodes used in our experiment are shown below.
 <div>
     <table border="0">
