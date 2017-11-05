@@ -97,5 +97,17 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 </div>
 <p align=center>terminateTest.sh</p>
 <br />
-
+Interface implementation
+------------------------
+<p align=center>1. Read and write configuration file</p>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
+</div>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface1.jpg"  align=center />
+</div>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface2.jpg"  align=center />
+</div>
+<p align=center>2. The directory of configuration files</p>
 
