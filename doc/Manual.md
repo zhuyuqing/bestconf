@@ -45,7 +45,6 @@ There are 9 shell scripts in BestConfig and they are classified into two groups.
 <br />
 The scripts of start.sh and stop.sh deployed on worker and Master node are different. <br />  
 <p>(1) Shell scripts (start.sh and stop.sh) on Master node</p>
-<br />
 <div align=center>
     <br />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
