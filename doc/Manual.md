@@ -13,6 +13,7 @@ Precondition
 
 Deployment architecture
 -----------------------
+
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/BestConfig.png" width = "600" height = "200" align=center />
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
@@ -31,6 +32,7 @@ Figure 1: Deployment architecture
 
 How to deploy BestConfig?
 -----------------------
+
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Deployprocess.jpg" width = "600" height = "400" align=center />
   </div>
