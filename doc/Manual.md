@@ -117,7 +117,7 @@ Interface implementation
 </div>
 <p>(2) bestconf.properties </p>
 <div align=center>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_properties.jpg" width = "240" height = "110" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_properties.jpg" width = "290" height = "110" align=center />
 </div>
 <p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
 <div align=center>
