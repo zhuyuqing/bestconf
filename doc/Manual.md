@@ -96,24 +96,24 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateTest.jpg"  align=center />
 </div>
 <p align=center>terminateTest.sh</p>
-<br />
 
 Interface implementation
 ------------------------
 <p>1. Read and write configuration file</p>
-<div align=center>
+<div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
 </div>
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface1.jpg"  align=center />
 </div>
+<br />
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface2.jpg"  align=center />
 </div>
 <p>2. The directory of configuration files</p>
 <p>(1) Data directory</p>
 <div align=center>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg"  align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg" width = "270" height = "130" align=center />
 </div>
 <p>(2) bestconf.properties </p>
 <div align=center>
