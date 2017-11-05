@@ -17,13 +17,7 @@ Deployment architecture
 <div align=center>
     <br />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/BestConfig.png" width = "600" height = "200" align=center />
-<table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
-<tr border="0">
-<td border="0" align=center>
-Figure 1: Deployment architecture
-</td>
-</tr>
-</table>
+    <p align=center> Figure 1: Deployment architecture </p>
 </div>
 
 How to deploy BestConfig?
@@ -34,13 +28,9 @@ How to deploy BestConfig?
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Deployprocess.jpg" width = "600" height = "400" align=center />
 </div>
 <div>
-    <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
-<tr border="0">
-<td border="0" align=center>
-Figure 2: The process of deploying BestConfig
-</td>
-</tr>
-</table>
+  
+<p align=center>Figure 2: The process of deploying BestConfig </p>
+
 </div>
 We executed Bestconf for the spark cluster with 4 nodes. The spark cluster consists of 1 master node and 3 slave nodes. All nodes used in our experiment are shown below.
 <div>
