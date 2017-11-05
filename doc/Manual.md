@@ -42,11 +42,6 @@ There are 9 shell scripts in BestConfig and they are classified into two groups.
   <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shells-tune.jpg" width = "200" height = "100" align=center />
 </div>
-  (2) Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh, which are deployed         on the test node. <br />
-   <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg" width = "200" height = "100" align=center />
-</div>
-<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg" width = "200" height = "100" align=center />
 </div>
@@ -73,6 +68,11 @@ There are 9 shell scripts in BestConfig and they are classified into two groups.
 <br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" width = "200" height = "100" align=center />
+</div>
+<br />
+  (2) Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh, which are deployed         on the test node. <br />
+   <div align=center>
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg" width = "200" height = "100" align=center />
 </div>
 <br />
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/startTest.jpg" width = "200" height = "100" align=center />
