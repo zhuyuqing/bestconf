@@ -120,18 +120,18 @@ Interface implementation
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_properties.jpg" width = "290" height = "110" align=center />
 </div>
 <p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
-<div align=center>
+<div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yaml.jpg"  align=center />
 </div>
 <p>(4) defaultConfig.yaml_range(the range of parameters) </p>
-<div align=center>
+<div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
 </div>
 <p>(5) SUTconfig.properties </p>
-<div align=center>
+<div >
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties.jpg"  align=center />
 </div>
 <br />
-<div align=center>
+<div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties2.jpg" width = "410" height = "310" align=center />
 </div>
