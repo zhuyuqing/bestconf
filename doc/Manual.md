@@ -7,7 +7,7 @@ Environment
 
 Precondition
 ------------
-1. ip, user name and password of the system or cluster nodes under tuned
+1. ip, user name and password of the system or cluster nodes under test
 2. Authorization of SSH to access the system remotely
 3. Download source code of [BestConfig](https://github.com/zhuyuqing/bestconf)
 
@@ -31,6 +31,9 @@ How to deploy BestConfig?
 <p align=center>Figure 2: The process of deploying BestConfig </p>
 </div>
 
+The following part illustrates the detailed method of using BestConfig to tune practical systems by a case of spark tuning.
 
+Spark tuning by BestConfig
+--------------------------
 
 
