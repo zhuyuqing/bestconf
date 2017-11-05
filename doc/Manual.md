@@ -38,7 +38,7 @@ Spark tuning by BestConfig
 Shell scripts
 -------------
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
-  1. One group consits of 5 shell scripts, start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh, which are deployed on the       systems under test. <br />
+1. One group consits of 5 shell scripts, start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh, which are deployed on the      systems under test. <br />
   <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shells-tune.jpg" width = "200" height = "100" align=center />
 </div>
@@ -78,24 +78,24 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 </div>
 <p align=center>isClosed.sh</p>
 <br />
-  2. Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh, which are deployed         on the test node. <br />
+2. Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh, which are deployed        on the test node. <br />
    <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg"  align=center />
 </div>
 <br />
-<div>
+<div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/startTest.jpg"  align=center />
 </div>
 <p align=center>startTest.sh</p>
-<div>
+<div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isFinished.jpg"  align=center />
 </div>
 <p align=center>isFinished.sh</p>
-<div>
+<div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/getTestResult.jpg"  align=center />
 </div>
 <p align=center>getTestResult.sh</p>
-<div>
+<div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateTest.jpg"  align=center />
 </div>
 <p align=center>terminateTest.sh</p>
