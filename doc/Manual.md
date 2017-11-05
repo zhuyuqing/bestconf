@@ -113,7 +113,7 @@ Interface implementation
 <p>2. The directory of configuration files</p>
 <p>(1) Data directory</p>
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg" width = "240" height = "110" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg" width = "270" height = "110" align=center />
 </div>
 <p>(2) bestconf.properties </p>
 <div>
@@ -126,4 +126,12 @@ Interface implementation
 <p>(4) defaultConfig.yaml_range(the range of parameters) </p>
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
+</div>
+<p>(5) SUTconfig.properties </p>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties.jpg"  align=center />
+</div>
+<br />
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties2.jpg"  align=center />
 </div>
