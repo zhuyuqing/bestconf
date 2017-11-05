@@ -44,7 +44,7 @@ There are 9 shell scripts in BestConfig and they are classified into two groups.
 </div>
 <br />
 The scripts of start.sh and stop.sh deployed on worker and Master node are different. <br />  
-1. Shell scripts (start.sh and stop.sh) on Master node
+<p>1. Shell scripts (start.sh and stop.sh) on Master node</p>
 <br />
 <div align=center>
     <br />
@@ -55,6 +55,7 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg"  align=center />
 </div>
 <p align=center>stop.sh(Master)</p>
+<p>2. Shell scripts (start.sh and stop.sh) on Worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start_worker.jpg" align=center />
 </div>
@@ -66,6 +67,7 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" align=center />
 </div>
+<p>2. Identical shell scripts on Master and Worker node</p>
 <p align=center>isStart.sh</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg"  align=center />
@@ -78,19 +80,19 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 <br />
   (2) Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh, which are deployed         on the test node. <br />
    <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg" width = "200" height = "100" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg"  align=center />
 </div>
 <br />
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/startTest.jpg" width = "200" height = "100" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/startTest.jpg"  align=center />
 </div>
 <br />
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isFinished.jpg" width = "200" height = "100" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isFinished.jpg"  align=center />
 </div>
 <br />
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/getTestResult.jpg" width = "200" height = "100" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/getTestResult.jpg"  align=center />
 </div>
 <br />
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateTest.jpg" width = "200" height = "100" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateTest.jpg"  align=center />
 </div>
 <br />
 
