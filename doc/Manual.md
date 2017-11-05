@@ -113,11 +113,11 @@ Interface implementation
 <p>2. The directory of configuration files</p>
 <p>(1) Data directory</p>
 <div align=center>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg" width = "270" height = "130" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg" width = "240" height = "110" align=center />
 </div>
 <p>(2) bestconf.properties </p>
 <div align=center>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_properties.jpg"  align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_properties.jpg" width = "240" height = "110" align=center />
 </div>
 <p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
 <div align=center>
