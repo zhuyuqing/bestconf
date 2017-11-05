@@ -54,7 +54,7 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 <br />
 <div align=center>
     <br />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg" width = "370" height = "130" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg" width = "310" height = "130" align=center />
 </div>
 <p align=center>stop.sh</p>
 <br />
