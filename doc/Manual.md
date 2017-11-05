@@ -13,11 +13,12 @@ Precondition
 
 Deployment architecture
 -----------------------
-<div>
+<div align=center>
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/BestConfig.png" width = "600" height = "200" align=center />
 <table border="0" cellspacing="0" cellpadding="0" frame=void rows=none cols=none rules=none>
 <tr border="0">
 <td border="0">
-<img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/BestConfig.png" width = "600" height = "200" align=center />
+
 </td>
 </tr>
 <tr border="0">
