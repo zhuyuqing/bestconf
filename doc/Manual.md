@@ -47,7 +47,7 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 Shell scripts (start.sh and stop.sh) on Master node
 <br />
 <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg" width = "300" height = "150" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg" width = "270" height = "150" align=center />
 </div>
 <br />
 <div align=center>
