@@ -25,7 +25,7 @@ How to deploy BestConfig?
 
 <div align=center>
     <br />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Deployprocess.jpg" width = "600" height = "300" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Deployprocess.jpg" width = "600" height = "340" align=center />
 </div>
 <div>
   
