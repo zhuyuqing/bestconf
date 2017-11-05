@@ -17,7 +17,7 @@ Deployment architecture
 <div align=center>
     <br />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/BestConfig.png" width = "600" height = "200" align=center />
-    <p align=center> Figure 1: Deployment architecture </p>
+    <p align=center>Deployment architecture </p>
 </div>
 
 How to deploy BestConfig?
@@ -28,7 +28,7 @@ How to deploy BestConfig?
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/deploy_process.jpg" width = "600" height = "340" align=center />
 </div>
 <div>
-<p align=center>Figure 2: The process of deploying BestConfig </p>
+<p align=center>The process of deploying BestConfig </p>
 </div>
 
 The following part illustrates the detailed method of using BestConfig to tune practical systems by a case of spark tuning.
@@ -46,7 +46,6 @@ There are 9 shell scripts in BestConfig and they are classified into two groups.
 The scripts of start.sh and stop.sh deployed on worker and Master node are different. <br />  
 <p>(1) Shell scripts (start.sh and stop.sh) on Master node</p>
 <div align=center>
-    <br />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
 </div>
 <p align=center>start.sh(Master)</p>
