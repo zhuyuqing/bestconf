@@ -36,6 +36,7 @@ The following part illustrates the detailed method of using BestConfig to tune p
 Spark tuning by BestConfig
 --------------------------
 Shell scripts
+
 There are 9 shell scripts in BestConfig and they are classified into two groups. One group consits of 5 shell scripts, start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh. These shell scripts are deployed on the systems under test. Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh.
 
 
