@@ -46,34 +46,46 @@ There are 9 shell scripts in BestConfig and they are classified into two groups.
    <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start_worker.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/startTest.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isFinished.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/getTestResult.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateTest.jpg" width = "200" height = "100" align=center />
 </div>
+<br />
 
 
