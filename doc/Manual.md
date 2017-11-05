@@ -48,36 +48,39 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 <br />
 <div align=center>
     <br />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg" width = "270" height = "130" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
 </div>
-<p align=center>start.sh</p>
+<p align=center>start.sh(Master)</p>
 <br />
 <div align=center>
-    <br />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg" width = "520" height = "110" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg"  align=center />
 </div>
-<p align=center>stop.sh</p>
+<p align=center>stop.sh(Master)</p>
 <br />
 <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start_worker.jpg" width = "200" height = "100" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start_worker.jpg" align=center />
 </div>
-<p align=center>start.sh</p>
+<p align=center>start.sh(Worker)</p>
 <br />
 <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" width = "200" height = "100" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" align=center />
 </div>
+<p align=center>start.sh(Worker)</p>
 <br />
 <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" width = "200" height = "100" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" align=center />
 </div>
+<p align=center>isStart.sh</p>
 <br />
 <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg" width = "200" height = "100" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg"  align=center />
 </div>
+<p align=center>terminateSystem.sh</p>
 <br />
 <div align=center>
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" width = "200" height = "100" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
+<p align=center>isClosed.sh</p>
 <br />
   (2) Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh, which are deployed         on the test node. <br />
    <div align=center>
