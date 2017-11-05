@@ -51,32 +51,26 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
 </div>
 <p align=center>start.sh(Master)</p>
-<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg"  align=center />
 </div>
 <p align=center>stop.sh(Master)</p>
-<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start_worker.jpg" align=center />
 </div>
 <p align=center>start.sh(Worker)</p>
-<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" align=center />
 </div>
-<p align=center>start.sh(Worker)</p>
-<br />
+<p align=center>stop.sh(Worker)</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" align=center />
 </div>
 <p align=center>isStart.sh</p>
-<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg"  align=center />
 </div>
 <p align=center>terminateSystem.sh</p>
-<br />
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
