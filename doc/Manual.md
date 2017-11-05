@@ -133,5 +133,5 @@ Interface implementation
 </div>
 <br />
 <div align=center>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties2.jpg"  align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties2.jpg" width = "490" height = "410" align=center />
 </div>
