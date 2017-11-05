@@ -100,7 +100,7 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 
 Interface implementation
 ------------------------
-<p align=center>1. Read and write configuration file</p>
+<p>1. Read and write configuration file</p>
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
 </div>
@@ -110,5 +110,20 @@ Interface implementation
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface2.jpg"  align=center />
 </div>
-<p align=center>2. The directory of configuration files</p>
-
+<p>2. The directory of configuration files</p>
+<p>(1) Data directory</p>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg"  align=center />
+</div>
+<p>(2) bestconf.properties </p>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_properties.jpg"  align=center />
+</div>
+<p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yaml.jpg"  align=center />
+</div>
+<p>(4) defaultConfig.yaml_range(the range of parameters) </p>
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
+</div>
