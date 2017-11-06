@@ -31,7 +31,7 @@ Spark tuning by BestConfig
 Step 1. Deploy shell scripts on cluster nodes under test
 -------------
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
-1. One group consits of 5 shell scripts, start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh, which are deployed on the      systems under test. <br />
+<p>1. One group consits of 5 shell scripts, start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh, which are deployed on the      systems under test. <br /> </p>
   <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shells-tune.jpg" width = "200" height = "100" align=center />
 </div>
@@ -135,7 +135,7 @@ When the process of BestConfig ends, a best configuration for target parameters 
 Apply and extend BestConfig
 ---------------------------
 
-1. Apply BestConfig <br />
+<p>1. Apply BestConfig <br /></p>
    (1) Shell scripts <br />
        a. deployed on systems under test <br />
        b. deployed on test node <br />
@@ -144,7 +144,7 @@ Apply and extend BestConfig
     a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
     b. Configuration files related to tuning process and system under test <br />
        <br />
-2. Extend BestConfig <br />
+<p>2. Extend BestConfig <br /></p>
    (1) Extended sampling algrithom <br />
        --> Extend the abstract class of ConfigSampler <br />
  <div>
