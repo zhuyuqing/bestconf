@@ -134,7 +134,6 @@ When the process of BestConfig ends, a best configuration for target parameters 
 
 Apply and extend BestConfig
 ---------------------------
-
 <p>1. Apply BestConfig <br /></p>
    (1) Shell scripts <br />
          --> Deployed on systems under test <br />
