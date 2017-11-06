@@ -9,15 +9,15 @@ Hadoop, Cassandra, MySQL and Tomcat, does not necessarily offer the best perform
 
 Currently, Bestconfig has been tested on the following systems. It has also been applied to the Huawei Cloud+ applications. 
 
--------->>>[Spark: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/spark.md)
+>>>[Spark: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/spark.md)
 
--------->>>[Cassandra: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/cassandra.md)
+>>>[Cassandra: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/cassandra.md)
 
--------->>>[Hive+Hadoop: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/hadoop.md)
+>>>[Hive+Hadoop: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/hadoop.md)
 
--------->>>[Tomcat Server: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/tomcat.md)
+>>>[Tomcat Server: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/tomcat.md)
 
--------->>>[MySQL: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/mysql.md)
+>>>[MySQL: results](https://github.com/zhuyuqing/bestconf/blob/master/doc/mysql.md)
 
 Getting Started
 ---------------
@@ -47,6 +47,8 @@ Getting Started
     ```
 
 Slides (in Chinese) on how to use BestConfig can also be downloaded following this [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ).
+
+Or, if you would like to adapt BestConfig for your own application scenarios, you could follow our steps in [QuickStart](https://github.com/zhuyuqing/bestconf/blob/master/doc/QuickStart.md)
 
 Building from source
 --------------------
