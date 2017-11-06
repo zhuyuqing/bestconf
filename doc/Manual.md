@@ -140,10 +140,12 @@ Interface implementation
 
 Apply and extend BestConfig
 ---------------------------
-<p>1. Apply BestConfig</p>
-   <p>(1) Shell scripts</p>
-       <p>a. deployed on systems under test</p>
-       <p>b. deployed on test node</p>
+1. Apply BestConfig
+   <br />
+   (1) Shell scripts
+       a. deployed on systems under test
+       b. deployed on test node
+       <br />
    <p>(2) Directory of configuration files</p>
        <p>a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test</p>
        <p>b. Configuration files related to tuning process and system under test</p>
