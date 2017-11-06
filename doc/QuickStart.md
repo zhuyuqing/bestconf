@@ -16,9 +16,6 @@ Overview
 
 Here, "deployment environemnt" refers to the actual running environment of your applications, while "staging environment" is some environment that is almost the same as the deployment environment but where tests are run without interfering the actual application.
 
-How to deploy BestConfig?
------------------------
-
 <div align=center>
     <br />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/deploy_process.jpg" width = "600" height = "340" align=center />
