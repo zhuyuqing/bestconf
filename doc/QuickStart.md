@@ -109,18 +109,22 @@ Step 2. Implement interfaces
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalogNew.jpg" width = "740" height = "110" align=center />
 </div>
+<br />
 <p>(2) bestconf.properties </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew4.jpg" width = "640" height = "90" align=center />
 </div>
+<br />
 <p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yaml.jpg"  align=center />
 </div>
+<br />
 <p>(4) defaultConfig.yaml_range(the range of parameters) </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
 </div>
+<br />
 <p>(5) SUTconfig.properties </p>
 <div >
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew3.jpg"  align=center />
