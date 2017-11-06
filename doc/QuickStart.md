@@ -135,13 +135,12 @@ When the process of BestConfig ends, a best configuration for target parameters 
 Apply and extend BestConfig
 ---------------------------
 <p>1. Apply BestConfig <br /></p>
-   (1) Shell scripts <br />
+   (1) Shell scripts
       <p>--> Deployed on systems under test</p>
-      <p>--> Deployed on test node</p>
-   (2) Directory of configuration files <br />
+      --> Deployed on test node
+   (2) Directory of configuration files
    <p>--> Parameters(ranges) to be tuned--They can be automatically extracted from system under test </p?
    <p>--> Configuration files related to tuning process and system under test </p>
-       <br />
 <p>2. Extend BestConfig <br /></p>
    (1) Extended sampling algrithom <br />
        --> Extend the abstract class of ConfigSampler <br />
