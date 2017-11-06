@@ -135,6 +135,7 @@ Step 3. Start BestConfig
 ------------------------
 If the above two steps are completed, BestConfig can be started. Once BestConfig is started, 
 When BestConfig finished,
+
 Apply and extend BestConfig
 ---------------------------
 1. Apply BestConfig <br />
