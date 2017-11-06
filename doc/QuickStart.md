@@ -137,12 +137,12 @@ Apply and extend BestConfig
 
 <p>1. Apply BestConfig <br /></p>
    (1) Shell scripts <br />
-    a. deployed on systems under test <br />
-    b. deployed on test node <br />
+       --> Deployed on systems under test <br />
+       --> Deployed on test node <br />
        <br />
    (2) Directory of configuration files <br />
-    a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
-    b. Configuration files related to tuning process and system under test <br />
+       --> Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
+       --> Configuration files related to tuning process and system under test <br />
        <br />
 <p>2. Extend BestConfig <br /></p>
    (1) Extended sampling algrithom <br />
