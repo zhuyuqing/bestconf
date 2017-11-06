@@ -133,8 +133,8 @@ Step 2. Implement interfaces
 
 Step 3. Start BestConfig
 ------------------------
-If the above two steps are completed, BestConfig can be started. Once BestConfig is started, 
-When BestConfig finished,
+If the above two steps are completed, BestConfig can be started. Once BestConfig is started, we just leave it alone.  
+When the process of BestConfig ends, a best configuration for target parameters is generated.
 
 Apply and extend BestConfig
 ---------------------------
