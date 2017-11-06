@@ -107,11 +107,11 @@ Step 2. Implement interfaces
 <p>2. Modify configuration files under data directory</p>
 <p>(1) Data directory</p>
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalogNew.jpg"  align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalogNew.jpg" width = "310" height = "210" align=center />
 </div>
 <p>(2) bestconf.properties </p>
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew1.jpg" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew1.jpg" width = "310" height = "210" align=center />
 </div>
 <p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
 <div>
