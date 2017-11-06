@@ -137,24 +137,26 @@ Interface implementation
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties2.jpg" width = "310" height = "210" align=center />
 </div>
 <br />
+
 Apply and extend BestConfig
 ---------------------------
-1. Apply BestConfig
-   (1) Shell scripts
-       a. deployed on systems under test
-       b. deployed on test node
-   (2) Directory of configuration files
-       a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test
-       b. Configuration files related to tuning process and system under test
-2. Extend BestConfig
+<p>1. Apply BestConfig</p>
+   <p>(1) Shell scripts</p>
+       <p>a. deployed on systems under test</p>
+       <p>b. deployed on test node</p>
+   <p>(2) Directory of configuration files</p>
+       <p>a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test</p>
+       <p>b. Configuration files related to tuning process and system under test</p>
+<p>2. Extend BestConfig</p>
    (1) Extended sampling algrithom
-       --> Extend the abstract class of ConfigSampler
+   <br />
+       --> Extend the abstract class of ConfigSampler
        <br />
        <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler1.jpg" width = "310" height = "210" align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler2.jpg" width = "310" height = "210" align=center />
-   (2) Extended optimization algrithom
-       --> Implement the interface of Optimization
+   <p>(2) Extended optimization algrithom</p>
+       <p>--> Implement the interface of Optimization</p>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization1.jpg" width = "310" height = "210" align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization2.jpg" width = "310" height = "210" align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization3.jpg" width = "310" height = "210" align=center />
