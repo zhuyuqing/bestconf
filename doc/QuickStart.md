@@ -154,7 +154,6 @@ Apply and extend BestConfig
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler2.jpg"  align=center />
  </div>
-    <br />
    (2) Extended optimization algrithom <br />
        --> Implement the interface of Optimization <br />
        <div>
