@@ -1,6 +1,10 @@
 QuickStart
 ======================
 
+Good tools make system performance tuning quicker, easier and cheaper than if everything is done manually or by experience.
+
+Bestconfig can find better configurations for a specific large-scale system deployed for a given application workload.
+
 Overview
 -----------------------
 
