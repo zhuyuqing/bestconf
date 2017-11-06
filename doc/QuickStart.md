@@ -127,7 +127,7 @@ Step 2. Implement interfaces
 </div>
 <br />
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew2.jpg" width = "310" height = "210" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew2.jpg"  align=center />
 </div>
 <br />
 
