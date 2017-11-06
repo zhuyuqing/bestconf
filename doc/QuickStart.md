@@ -123,11 +123,7 @@ Step 2. Implement interfaces
 </div>
 <p>(5) SUTconfig.properties </p>
 <div >
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew.jpg"  align=center />
-</div>
-<br />
-<div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew2.jpg"  align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew3.jpg.jpg"  align=center />
 </div>
 <br />
 
