@@ -24,19 +24,19 @@ Here, "deployment environment" refers to the actual running environment of your 
 <p align=center>The process of deploying BestConfig </p>
 </div>
 
-The following part illustrates the detailed method of using BestConfig to tune practical systems by a case of spark tuning.
+The detailed method of using BestConfig to tune practical system is as the following, which can be showed by a case of spark tuning.
 
 Spark tuning by BestConfig
 --------------------------
 Step 1. Deploy shell scripts on cluster nodes under test
 -------------
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
-<p>1. One group consits of 5 shell scripts, start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh, which are deployed on the      systems under test. <br /> </p>
+<p>1. One group consits of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the systems under test. <br /> </p>
   <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shells-tune.jpg" width = "200" height = "100" align=center />
 </div>
 <br />
-The scripts of start.sh and stop.sh deployed on worker and Master node are different. <br />  
+The scripts of start.sh and stop.sh deployed on worker and master node are different. <br />  
 <p>(1) Shell scripts (start.sh and stop.sh) on Master node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
@@ -68,7 +68,7 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
 <p align=center>isClosed.sh</p>
-2. Another group consits of 4 shell scripts, startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh, which are deployed        on the test node. <br />
+2. Another group consits of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed        on the test node. <br />
    <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg"  align=center />
 </div>
@@ -134,7 +134,7 @@ Step 2. Implement interfaces
 Step 3. Start BestConfig
 ------------------------
 If the above two steps are completed, BestConfig can be started. Once BestConfig is started, we just leave it alone.  
-When the process of BestConfig ends, a best configuration for target parameters is generated.
+When the process of BestConfig ends, a set of optimal configurations is generated.
 
 Apply and extend BestConfig
 ---------------------------
