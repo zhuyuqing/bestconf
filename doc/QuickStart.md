@@ -141,6 +141,7 @@ Apply and extend BestConfig
 (2) Directory of configuration files <br />
     --> Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
     --> Configuration files related to tuning process and system under test <br />
+    <br />
 <p>2. Extend BestConfig <br /></p>
    (1) Extended sampling algrithom <br />
        --> Extend the abstract class of ConfigSampler <br />
