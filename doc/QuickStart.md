@@ -14,7 +14,7 @@ Overview
     <p align=center>Deployment architecture </p>
 </div>
 
-Here, "deployment environemnt" refers to the actual running environment of your applications, while "staging environment" is some environment that is almost the same as the deployment environment but where tests are run without interfering the actual application.
+Here, "deployment environment" refers to the actual running environment of your applications, while "staging environment" is some environment that is almost the same as the deployment environment but where tests are run without interfering the actual application.
 
 <div align=center>
     <br />
