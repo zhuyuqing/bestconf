@@ -139,7 +139,6 @@ Apply and extend BestConfig
    (1) Shell scripts <br />
          --> Deployed on systems under test <br />
          --> Deployed on test node <br />
-       <br />
    (2) Directory of configuration files <br />
        --> Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
        --> Configuration files related to tuning process and system under test <br />
