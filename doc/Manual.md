@@ -141,7 +141,7 @@ Interface implementation
 Apply and extend BestConfig
 ---------------------------
 <p>1. Apply BestConfig</p>
-   (1) Shell scripts
+   (1) Shell scripts<br />
        a. deployed on systems under test <br />
        b. deployed on test node <br />
    (2) Directory of configuration files<br />
@@ -153,9 +153,12 @@ Apply and extend BestConfig
        <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler2.jpg"  align=center />
+    </div>
    (2) Extended optimization algrithom<br />
        --> Implement the interface of Optimization<br />
+       <div>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization2.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization3.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization4.jpg"  align=center />
+    </div>
