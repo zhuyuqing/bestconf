@@ -136,11 +136,11 @@ Apply and extend BestConfig
 ---------------------------
 <p>1. Apply BestConfig <br /></p>
 (1) Shell scripts<br />
---> Deployed on systems under test<br />
---> Deployed on test node <br />
+    --> Deployed on systems under test<br />
+    --> Deployed on test node <br />
 (2) Directory of configuration files <br />
---> Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
---> Configuration files related to tuning process and system under test <br />
+    --> Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
+    --> Configuration files related to tuning process and system under test <br />
 <p>2. Extend BestConfig <br /></p>
    (1) Extended sampling algrithom <br />
        --> Extend the abstract class of ConfigSampler <br />
