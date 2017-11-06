@@ -1,4 +1,4 @@
-How to use BestConfig?
+QuickStart
 ======================
 Environment
 -----------
