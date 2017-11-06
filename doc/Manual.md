@@ -144,6 +144,7 @@ Apply and extend BestConfig
    (1) Shell scripts <br />
        a. deployed on systems under test <br />
        b. deployed on test node <br />
+       <br />
    (2) Directory of configuration files <br />
        a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
        b. Configuration files related to tuning process and system under test <br />
@@ -155,6 +156,7 @@ Apply and extend BestConfig
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler2.jpg"  align=center />
     </div>
+    <br />
    (2) Extended optimization algrithom <br />
        --> Implement the interface of Optimization <br />
        <div>
