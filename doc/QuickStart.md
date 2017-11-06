@@ -27,7 +27,7 @@ Here, "deployment environment" refers to the actual running environment of your 
 The following part illustrates the detailed method of using BestConfig to tune practical systems by a case of spark tuning.
 
 Spark tuning by BestConfig
-==========================
+--------------------------
 Shell scripts
 -------------
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
