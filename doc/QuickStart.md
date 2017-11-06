@@ -133,9 +133,8 @@ Step 2. Implement interfaces
 
 Step 3. Start BestConfig
 ------------------------
-If the above two steps are completed, BestConfig can be started. Once BestConfig being started, we just need to wait for the end the it.
-When BestConfig end, we can acquire a set of best configuration.
-
+If the above two steps are completed, BestConfig can be started. Once BestConfig is started, 
+When BestConfig finished,
 Apply and extend BestConfig
 ---------------------------
 1. Apply BestConfig <br />
