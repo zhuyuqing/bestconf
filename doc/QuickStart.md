@@ -111,7 +111,7 @@ Step 2. Implement interfaces
 </div>
 <p>(2) bestconf.properties </p>
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew1.jpg.jpg" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew1.jpg" align=center />
 </div>
 <p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
 <div>
