@@ -146,16 +146,16 @@ Apply and extend BestConfig
        b. deployed on test node <br />
        <br />
    (2) Directory of configuration files <br />
-       a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
-       b. Configuration files related to tuning process and system under test <br />
+    a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
+    b. Configuration files related to tuning process and system under test <br />
        <br />
 2. Extend BestConfig <br />
    (1) Extended sampling algrithom <br />
        --> Extend the abstract class of ConfigSampler <br />
-       <div>
+ <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler2.jpg"  align=center />
-    </div>
+ </div>
     <br />
    (2) Extended optimization algrithom <br />
        --> Implement the interface of Optimization <br />
