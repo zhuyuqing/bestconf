@@ -107,11 +107,11 @@ Step 2. Implement interfaces
 <p>2. Modify configuration files under data directory</p>
 <p>(1) Data directory</p>
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg" width = "270" height = "110" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalogNew.jpg" width = "270" height = "110" align=center />
 </div>
 <p>(2) bestconf.properties </p>
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_properties.jpg" width = "290" height = "110" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew1.jpg.jpg" width = "290" height = "110" align=center />
 </div>
 <p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
 <div>
@@ -123,11 +123,11 @@ Step 2. Implement interfaces
 </div>
 <p>(5) SUTconfig.properties </p>
 <div >
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties.jpg"  align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew.jpg"  align=center />
 </div>
 <br />
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties2.jpg" width = "310" height = "210" align=center />
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew2.jpg" width = "310" height = "210" align=center />
 </div>
 <br />
 
@@ -138,6 +138,7 @@ When the process of BestConfig ends, a best configuration for target parameters 
 
 Apply and extend BestConfig
 ---------------------------
+
 1. Apply BestConfig <br />
    (1) Shell scripts <br />
        a. deployed on systems under test <br />
