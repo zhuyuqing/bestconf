@@ -1,17 +1,7 @@
 QuickStart
 ======================
-Environment
------------
-1. Deploy environment
-2. Staging environment
 
-Precondition
-------------
-1. ip, user name and password of the system or cluster nodes under test
-2. Authorization of SSH to access the system remotely
-3. Download source code of [BestConfig](https://github.com/zhuyuqing/bestconf)
-
-Deployment architecture
+Overview
 -----------------------
 
 <div align=center>
@@ -19,6 +9,8 @@ Deployment architecture
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/BestConfig.png" width = "600" height = "200" align=center />
     <p align=center>Deployment architecture </p>
 </div>
+
+Here, "deployment environemnt" refers to the actual running environment of your applications, while "staging environment" is some environment that is almost the same as the deployment environment but where tests are run without interfering the actual application.
 
 How to deploy BestConfig?
 -----------------------
