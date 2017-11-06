@@ -18,7 +18,7 @@ Here, "deployment environment" refers to the actual running environment of your 
 
 <div align=center>
     <br />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/deploy_process1.jpg" width = "600" height = "340" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/deploy_process2.jpg" width = "600" height = "340" align=center />
 </div>
 <div>
 <p align=center>The process of deploying BestConfig </p>
