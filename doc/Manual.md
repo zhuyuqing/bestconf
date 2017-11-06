@@ -140,14 +140,15 @@ Interface implementation
 
 Apply and extend BestConfig
 ---------------------------
-<p>1. Apply BestConfig</p>
+1. Apply BestConfig<br />
    (1) Shell scripts<br />
        a. deployed on systems under test <br />
        b. deployed on test node <br />
    (2) Directory of configuration files<br />
        a. Parameters(ranges) to be tuned--They can be automatically extracted from system under test<br />
        b. Configuration files related to tuning process and system under test <br />
- 2. Extend BestConfig<br />
+       <br />
+2. Extend BestConfig<br />
    (1) Extended sampling algrithom<br />
        --> Extend the abstract class of ConfigSampler<br />
        <div>
@@ -160,5 +161,5 @@ Apply and extend BestConfig
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization2.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization3.jpg"  align=center />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization4.jpg"  align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization5.jpg"  align=center />
     </div>
