@@ -18,7 +18,7 @@ Here, "deployment environment" refers to the actual running environment of your 
 
 <div align=center>
     <br />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/deploy_process.jpg" width = "600" height = "340" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/deploy_process1.jpg" width = "600" height = "340" align=center />
 </div>
 <div>
 <p align=center>The process of deploying BestConfig </p>
@@ -28,7 +28,7 @@ The following part illustrates the detailed method of using BestConfig to tune p
 
 Spark tuning by BestConfig
 --------------------------
-Shell scripts
+Step 1. Deploy shell scripts on cluster nodes under test
 -------------
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
 1. One group consits of 5 shell scripts, start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh, which are deployed on the      systems under test. <br />
@@ -90,7 +90,7 @@ The scripts of start.sh and stop.sh deployed on worker and Master node are diffe
 </div>
 <p align=center>terminateTest.sh</p>
 
-Interface implementation
+Step 2. Implement interfaces
 ------------------------
 <p>1. Read and write configuration file</p>
 <div>
@@ -104,7 +104,7 @@ Interface implementation
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface2.jpg"  align=center />
 </div>
-<p>2. The directory of configuration files</p>
+<p>2. Modify configuration files under data directory</p>
 <p>(1) Data directory</p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalog.jpg" width = "270" height = "110" align=center />
@@ -130,6 +130,11 @@ Interface implementation
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_properties2.jpg" width = "310" height = "210" align=center />
 </div>
 <br />
+
+Step 3. Start BestConfig
+------------------------
+If the above two steps are completed, BestConfig can be started. Once BestConfig being started, we just need to wait for the end the it.
+When BestConfig end, we can acquire a set of best configuration.
 
 Apply and extend BestConfig
 ---------------------------
