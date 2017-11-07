@@ -140,7 +140,7 @@ Now, you can start BestConfig. BestConfig will automatically run the tuning proc
 BestConfig will output the best configuration setting into files once the tuning is done.
 
 <h2 id='3'>Implementing your own sampling/tuing algorithms for BestConfig<h2>
-
+<br >
 You can also choose to extend and tailor BestConfig for your specific use cases using your own sampling/tuning algorithms.
 
    (1) To implement your own sampling algorithms <br />
