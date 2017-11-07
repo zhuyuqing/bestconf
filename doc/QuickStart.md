@@ -37,29 +37,29 @@ There are 9 shell scripts in BestConfig and they are classified into two groups.
 </div>
 <br />
 The scripts of start.sh and stop.sh deployed on worker and master node are different. <br />  
-<p>(1) Shell scripts (start.sh and stop.sh) on Master node</p>
+<p>(1) Shell scripts (start.sh and stop.sh) on master node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
 </div>
-<p align=center>start.sh(Master)</p>
+<p align=center>start.sh(master)</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg"  align=center />
 </div>
-<p align=center>stop.sh(Master)</p>
-<p>(2) Shell scripts (start.sh and stop.sh) on Worker node</p>
+<p align=center>stop.sh(master)</p>
+<p>(2) Shell scripts (start.sh and stop.sh) on worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start_worker.jpg" align=center />
 </div>
-<p align=center>start.sh(Worker)</p>
+<p align=center>start.sh(worker)</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" align=center />
 </div>
-<p align=center>stop.sh(Worker)</p>
+<p align=center>stop.sh(worker)</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" align=center />
 </div>
 <p align=center>isStart.sh</p>
-<p>(3) Identical shell scripts on Master and Worker node</p>
+<p>(3) Identical shell scripts on master and worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg"  align=center />
 </div>
