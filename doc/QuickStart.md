@@ -138,27 +138,18 @@ Now, you can start BestConfig. BestConfig will automatically run the tuning proc
 
 BestConfig will output the best configuration setting into files once the tuning is done.
 
-Extending BestConfig
+Implementing your own sampling/tuing algorithms for BestConfig
 ---------------------------
 
-You can also choose to extend and tailor BestConfig for your specific use cases.
+You can also choose to extend and tailor BestConfig for your specific use cases using your own sampling/tuning algorithms.
 
-<p>1. Apply BestConfig <br /></p>
-(1) Shell scripts<br />
-    --> Deployed on systems under test<br />
-    --> Deployed on test node <br />
-(2) Directory of configuration files <br />
-    --> Parameters(ranges) to be tuned--They can be automatically extracted from system under test <br />
-    --> Configuration files related to tuning process and system under test <br />
-    <br />
-<p>2. Extend BestConfig <br /></p>
-   (1) Extended sampling algrithom <br />
+   (1) To implement your own sampling algrithms <br />
        --> Extend the abstract class of ConfigSampler <br />
  <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler2.jpg"  align=center />
  </div>
-   (2) Extended optimization algrithom <br />
+   (2) To implement your own tuning algrithms <br />
        --> Implement the interface of Optimization <br />
        <div>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization1.jpg"  align=center />
