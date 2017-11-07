@@ -92,7 +92,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 
 Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
 ------------------------
-<p>As for spark tuning, we need to implement two interfaces of ConfigReadin and ConfigWrite. </p>
+<p>As for spark tuning, we need to implement the ConfigReadin and ConfigWrite interfaces as SparkConfigReadin(请添加文件链接) and SparkConfigWrite(请添加文件链接). </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface1.jpg"  align=center />
 </div>
@@ -107,18 +107,18 @@ Step 2. Implement the ConfigReadin and ConfigWrite interfaces
 
 Step 3. Specify the parameter set for tuning and their ranges
 ------------------------
-<p>(1) defaultConfig.yaml(the parameters need to tune)  </p>
+<p>(1) An example of defaultConfig.yaml (specifying the parameters for tuning)  </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yaml.jpg"  align=center />
 </div>
 <br />
-<p>(2) defaultConfig.yaml_range(the ranges of parameters) </p>
+<p>(2) An example of defaultConfig.yaml_range (the valid ranges of parameters) </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
 </div>
 <br />
 
-Step 4. Specify the resource limit (or, sample size/round number) 
+Step 4. Specify the resource limit and things about the tuning environment (or, sample size/round number) 
 ------------------------
 <p>(1) bestconf.properties </p>
 <div>
@@ -134,11 +134,15 @@ Step 4. Specify the resource limit (or, sample size/round number)
 
 Step 5. Start BestConfig
 ------------------------
-If the above two steps are completed, BestConfig can be started. Once BestConfig is started, we just leave it alone.  
-When the process of BestConfig ends, a set of optimal configurations is generated.
+Now, you can start BestConfig. BestConfig will automatically run the tuning process without any requirement for user interferences, until the tuning process ends due to resource exhaustion or unhandlable environment errors.
 
-Apply and extend BestConfig
+BestConfig will output the best configuration setting into files once the tuning is done.
+
+Extending BestConfig
 ---------------------------
+
+You can also choose to extend and tailor BestConfig for your specific use cases.
+
 <p>1. Apply BestConfig <br /></p>
 (1) Shell scripts<br />
     --> Deployed on systems under test<br />
