@@ -28,8 +28,7 @@ The detailed method of using BestConfig to tune practical system is as the follo
 
 BestConfig Tuning -- Taking Spark as the example SUT
 --------------------------
-Step 1. Deploy shells scripts for system under tune
--------------
+###Step 1. Deploy shells scripts for system under tune
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
 <p>1. One group consists of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the system under tune. <br /> </p>
   <div align=center>
@@ -90,7 +89,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 </div>
 <p align=center>terminateTest.sh</p>
 
-Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
+###Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
 ------------------------
 As for spark tuning, we need to implement the ConfigReadin and ConfigWrite interfaces as [SparkConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [SparkConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java).
 <div>
@@ -105,7 +104,7 @@ As for spark tuning, we need to implement the ConfigReadin and ConfigWrite inte
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
 </div>
 
-Step 3. Specify the parameter set for tuning and their ranges
+###Step 3. Specify the parameter set for tuning and their ranges
 ------------------------
 <p>(1) An example of defaultConfig.yaml (specifying the parameters for tuning)  </p>
 <div>
@@ -118,7 +117,7 @@ Step 3. Specify the parameter set for tuning and their ranges
 </div>
 <br />
 
-Step 4. Specify the resource limit and things about the tuning environment (or, sample size/round number) 
+###Step 4. Specify the resource limit and things about the tuning environment (or, sample size/round number) 
 ------------------------
 <p>(1) bestconf.properties </p>
 <div>
@@ -132,7 +131,7 @@ Step 4. Specify the resource limit and things about the tuning environment (or, 
 </div>
 <br />
 
-Step 5. Start BestConfig
+###Step 5. Start BestConfig
 ------------------------
 Now, you can start BestConfig. BestConfig will automatically run the tuning process without any requirement for user interferences, until the tuning process ends due to resource exhaustion or unhandlable environment errors.
 
