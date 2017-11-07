@@ -68,7 +68,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
 <p align=center>isClosed.sh</p>
-2. Another group consits of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed        on the test node. <br />
+2. Another group consits of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed on the test node. <br />
    <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg"  align=center />
 </div>
@@ -101,7 +101,7 @@ Step 2. Implement the ConfigReadin and ConfigWrite interfaces
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface2.jpg"  align=center />
 </div>
 <br />
-<div align=center>
+<div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
 </div>
 
