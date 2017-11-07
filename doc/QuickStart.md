@@ -7,11 +7,6 @@ Bestconfig can find better configurations for a specific large-scale system depl
 
 * [Overview](#1)<br>
 * [BestConfig Tuning -- Taking Spark as the example SUT](#2)<br>
-* [Step 1. Deploy shells scripts for system under tune](#2.1)<br>
-* [Step 2. Implement the ConfigReadin and ConfigWrite interfaces ](#2.2)<br>
-* [Step 3. Specify the parameter set for tuning and their ranges](#2.3)<br>
-* [Step 4. Specify the resource limit and things about the tuning environment (or, sample size/round number) ](#2.4)<br>
-* [Step 5. Start BestConfig](#2.5)<br>
 * [Implementing your own sampling/tuing algorithms for BestConfig](#3)<br>
 
 <h2 id='1'>Overview</h2>
