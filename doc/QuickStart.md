@@ -26,7 +26,7 @@ Here, "deployment environment" refers to the actual running environment of your 
 
 The detailed method of using BestConfig to tune practical system is as the following, which can be showed by a case of spark tuning.
 
-Spark tuning by BestConfig
+BestConfig Tuning -- Taking Spark as the example SUT
 --------------------------
 Step 1. Deploy shells scripts for system under tune
 -------------
