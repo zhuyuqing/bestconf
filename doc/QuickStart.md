@@ -18,7 +18,7 @@ Here, "deployment environment" refers to the actual running environment of your 
 
 <div align=center>
     <br />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/deploy_process2.jpg" width = "600" height = "340" align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/workflow.jpg" width = "640" height = "450" align=center />
 </div>
 <div>
 <p align=center>The process of deploying BestConfig </p>
@@ -28,10 +28,10 @@ The detailed method of using BestConfig to tune practical system is as the follo
 
 Spark tuning by BestConfig
 --------------------------
-Step 1. Deploy shell scripts on cluster nodes under test
+Step 1. Deploy shells scripts for system under tune
 -------------
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
-<p>1. One group consits of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the systems under test. <br /> </p>
+<p>1. One group consits of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the system under tune. <br /> </p>
   <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shells-tune.jpg" width = "200" height = "100" align=center />
 </div>
@@ -68,7 +68,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
 <p align=center>isClosed.sh</p>
-2. Another group consits of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed        on the test node. <br />
+2. Another group consits of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed        on the test node. <br />
    <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg"  align=center />
 </div>
@@ -90,50 +90,43 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 </div>
 <p align=center>terminateTest.sh</p>
 
-Step 2. Implement interfaces
+Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
 ------------------------
-<p> Read and write configuration file</p>
+<p>As for spark tuning, we need to implement two interfaces of ConfigReadin and ConfigWrite. </p>
 <div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
-</div>
-<br />
-<div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface1.jpg"  align=center />
 </div>
 <br />
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface2.jpg"  align=center />
 </div>
+<br />
+<div align=center>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
+</div>
 
-Step 3. 
+Step 3. Specify the parameter set for tuning and their ranges
 ------------------------
 <p>(1) defaultConfig.yaml(the parameters need to tune)  </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yaml.jpg"  align=center />
 </div>
 <br />
-<p>(2) defaultConfig.yaml_range(the range of parameters) </p>
+<p>(2) defaultConfig.yaml_range(the ranges of parameters) </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
 </div>
 <br />
 
-Step 4. 
+Step 4. Specify the resource limit (or, sample size/round number) 
 ------------------------
-<p>2. Modify configuration files under data directory</p>
-<p>(1) Data directory</p>
-<div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalogNew.jpg" width = "740" height = "110" align=center />
-</div>
-<br />
-
-<p>(2) bestconf.properties </p>
+<p>(1) bestconf.properties </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew4.jpg" width = "640" height = "90" align=center />
 </div>
 <br />
 
-<p>(5) SUTconfig.properties </p>
+<p>(2) SUTconfig.properties </p>
 <div >
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew3.jpg"  align=center />
 </div>
