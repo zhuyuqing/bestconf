@@ -62,7 +62,7 @@ The test result of Cassandra under YCSB workloada [cassandraYcsba.arff](https://
 
 Interface Impl
 -------
-The source files of [CassandraConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/cassandra/cn/ict/zyq/bestConf/cluster/InterfaceImpl/CassandraConfigReadin.java) and [CassandraConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/cassandra/cn/ict/zyq/bestConf/cluster/InterfaceImpl/CassandraConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
+The source files of [CassandraConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/cassandra/cn/ict/zyq/bestConf/cluster/InterfaceImpl/CassandraConfigReadin.java) and [CassandraConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/cassandra/cn/ict/zyq/bestConf/cluster/InterfaceImpl/CassandraConfigWrite.java) implement the interfaces of [ConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
 
 Download 
 -------
