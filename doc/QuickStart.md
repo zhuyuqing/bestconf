@@ -5,6 +5,10 @@ Good tools make system performance tuning quicker, easier and cheaper than if ev
 
 Bestconfig can find better configurations for a specific large-scale system deployed for a given application workload.
 
+* [1. Overview]("#1")<br>
+* [2. BestConfig Tuning -- Taking Spark as the example SUT]("#2")<br>
+* [3. Implementing your own sampling/tuing algorithms for BestConfig]("#3")<br>
+
 Overview
 -----------------------
 
@@ -26,9 +30,9 @@ Here, "deployment environment" refers to the actual running environment of your 
 
 The detailed method of using BestConfig to tune practical system is as the following, which can be showed by a case of spark tuning.
 
-BestConfig Tuning -- Taking Spark as the example SUT
+<h3 id="3">BestConfig Tuning -- Taking Spark as the example SUT</h3>
 --------------------------
-###Step 1. Deploy shells scripts for system under tune
+### Step 1. Deploy shells scripts for system under tune
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
 <p>1. One group consists of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the system under tune. <br /> </p>
   <div align=center>
@@ -89,8 +93,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 </div>
 <p align=center>terminateTest.sh</p>
 
-###Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
-------------------------
+### Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
 As for spark tuning, we need to implement the ConfigReadin and ConfigWrite interfaces as [SparkConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [SparkConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java).
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface1.jpg"  align=center />
@@ -104,7 +107,7 @@ As for spark tuning, we need to implement the ConfigReadin and ConfigWrite inte
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
 </div>
 
-###Step 3. Specify the parameter set for tuning and their ranges
+### Step 3. Specify the parameter set for tuning and their ranges
 ------------------------
 <p>(1) An example of defaultConfig.yaml (specifying the parameters for tuning)  </p>
 <div>
@@ -117,7 +120,7 @@ As for spark tuning, we need to implement the ConfigReadin and ConfigWrite inte
 </div>
 <br />
 
-###Step 4. Specify the resource limit and things about the tuning environment (or, sample size/round number) 
+### Step 4. Specify the resource limit and things about the tuning environment (or, sample size/round number) 
 ------------------------
 <p>(1) bestconf.properties </p>
 <div>
@@ -131,7 +134,7 @@ As for spark tuning, we need to implement the ConfigReadin and ConfigWrite inte
 </div>
 <br />
 
-###Step 5. Start BestConfig
+### Step 5. Start BestConfig
 ------------------------
 Now, you can start BestConfig. BestConfig will automatically run the tuning process without any requirement for user interferences, until the tuning process ends due to resource exhaustion or unhandlable environment errors.
 
