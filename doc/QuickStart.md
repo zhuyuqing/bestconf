@@ -92,7 +92,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 
 Step 2. Implement interfaces
 ------------------------
-<p>1. Read and write configuration file</p>
+<p> Read and write configuration file</p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface3.jpg"  align=center />
 </div>
@@ -104,34 +104,42 @@ Step 2. Implement interfaces
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface2.jpg"  align=center />
 </div>
+
+Step 3. 
+------------------------
+<p>(1) defaultConfig.yaml(the parameters need to tune)  </p>
+<div>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yaml.jpg"  align=center />
+</div>
+<br />
+<p>(2) defaultConfig.yaml_range(the range of parameters) </p>
+<div>
+ <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
+</div>
+<br />
+
+Step 4. 
+------------------------
 <p>2. Modify configuration files under data directory</p>
 <p>(1) Data directory</p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/data_catalogNew.jpg" width = "740" height = "110" align=center />
 </div>
 <br />
+
 <p>(2) bestconf.properties </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/bestconf_propertiesNew4.jpg" width = "640" height = "90" align=center />
 </div>
 <br />
-<p>(3) defaultConfig.yaml(the parameters need to tune)  </p>
-<div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yaml.jpg"  align=center />
-</div>
-<br />
-<p>(4) defaultConfig.yaml_range(the range of parameters) </p>
-<div>
- <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/defaultConfig_yamlrange.jpg"  align=center />
-</div>
-<br />
+
 <p>(5) SUTconfig.properties </p>
 <div >
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/SUTconfig_propertiesNew3.jpg"  align=center />
 </div>
 <br />
 
-Step 3. Start BestConfig
+Step 5. Start BestConfig
 ------------------------
 If the above two steps are completed, BestConfig can be started. Once BestConfig is started, we just leave it alone.  
 When the process of BestConfig ends, a set of optimal configurations is generated.
