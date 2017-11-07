@@ -31,7 +31,7 @@ BestConfig Tuning -- Taking Spark as the example SUT
 Step 1. Deploy shells scripts for system under tune
 -------------
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
-<p>1. One group consits of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the system under tune. <br /> </p>
+<p>1. One group consists of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the system under tune. <br /> </p>
   <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shells-tune.jpg" width = "200" height = "100" align=center />
 </div>
@@ -55,11 +55,11 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" align=center />
 </div>
 <p align=center>stop.sh(worker)</p>
+<p>(3) Identical shell scripts on master and worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" align=center />
 </div>
 <p align=center>isStart.sh</p>
-<p>(3) Identical shell scripts on master and worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg"  align=center />
 </div>
@@ -68,7 +68,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
 <p align=center>isClosed.sh</p>
-2. The other group consits of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed on the test node. <br />
+2. The other group consists of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed on the test node. <br />
    <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg"  align=center />
 </div>
@@ -92,7 +92,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 
 Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
 ------------------------
-<p>As for spark tuning, we need to implement the ConfigReadin and ConfigWrite interfaces as SparkConfigReadin(请添加文件链接) and SparkConfigWrite(请添加文件链接). </p>
+<p>As for spark tuning, we need to implement the ConfigReadin and ConfigWrite interfaces as [SparkConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [SparkConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java). </p>
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface1.jpg"  align=center />
 </div>
@@ -143,13 +143,13 @@ Implementing your own sampling/tuing algorithms for BestConfig
 
 You can also choose to extend and tailor BestConfig for your specific use cases using your own sampling/tuning algorithms.
 
-   (1) To implement your own sampling algrithms <br />
+   (1) To implement your own sampling algorithms <br />
        --> Extend the abstract class of ConfigSampler <br />
  <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/ConfigSampler2.jpg"  align=center />
  </div>
-   (2) To implement your own tuning algrithms <br />
+   (2) To implement your own tuning algorithms <br />
        --> Implement the interface of Optimization <br />
        <div>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization1.jpg"  align=center />
