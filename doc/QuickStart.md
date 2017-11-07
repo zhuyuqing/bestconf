@@ -9,8 +9,7 @@ Bestconfig can find better configurations for a specific large-scale system depl
 * [BestConfig Tuning -- Taking Spark as the example SUT](#2)<br>
 * [Implementing your own sampling/tuing algorithms for BestConfig](#3)<br>
 
-Overview
------------------------
+<h2 id='1'>Overview</h2>
 
 <div align=center>
     <br />
@@ -30,7 +29,7 @@ Here, "deployment environment" refers to the actual running environment of your 
 
 The detailed method of using BestConfig to tune practical system is as the following, which can be showed by a case of spark tuning.
 
-<h2 id='3'>BestConfig Tuning -- Taking Spark as the example SUT</h2>
+<h2 id='2'>BestConfig Tuning -- Taking Spark as the example SUT</h2>
 
 ### Step 1. Deploy shells scripts for system under tune
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
@@ -140,8 +139,7 @@ Now, you can start BestConfig. BestConfig will automatically run the tuning proc
 
 BestConfig will output the best configuration setting into files once the tuning is done.
 
-Implementing your own sampling/tuing algorithms for BestConfig
----------------------------
+<h2 id='3'>Implementing your own sampling/tuing algorithms for BestConfig<h2>
 
 You can also choose to extend and tailor BestConfig for your specific use cases using your own sampling/tuning algorithms.
 
