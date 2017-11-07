@@ -32,6 +32,7 @@ The detailed method of using BestConfig to tune practical system is as the follo
 
 <h2 id='3'>BestConfig Tuning -- Taking Spark as the example SUT</h2>
 --------------------------
+
 ### Step 1. Deploy shells scripts for system under tune
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
 <p>1. One group consists of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the system under tune. <br /> </p>
