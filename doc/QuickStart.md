@@ -6,8 +6,8 @@ Good tools make system performance tuning quicker, easier and cheaper than if ev
 Bestconfig can find better configurations for a specific large-scale system deployed for a given application workload.
 
 * [Overview](#1)<br>
-* [BestConfig Tuning -- Taking Spark as the example SUT](#2)<br
-* <a herf="#jump">Implementing your own sampling/tuing algorithms for BestConfig</a><br>
+* [BestConfig Tuning -- Taking Spark as the example SUT](#2)<br>
+* [Implementing your own sampling/tuing algorithms for BestConfig](#3)<br>
 
 Overview
 -----------------------
@@ -30,7 +30,7 @@ Here, "deployment environment" refers to the actual running environment of your 
 
 The detailed method of using BestConfig to tune practical system is as the following, which can be showed by a case of spark tuning.
 
-<span id="jump">BestConfig Tuning -- Taking Spark as the example SUT</span>
+<span id='3'>BestConfig Tuning -- Taking Spark as the example SUT</span>
 --------------------------
 ### Step 1. Deploy shells scripts for system under tune
 There are 9 shell scripts in BestConfig and they are classified into two groups.<br />
