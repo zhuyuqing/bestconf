@@ -7,7 +7,7 @@ Bestconfig can find better configurations for a specific large-scale system depl
 
 * [Overview](#1)<br>
 * [BestConfig Tuning -- Taking Spark as the example SUT](#2)<br
-* [Implementing your own sampling/tuing algorithms for BestConfig]("#jump")<br>
+* <a herf="#jump">Implementing your own sampling/tuing algorithms for BestConfig</a><br>
 
 Overview
 -----------------------
