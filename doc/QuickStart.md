@@ -43,29 +43,29 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
 </div>
-<p align=center>start.sh(master)</p>
+<p align=center>start.sh(master) -- this script will start the system on the master node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg"  align=center />
 </div>
-<p align=center>stop.sh(master)</p>
+<p align=center>stop.sh(master) -- this script will stop the system on the master node</p>
 <p>(2) Shell scripts (start.sh and stop.sh) on worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start_worker.jpg" align=center />
 </div>
-<p align=center>start.sh(worker)</p>
+<p align=center>start.sh(worker) -- this script will start the system on the worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" align=center />
 </div>
-<p align=center>stop.sh(worker)</p>
+<p align=center>stop.sh(worker) -- this script will stop the system on the master node</p>
 <p>(3) Identical shell scripts on master and worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" align=center />
 </div>
-<p align=center>isStart.sh</p>
+<p align=center>isStart.sh -- this script will return OK if the system is successfully started</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateSystem.jpg"  align=center />
 </div>
-<p align=center>terminateSystem.sh</p>
+<p align=center>terminateSystem.sh -- this script will terminate the system process on the server</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
@@ -78,19 +78,19 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/startTest.jpg"  align=center />
 </div>
-<p align=center>startTest.sh</p>
+<p align=center>startTest.sh -- this script will start a test towards the system under tune</p>
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isFinished.jpg"  align=center />
 </div>
-<p align=center>isFinished.sh</p>
+<p align=center>isFinished.sh -- this script will return OK if the test is done</p>
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/getTestResult.jpg"  align=center />
 </div>
-<p align=center>getTestResult.sh</p>
+<p align=center>getTestResult.sh -- this script will return performance metrics regarding the test</p>
 <div align=center>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/terminateTest.jpg"  align=center />
 </div>
-<p align=center>terminateTest.sh</p>
+<p align=center>terminateTest.sh -- this script will terminate the testing process</p>
 
 ### Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
 As for spark tuning, we need to implement the ConfigReadin and ConfigWrite interfaces as [SparkConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [SparkConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java).
