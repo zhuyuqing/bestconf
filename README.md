@@ -46,9 +46,9 @@ Getting Started
     bin/start.sh
     ```
 
-`Slides (in Chinese) on how to use BestConfig can also be downloaded following this` [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ).
+### Slides (in Chinese) on how to use BestConfig can also be downloaded following this [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ).
 
-`Or, if you would like to adapt BestConfig for your own application scenarios, you could follow our steps in` [QuickStart](https://github.com/zhuyuqing/bestconf/blob/master/doc/QuickStart.md)
+### Or, if you would like to adapt BestConfig for your own application scenarios, you could follow our steps in [QuickStart](https://github.com/zhuyuqing/bestconf/blob/master/doc/QuickStart.md)
 
 Building from source
 --------------------
