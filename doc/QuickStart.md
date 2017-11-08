@@ -43,7 +43,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/start.jpg"  align=center />
 </div>
-<p align=center>start.sh(master) -- this script will start the system on the master node</p>
+<p align=center><h5>start.sh(master) -- this script will start the system on the master node</h5></p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop.jpg"  align=center />
 </div>
