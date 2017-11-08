@@ -69,7 +69,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isClosed.jpg" align=center />
 </div>
-<p align=center>isClosed.sh</p>
+<p align=center>isClosed.sh -- this script will return OK if the system is successfully terminated</p>
 2. The other group consists of 4 shell scripts. They are startTest.sh, getTestResult.sh, terminateTest.sh and isFinished.sh and deployed on the test node. <br />
    <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shell-test.jpg"  align=center />
