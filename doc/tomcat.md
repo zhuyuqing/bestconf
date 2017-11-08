@@ -55,7 +55,7 @@ Script files
 
 Interface Impl
 -------
-The source files of [TomcatConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigReadin.java) and [TomcatConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigWrite.java) implement the interfaces of [ConfigReadin.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite.java](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
+The source files of [TomcatConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigReadin.java) and [TomcatConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/tomcat/cn/ict/zyq/bestConf/cluster/InterfaceImpl/TomcatConfigWrite.java) implement the interfaces of [ConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigReadin.java) and [ConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/main/cn/ict/zyq/bestConf/cluster/Interface/ConfigWrite.java) respectively.  
 
 Download 
 -------
