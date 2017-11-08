@@ -95,7 +95,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 ### Step 2. Implement the ConfigReadin and ConfigWrite interfaces 
 As for spark tuning, we need to implement the ConfigReadin and ConfigWrite interfaces as [SparkConfigReadin](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigReadin.java) and [SparkConfigWrite](https://github.com/zhuyuqing/bestconf/blob/master/src/spark/cn/ict/zyq/bestConf/cluster/InterfaceImpl/SparkConfigWrite.java).
 
-Next, we need to compile SparkConfigReadin and SparkconfigWrite to bytecode and then add the compiled bytecode to classpath of BestConfig project.
+Next, we need to compile SparkConfigReadin and SparkconfigWrite to bytecodes. Then the location(path) of compiled bytecodes need to be added to classpath of BestConfig project.
 
 <div>
  <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/interface1.jpg"  align=center />
