@@ -56,7 +56,7 @@ The scripts of start.sh and stop.sh deployed on worker and master node are diffe
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/stop_worker.jpg" align=center />
 </div>
-<p align=center><B>stop.sh(worker) -- this script will stop the system on the master node</B></p>
+<p align=center><B>stop.sh(worker) -- this script will stop the system on the worker node</B></p>
 <p>(3) Identical shell scripts on master and worker node</p>
 <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/isStart.jpg" align=center />
