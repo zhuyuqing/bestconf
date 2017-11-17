@@ -158,5 +158,5 @@ You can also choose to extend and tailor BestConfig for your specific use cases 
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization1.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization2.jpg"  align=center />
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization3.jpg"  align=center />
-    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization5.jpg"  align=center />
+    <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/Optimization4.jpg"  align=center />
     </div>
