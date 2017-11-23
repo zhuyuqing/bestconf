@@ -2,6 +2,8 @@
 Better Configurations for Large-Scale Systems (BestConfig)
 ====================================
 
+[Documentation](http://bestconfig.readthedocs.io) | [QuickStart](http://bestconfig.readthedocs.io/en/latest/source/how%20to%20apply/index_howtoapply.html) | [Use cases](http://bestconfig.readthedocs.io/en/latest/source/examples/index_usecase.html) | [FAQ](http://bestconfig.readthedocs.io/en/latest/source/faq/index_faq.html) 
+
 Bestconfig can find better configurations for a specific large-scale system under a given application workload.
 
 Given the diverse application workloads, a large-scale system with hundreds of configuration parameters, such as Spark, 
