@@ -22,7 +22,7 @@ Currently, Bestconfig has been tested on the following systems. It has also been
 What’s New
 -----------
 
-Tutorial: [Tuning Spark with BestConfig](http://bestconfig.readthedocs.io/en/latest/source/how%20to%20apply/index_howtoapply.html)
+Tutorial: Tuning [Spark](http://bestconfig.readthedocs.io/en/latest/source/how%20to%20apply/index_howtoapply.html) with BestConfig
 
 Tutorial: [Automatic Configuration Setting for Systems](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ)(in Chinese)
 
