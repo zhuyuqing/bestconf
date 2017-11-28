@@ -11,28 +11,30 @@ Currently, Bestconfig has been tested on the following systems. It has also been
     
 >>>Hadoop (distributed processing framework for big data)
     
-Hive (big data warehouse)
+>>>Hive (big data warehouse)
     
-    >>> MySQL (database)
+>>>MySQL (database)
     
-    >>> Cassandra (NoSQL DB)
+>>>Cassandra (NoSQL DB)
     
-    >>> Tomcat (Web Server).
+>>>Tomcat (Web Server).
 
 What’s New
 -----------
 
+Tutorial: Tuning Spark with BestConfig
+
+Tutorial: [Automatic Configuration Setting for Systems](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ). (in Chinese)
+
+Results: Tuning Spark, Hadoop+Hive, MySQL, Cassandra, Tomcat+JVM
 #### Slides (in Chinese) on how to use BestConfig can also be downloaded following this [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ).
 
-Building from source
+Ask a Question
 --------------------
 
-Import the whole Bestconfig project into eclipse and enjoy!~
-
-
-Examples of tuning results
---------------------
-We provide the tuning results on our cluster under the testResults folder for a quick reference.
+  Please use the bestconf/issues page; or
+  
+  please contact us at: zhuyuqing@ict.ac.cn or liujianxun@ict.ac.cn
 
 Related Publications
 --------------------
@@ -45,12 +47,3 @@ Acknowledgements
 
 We thank Huawei for supporting this work. This work is also supported in part by the State Key Development Program for Basic Research of China (Grant No. 2014CB340402) and the National Natural Science Foundation of China (Grant No. 61303054).
 
-
-Notes
------
-
-If you have any question, please contact us at:
-
-   zhuyuqing@ict.ac.cn
-   
-   liujianxun@ict.ac.cn
