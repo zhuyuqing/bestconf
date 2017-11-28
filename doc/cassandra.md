@@ -67,6 +67,6 @@ The source files of [CassandraConfigReadin](https://github.com/zhuyuqing/bestcon
 Download 
 -------
 
-http://github.com/zhuyuqing/bestconf
+https://github.com/zhuyuqing/bestconf.git
 
 
