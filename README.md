@@ -22,12 +22,12 @@ Currently, Bestconfig has been tested on the following systems. It has also been
 What’s New
 -----------
 
-Tutorial: Tuning Spark with BestConfig
+Tutorial: [Tuning Spark with BestConfig](http://bestconfig.readthedocs.io/en/latest/source/how%20to%20apply/index_howtoapply.html)
 
 Tutorial: [Automatic Configuration Setting for Systems](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ). (in Chinese)
 
-Results: Tuning Spark, Hadoop+Hive, MySQL, Cassandra, Tomcat+JVM
-#### Slides (in Chinese) on how to use BestConfig can also be downloaded following this [link](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx6aHV5dXFpbmd8Z3g6NmI1ZTYxMDc2N2FiOWMwNQ).
+Results: [Tuning Spark](http://bestconfig.readthedocs.io/en/latest/source/examples/spark.html), [Hadoop+Hive](http://bestconfig.readthedocs.io/en/latest/source/examples/hadoop.html), [MySQL](http://bestconfig.readthedocs.io/en/latest/source/examples/mysql.html), [Cassandra](http://bestconfig.readthedocs.io/en/latest/source/examples/cassandra.html), [Tomcat+JVM](http://bestconfig.readthedocs.io/en/latest/source/examples/tomcat.html)
+
 
 Ask a Question
 --------------------
