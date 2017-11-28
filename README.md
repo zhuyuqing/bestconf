@@ -32,7 +32,7 @@ Results: [Tuning Spark](http://bestconfig.readthedocs.io/en/latest/source/exampl
 Ask a Question
 --------------------
 
-  Please use the bestconf/issues page; or
+  Please use the [bestconf/issues](https://github.com/zhuyuqing/bestconf/issues) page; or
   
   please contact us at: zhuyuqing@ict.ac.cn or liujianxun@ict.ac.cn
 
