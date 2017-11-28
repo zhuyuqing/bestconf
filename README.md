@@ -9,7 +9,7 @@ BestConfig is a system for automatically finding a best configuration setting wi
 Currently, Bestconfig has been tested on the following systems. It has also been applied to the Huawei Cloud+ applications.
 >>>Spark (large-scale data processing engine)
     
->>><font color=#00ffff size=72>Hadoop (distributed processing framework for big data)</font>
+>>> Hadoop (distributed processing framework for big data)</font>
     
 >>>Hive (big data warehouse)
     
