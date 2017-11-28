@@ -68,5 +68,5 @@ The source files of [SparkConfigReadin](https://github.com/zhuyuqing/bestconf/bl
 Download 
 -------
 
-http://github.com/zhuyuqing/bestconf
+https://github.com/zhuyuqing/bestconf.git
 
