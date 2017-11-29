@@ -32,7 +32,7 @@ The detailed method of using BestConfig to tune practical system is as the follo
 <h2 id='2'>BestConfig Tuning -- Taking Spark as the example SUT</h2>
 
 ### Step 1. Deploy shells scripts for system under tune
-There are 9 shell scripts(***must be permitted to be remotely executed by SSH***) in BestConfig and they are classified into two groups.<br />
+There are 9 shell scripts (***must be permitted to be remotely executed by SSH***) in BestConfig and they are classified into two groups.<br />
 <p>1. One group consists of 5 shell scripts. They are start.sh, isStart.sh, stop.sh, isClosed.sh and terminateSystem.sh and deployed on the system under tune. <br /> </p>
   <div align=center>
     <img src="https://github.com/zhuyuqing/bestconf/blob/master/doc/pics/shells-tune.jpg" width = "200" height = "100" align=center />
