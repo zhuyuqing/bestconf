@@ -57,7 +57,8 @@ The source files of [MySQLConfigReadin](https://github.com/zhuyuqing/bestconf/bl
 Download 
 -------
 
-https://github.com/zhuyuqing/bestconf.git
+git clone https://github.com/zhuyuqing/bestconf.git <br>
+wget https://github.com/zhuyuqing/bestconf/archive/master.zip
 
 
 
