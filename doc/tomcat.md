@@ -60,7 +60,8 @@ The source files of [TomcatConfigReadin](https://github.com/zhuyuqing/bestconf/b
 Download 
 -------
 
-https://github.com/zhuyuqing/bestconf.git
+git clone https://github.com/zhuyuqing/bestconf.git <br>
+wget https://github.com/zhuyuqing/bestconf/archive/master.zip
 
 
 
