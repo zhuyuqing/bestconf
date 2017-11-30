@@ -8,17 +8,17 @@ Better Configurations for Large-Scale Systems (BestConfig)
 ***BestConfig*** is a system for automatically ***finding a best configuration setting within a resource limit*** for a deployed system under a given application workload. BestConfig is designed with an extensible architecture to automate the configuration tuning ***for general systems***.
 
 Currently, Bestconfig has been tested on the following systems. It has also been applied to the Huawei Cloud+ applications.
->>***1. Spark*** **(large-scale data processing engine)**
+***1. Spark*** **(large-scale data processing engine)**
     
->>***2. Hadoop*** **(distributed processing framework for big data)**
+***2. Hadoop*** **(distributed processing framework for big data)**
     
->>***3. Hive*** **(big data warehouse)**
+***3. Hive*** **(big data warehouse)**
     
->>***4. MySQL*** **(database)**
+***4. MySQL*** **(database)**
     
->>***5. Cassandra*** **(NoSQL DB)**
+***5. Cassandra*** **(NoSQL DB)**
     
->>***6. Tomcat*** **(Web Server)**
+***6. Tomcat*** **(Web Server)**
 
 What’s New
 -----------
