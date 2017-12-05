@@ -20,7 +20,8 @@ CLASS="cn.ict.zyq.bestConf.bestConf.BestConf"
 # stop-the-world GC pauses during resize, and so that we can lock the
 # heap in memory on startup to prevent any of it from being swapped
 # out.
-JVM_OPTS="-Xmx10g -Xms1g -Xmn1g -XX:+HeapDumpOnOutOfMemoryError"
+JVM_OPTS="-Xmx10g -Xms10g -Xmn1g -XX:+HeapDumpOnOutOfMemoryError"
 
+cd ${BESTCONF_HOME}
 exec "$JAVA" $JVM_OPTS -classpath "$CLASSPATH" $CLASS
 
