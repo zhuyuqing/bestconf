@@ -1,2 +1,1 @@
-spark.shuffle.sort.bypassMergeThreshold: 200
-spark.executor.cores: 1
+
