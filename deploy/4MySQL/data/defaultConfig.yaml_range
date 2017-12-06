@@ -1,1 +1,3 @@
-
+sqlmyd_Kinnodb_buffer_pool_size: "[5120,1048576]"
+sqlmydmax_connections: "[1,100000]"
+sqlmyd_Typequery_cache_type: "[0,2]"
