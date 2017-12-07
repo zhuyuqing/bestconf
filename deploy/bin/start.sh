@@ -16,12 +16,6 @@ CLASSPATH="${CLASSPATH}:${BESTCONF_HOME}/bestconf.jar"
 
 CLASS="cn.ict.zyq.bestConf.bestConf.BestConf"
 
-# min and max heap sizes should be set to the same value to avoid
-# stop-the-world GC pauses during resize, and so that we can lock the
-# heap in memory on startup to prevent any of it from being swapped
-# out.
-JVM_OPTS="-Xmx10g -Xms10g -Xmn1g -XX:+HeapDumpOnOutOfMemoryError"
-
 cd ${BESTCONF_HOME}
 exec "$JAVA" $JVM_OPTS -classpath "$CLASSPATH" $CLASS
 
