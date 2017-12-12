@@ -1,0 +1,30 @@
+<?xml version="1.0"?>  
+<project name="BestConfig" default="prepare" basedir=".">  
+  
+  <property name="source.root" value="src"/>  
+  <property name="class.root" value="classes"/>  
+  <property name="lib.dir" value="lib"/>  
+  
+  <path id="basepath">
+      <pathelement location="${class.root}" />
+      <fileset dir="${lib.dir}">
+        <include name="*.jar"/>
+      </fileset>
+  </path>
+  
+  <target name="prepare">
+    <delete dir="${class.root}"/>
+    <mkdir dir="${class.root}"/>
+  </target>
+  
+  <target name="compile" depends="prepare">
+    <javac srcdir="${source.root}"
+           destdir="${class.root}"
+           debug="on"
+           optimize="off"
+           deprecation="on">
+	<compilerarg line="-encoding UTF-8 "/>
+      <classpath refid="basepath"/>
+    </javac>
+  </target>
+</project>
