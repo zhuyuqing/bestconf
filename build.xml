@@ -27,4 +27,9 @@
       <classpath refid="basepath"/>
     </javac>
   </target>
+<target name="run">  
+    <java classname="cn.ict.zyq.bestConf.bestConf.BestConf" fork="true">  
+      <classpath refid="basepath"/>  
+    </java>
+  </target>  
 </project>
