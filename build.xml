@@ -27,7 +27,7 @@
       <classpath refid="basepath"/>
     </javac>
   </target>
-<target name="run">  
+<target name="run" depends="compile">  
     <java classname="cn.ict.zyq.bestConf.bestConf.BestConf" fork="true">  
       <classpath refid="basepath"/>  
     </java>
