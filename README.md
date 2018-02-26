@@ -3,7 +3,7 @@
 Better Configurations for Large-Scale Systems (BestConfig)
 ====================================
 
-[Documentation](http://bestconfig.readthedocs.io) | [QuickStart](http://bestconfig.readthedocs.io/en/latest/source/how%20to%20apply/index_howtoapply.html) | [Use cases](http://bestconfig.readthedocs.io/en/latest/source/examples/index_usecase.html) | [FAQ](http://bestconfig.readthedocs.io/en/latest/source/faq/index_faq.html) 
+[Documentation](http://bestconfig.readthedocs.io) | [QuickStart](http://bestconfig.readthedocs.io/en/master/source/how%20to%20apply/index_howtoapply.html) | [Use cases](http://bestconfig.readthedocs.io/en/master/source/examples/index_usecase.html) | [FAQ](http://bestconfig.readthedocs.io/en/master/source/faq/index_faq.html) 
 
 ***BestConfig*** is a system for automatically ***finding a best configuration setting within a resource limit*** for a deployed system under a given application workload. BestConfig is designed with an extensible architecture to automate the configuration tuning ***for general systems***.
 
