@@ -19,14 +19,6 @@ package cn.ict.zyq.bestConf.cluster.InterfaceImpl;
 import cn.ict.zyq.bestConf.cluster.Interface.ConfigReadin;
 
 public class HadoopConfigReadin implements ConfigReadin {
-
-	private Connection connection;
-	private String server;
-	private String username;
-	private String password;
-	private String remotePath;
-	private String localPath;
-	private String filepath;
 	
 	public HadoopConfigReadin(){
 		
