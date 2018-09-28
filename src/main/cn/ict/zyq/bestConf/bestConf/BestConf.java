@@ -138,13 +138,7 @@ public class BestConf {
 		try {
 			//DataIOFile.saveDataToArffFile("data/zyqTestRange.arff", samplePoints);
 			
-			if(resuming){
-				samplePoints = manager.collectPerfs(samplePoints, perfAttName);
-			}
-			
 			retval = manager.runExp(samplePoints, perfAttName);
-			//we output the result set for future debugging and testing purposes
-			DataIOFile.saveDataToArffFile("data/trainingBestConf"+round+"_"+postfix+".arff", samplePoints);
 			
 			//evict all bad configurations
 			Attribute perfAtt = retval.attribute(perfAttName);
@@ -262,7 +256,6 @@ public class BestConf {
 							lower = val;
 							upper = 1;
 						}
-						p1.setProperty("range", "["+String.valueOf(lower)+","+String.valueOf(upper)+"]");
 					}
 					
 					ProtectedProperties prop1 = new ProtectedProperties(p1);
@@ -330,156 +323,6 @@ public class BestConf {
 		bestconf.afterOptimization();
 	}
 	
-	public void test(){
-		try {
-			System.out.println("Testing loading data and writing data.......................");
-			DataIOFile.saveDataToXrffFile("data/initialTestOnIO.xrff", DataIOFile.loadDataFromArffFile("data/train.arff"));
-			Thread.sleep(1000);
-			
-			System.out.println("Testing cluster manipulation functions.......................");
-			manager.test(2);
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}catch (IOException e) {
-			e.printStackTrace();
-		} 
-	}
-	
-	////////////////////////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////////////////////////
-	
-//	1. find the nearest neighbor in each dimension; 2. update the sampling range
-	public static ArrayList<Attribute> scaleDownDetour(Instances previousSet, Instance center){
-		ArrayList<Attribute> localAtts = new ArrayList<Attribute>();
-		int attNum = center.numAttributes();
-		
-		int pos = previousSet.attribute(PerformanceAttName).index();
-		
-		//traverse each dimension
-		Enumeration<Instance> enu;
-		double minDis;
-		for(int i=0;i<attNum;i++){
-			if(i==pos)
-				continue;
-			
-			enu = previousSet.enumerateInstances();
-			minDis = Double.MAX_VALUE;
-			
-			while(enu.hasMoreElements()){
-				Instance ins = enu.nextElement();
-				if(!ins.equals(center))
-					minDis = Math.min((double)((int)(Math.abs(ins.value(i)-center.value(i))*100))/100.0, minDis);
-			}
-			
-			//now we set the range
-			Properties p1 = new Properties();
-			double upper = center.value(i)+minDis, lower=center.value(i)-minDis;
-			
-			TreeSet<Double> detourSet = new TreeSet<Double>();
-			detourSet.add(upper);
-			detourSet.add(lower);
-			detourSet.add(previousSet.attribute(i).getUpperNumericBound());
-			detourSet.add(previousSet.attribute(i).getLowerNumericBound());
-			switch(detourSet.size()){
-			case 1:
-				upper=lower=detourSet.first();
-				break;
-			case 2:
-				upper = detourSet.last();
-				lower = detourSet.first();
-				break;
-			case 3:
-				upper=lower=detourSet.higher(detourSet.first());
-				break;
-			default://case 4:
-				upper=detourSet.lower(detourSet.last());
-				lower=detourSet.higher(detourSet.first());
-				break;
-			}
-			
-			p1.setProperty("range", "["+String.valueOf(lower)+","+String.valueOf(upper)+"]");
-			ProtectedProperties prop1 = new ProtectedProperties(p1);
-			
-			localAtts.add(new Attribute(previousSet.attribute(i).name(), prop1));
-		}
-		
-		return localAtts;
-	}
-	
-	public static Instance findBestPerf(Instances data){
-		int idx = data.numAttributes()-1;
-		double bestPerf = data.attributeStats(idx).numericStats.max;
-		for(int i=0;i<data.numInstances();i++)
-			if(data.get(i).value(idx)==bestPerf)
-				return data.get(i);
-		return null;//should never return NULL
-	}
-	
-	public static int findBestPerfIndex(Instances data){
-		int idx = data.numAttributes()-1;
-		double bestPerf = data.attributeStats(idx).numericStats.max;
-		for(int i=0;i<data.numInstances();i++)
-			if(data.get(i).value(idx)==bestPerf)
-				return i;
-		return -1;//should never return -1
-	}
-	
-	public static Map<Attribute, Double> instanceToMap(Instance ins){
-		HashMap<Attribute, Double> retval = new HashMap<Attribute, Double>();
-		Enumeration<Attribute> enu = ins.enumerateAttributes();
-		while(enu.hasMoreElements()){
-			Attribute temp = enu.nextElement();
-			retval.put(temp, ins.value(temp));
-		}
-		return retval;
-	}
-	
-	/**
-	 * remove all linearly related attributes
-	 * @return the set of attributes that are linearly related to the clase attributes
-	 */
-	private static double correlationFactorThreshold = 0.8;
-	public static ArrayList<String> preprocessInstances(Instances retval){
-		double[][] cMatrix;
-		ArrayList<String> result = new ArrayList<String>();
-		ArrayList<String> deleteAttNames = new ArrayList<String>();
-		PrincipalComponents pc = new PrincipalComponents();
-		HashMap<Integer, ArrayList<Integer>> filter = new HashMap<Integer, ArrayList<Integer>>();
-		try {
-			pc.buildEvaluator(retval);
-			cMatrix = pc.getCorrelationMatrix();		
-			for(int i = 0; i < cMatrix.length; i++){
-				ArrayList<Integer> record = new ArrayList<Integer>();
-				for(int j = i + 1; j < cMatrix.length; j++)
-					if(cMatrix[i][j] >= correlationFactorThreshold || cMatrix[i][j] <= -correlationFactorThreshold){
-						record.add(j);
-					}
-				if(record.size() != 0){
-					filter.put(i, record);
-				}
-			}
-			Iterator<Map.Entry<Integer, ArrayList<Integer>>> iter = filter.entrySet().iterator();
-			while (iter.hasNext()) {
-				Map.Entry<Integer, ArrayList<Integer>> entry = iter.next();
-				ArrayList<Integer> arr = entry.getValue();
-				for(int i = 0; i < arr.size(); i++)
-					if(arr.get(i) != cMatrix.length - 1 && !deleteAttNames.contains(retval.attribute(arr.get(i)).name())){
-						deleteAttNames.add(retval.attribute(arr.get(i)).name());
-					}
-				if(arr.contains(cMatrix.length-1)){
-					result.add(retval.attribute(Integer.parseInt(entry.getKey().toString())).name());
-				}
-			}
-			for(int i = 0; i < deleteAttNames.size(); i++){
-				retval.deleteAttributeAt(retval.attribute(deleteAttNames.get(i)).index());
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return result;
-	}
 	
 	public static void signalByFile(int method){
 		try {
