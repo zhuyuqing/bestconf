@@ -173,8 +173,41 @@ public class AutoTestAdjust implements ClusterManager{
 	
 	private static int maxTry = 3;
     public boolean startTest(HashMap hmTarget, int num, boolean isInterrupt) {
-		
+			
+	for (int i = 0; i < numServers; i++) {
+		HashMap hm = ConfR_cluster.get(i).modifyConfigFile(hmTarget);
+		ConfW_cluster.get(i).writetoConfigfile(hm);
+		ConfW_cluster.get(i).uploadConfigFile();
+	}	
+	for (int i = 0; i < numServers; i++) {
+		cluster.get(i).start();
 	}
+	flag = true;		
+	boolean[] flags = new boolean[numServers];
+	for (int i = 0; i < numServers; i++) {
+		flags[i] = false;
+	}
+	for (int i = 0; i < numServers; i++) {
+		flags[i] = cluster.get(i).isStarted();
+	}
+	for (int i = 0; i < numServers; i++) {
+		if (flags[i])
+			continue;
+		else
+			flag = false;
+	}
+	if(flag){		
+		sutTest.terminateTest();
+		sutTest.startTest();
+		performance = sutTest.getResultofTest(num, isInterrupt);
+                System.out.println("performance is : " + performance);
+		for(int i = 0; i < numServers; i++)
+			cluster.get(i).stopSystem();
+	        systemPerformance.initial(performance,1.0/(Math.abs(performance)+1));
+	    	return true;
+		}
+	return false;
+    }
     private double[] getPerf(String filePath){
     	double[] result = new double[2];
 		File res = new File(filePath);
