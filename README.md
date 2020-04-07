@@ -35,7 +35,7 @@ Ask a Question
 
   Please use the [bestconf/issues](https://github.com/zhuyuqing/bestconf/issues) page; or
   
-  please contact us at: zhuyuqing@ict.ac.cn or liujianxun@ict.ac.cn
+  please contact us at: zhuyuqing@tsinghua.edu.cn or liujianxun@utuned.com.cn
 
 Related Publications
 --------------------
