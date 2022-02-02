@@ -18,6 +18,8 @@
 package cn.ict.zyq.bestConf.cluster.InterfaceImpl;
 import cn.ict.zyq.bestConf.cluster.Interface.ConfigWrite;
 
+import java.util.HashMap;
+
 public class MySQLConfigWrite implements ConfigWrite {
 	
 	@Override
@@ -26,8 +28,13 @@ public class MySQLConfigWrite implements ConfigWrite {
 	}
 
 	@Override
+	public void uploadConfigFile() {
+
+	}
+
+	@Override
 	public void writetoConfigfile(HashMap hm) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

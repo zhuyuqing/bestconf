@@ -18,6 +18,8 @@
 package cn.ict.zyq.bestConf.cluster.InterfaceImpl;
 import cn.ict.zyq.bestConf.cluster.Interface.ConfigReadin;
 
+import java.util.HashMap;
+
 public class MySQLConfigReadin implements ConfigReadin {
 	
 	@Override
@@ -32,17 +34,20 @@ public class MySQLConfigReadin implements ConfigReadin {
 		
 	}
 	public HashMap loadFileToHashMap(String filePath) {
-		
+		return null;
+
 	}
 
 	@Override
 	public HashMap modifyConfigFile(HashMap hm, String filepath) {
-		
+		return null;
+
 	}
 
 	@Override
 	public HashMap modifyConfigFile(HashMap hm) {
-		
+		return null;
+
 	}
 	
 }

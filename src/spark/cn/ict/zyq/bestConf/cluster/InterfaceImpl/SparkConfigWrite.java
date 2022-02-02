@@ -18,12 +18,19 @@
 package cn.ict.zyq.bestConf.cluster.InterfaceImpl;
 import cn.ict.zyq.bestConf.cluster.Interface.ConfigWrite;
 
+import java.util.HashMap;
+
 public class SparkConfigWrite implements ConfigWrite {
 	
 	@Override
 	public void initial(String server, String username, String password, String localPath, String remotePath) {
 		// TODO Auto-generated method stub
 	
+	}
+
+	@Override
+	public void uploadConfigFile() {
+
 	}
 
 	@Override
