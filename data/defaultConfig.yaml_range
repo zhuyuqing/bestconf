@@ -1,2 +1,5 @@
-acceptCount:"[0,10000]"
-
+GROUP_NUMBER: "[1,500]"
+DEVICE_NUMBER: "[1,5000]"
+SENSOR_NUMBER: "[1,10000]"
+tsfile_size_threshold: "[1,536870912]"
+memtable_size_threshold: "[1048576,268435456]"
