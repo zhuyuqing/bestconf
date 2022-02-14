@@ -33,26 +33,26 @@ import com.jcraft.jsch.SftpException;
 
 public class SFTPUtil {
 	
-	public static Session connect(String host, Integer port, String user, String password) throws JSchException{
+	public static ChannelSftp connect(String server, String username, String password) throws JSchException{
 		Session session = null;
+		ChannelSftp sftp = null;
 		try {
 			JSch jsch = new JSch();
-			if(port != null){
-				session = jsch.getSession(user, host, port.intValue());
-			}else{
-				session = jsch.getSession(user, host);
-			}
+			session = jsch.getSession(username, server);
 			session.setPassword(password);
 			
 			session.setConfig("StrictHostKeyChecking", "no");
 			//time out
 			session.connect(3000);
+
+			sftp = (ChannelSftp) session.openChannel("sftp");
+			sftp.connect();
 		} catch (JSchException e) {
 			e.printStackTrace();
 			System.out.println("SFTPUitl connection error");
 			throw e;
 		}
-		return session;
+		return sftp;
 	}
 	
 	public static void upload(String directory, String uploadFile, ChannelSftp sftp) throws Exception{

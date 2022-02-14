@@ -1,12 +1,5 @@
-acceptCount:100
-acceptorThreadCount:1
-asyncTimeout:30000
-connectionTimeout:20000
-executorTerminationTimeoutMillis:5000
-keepAliveTimeout:20000
-maxConnections:8192
-maxKeepAliveRequests:100
-maxThreads:200
-minSpareThreads:10
-processorCache:200
-socketBuffer:9000
+GROUP_NUMBER: 500
+DEVICE_NUMBER: 5000
+SENSOR_NUMBER: 10000
+tsfile_size_threshold: 123695040
+memtable_size_threshold: 30923760
