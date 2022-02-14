@@ -133,15 +133,15 @@ public class AutoTestAdjust implements ClusterManager{
 		}catch(IOException e){
 			e.printStackTrace();
 		}
-		sshReconnectWatingtime = Integer.parseInt(pps.getProperty("sshReconnectWatingtimeInSec"));
-		maxRoundConnection = Integer.parseInt(pps.getProperty("maxConnectionRetries"));
+		sshReconnectWatingtime = Integer.parseInt(pps.getProperty("sshReconnectWatingtimeInSec", "3"));
+		maxRoundConnection = Integer.parseInt(pps.getProperty("maxConnectionRetries", "3"));
 		targetTestPath = pps.getProperty("targetTestPath");
 		remoteConfigFilePath = pps.getProperty("remoteConfigFilePath");
 		
 		performanceType = Integer.parseInt(pps.getProperty("performanceType"));
 		performanceType=performanceType>2?2:performanceType;
 		
-		targetTestErrorNum = Integer.valueOf(pps.getProperty("maxConsecutiveFailedSysStarts"));
+		targetTestErrorNum = Integer.valueOf(pps.getProperty("maxConsecutiveFailedSysStarts", "3"));
 		targetTestServer = pps.getProperty("targetTestServer");
 		targetTestUsername = pps.getProperty("targetTestUsername");
 		targetTestPassword = pps.getProperty("targetTestPassword");
@@ -182,7 +182,7 @@ public class AutoTestAdjust implements ClusterManager{
 	for (int i = 0; i < numServers; i++) {
 		cluster.get(i).start();
 	}
-	flag = true;		
+	boolean flag = true;
 	boolean[] flags = new boolean[numServers];
 	for (int i = 0; i < numServers; i++) {
 		flags[i] = false;
