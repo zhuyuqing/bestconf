@@ -49,17 +49,6 @@ public abstract class ConfigSampler {
 		while(retval.size()>sampleSetSize)
 			retval.remove(retval.size()-1);
 		
-		for (int i = 0; i < retval.size(); i++) {
-			long device_number = (long)retval.get(i).value(2);
-			long group_number = (long)retval.get(i).value(3);
-			long memtable_size_threshold = 15_461_882_260l / group_number;
-			retval.get(i).setValue(1, memtable_size_threshold);
-			retval.get(i).setValue(0, memtable_size_threshold * 4);
-			if (device_number <= group_number) {
-				retval.get(i).setValue(2, group_number);
-			}
-		}
-		
 		return retval;
 	}
 
